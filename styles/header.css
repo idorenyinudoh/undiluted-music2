@@ -3,6 +3,10 @@ body {
     height: 800px;
 }
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
     width: 100%;
     padding-top: 10px;
     display: grid;
@@ -30,7 +34,7 @@ nav ul {
     grid-template-columns: repeat(4, 70px);
     justify-content: space-evenly;
 }
-li {
+nav ul li {
     display: grid;
     place-items: center;
 }
@@ -39,6 +43,7 @@ a {
     color: black;
 }
 #genres-link {
+    cursor: pointer;
     display: grid;
     grid-template-columns: 1fr 24px;
     place-items: center;
@@ -48,4 +53,27 @@ a {
     grid-row: 1 / 2;
     display: grid;
     place-items: center;
+}
+#genres-box {
+    width: 100%;
+    margin-top: 110px;
+}
+.hide {
+    display: none;
+}
+.show {
+}
+#genres-box ul {
+    margin: 0;
+    padding: 2px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#genres-box ul li {
+    display: grid;
+    width: max-content;
+    height: max-content;
+    margin: 1px;
+    padding: 5px;
 }
