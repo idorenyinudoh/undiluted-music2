@@ -86,7 +86,8 @@ a {
 #genres-box ul li {
     display: grid;
     width: max-content;
-    height: max-content;
-    margin: 1px;
+    margin: 2px;
     padding: 5px;
+    font-size: 0.9rem;
+    border: 1px solid black;
 }
