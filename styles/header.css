@@ -25,10 +25,6 @@
         grid-row: 1 / 2;
     }
 }
-body {
-    margin: 0;
-    height: 800px;
-}
 #header {
     position: fixed;
     top: 0;
@@ -70,9 +66,6 @@ a {
     display: grid;
     grid-template-columns: 1fr 24px;
     place-items: center;
-}
-p {
-    margin: 0;
 }
 #search {
     margin-right: 20px;
