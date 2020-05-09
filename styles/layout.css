@@ -1,12 +1,24 @@
+@media screen and (min-width: 700px) {
+    #today-data {
+        grid-template-columns: max-content max-content;
+    }
+    #today-title {
+        padding-right: 5px;
+        justify-self: flex-end;
+    }
+    #today-artiste {
+        padding-left: 5px;
+        justify-self: flex-start;
+    }
+}
 @media screen and (max-width: 919px) {
     #today-jam-container {
         margin: 125px 0 0 0;
-        place-items: center;
     }
 }
 @media screen and (min-width: 920px) {
     #today-jam-container {
-        margin: 80px 0 0 0;
+        margin: 85px 0 0 0;
     }
 }
 body {
@@ -19,12 +31,19 @@ p {
 #today-jam-container {
     display: grid;
     gap: 5px;
+    place-items: center;
 }
 #today-text {
     margin: 0;
 }
+#today-data {
+    display: grid;
+    gap: 5px;
+    place-items: center;
+}
 #audio-player {
     width: 90vw;
+    max-width: 500px;
     height: 50px;
 }
 hr {
