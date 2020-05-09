@@ -1,3 +1,4 @@
+/*Inherits .grid-center from header.css*/
 body {
     margin: 0;
     height: 800px;
@@ -7,18 +8,14 @@ p {
 }
 #today-jam-container {
     margin: 130px 0 0 0;
-    display: grid;
-    place-items: center;
     gap: 5px;
 }
 #today-text {
     margin: 0;
 }
 #audio-player {
-    width: 280px;
+    width: 90vw;
     height: 50px;
-    display: grid;
-    place-items: center;
 }
 hr {
     width: 92.5vw;
