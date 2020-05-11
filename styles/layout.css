@@ -1,21 +1,59 @@
-/*Inherits .grid-center from header.css*/
+@media screen and (min-width: 700px) and (max-width: 919px) {
+    #today-data {
+        grid-template-columns: max-content max-content;
+    }
+    #today-title {
+        padding-right: 5px;
+        justify-self: flex-end;
+    }
+    #today-artiste {
+        padding-left: 5px;
+        justify-self: flex-start;
+    }
+}
+@media screen and (max-width: 919px) {
+    #today-jam-container {
+        margin: 125px 0 0 0;
+    }
+    #audio-player {
+        width: 90vw;
+        max-width: 500px;
+        height: 50px;
+    }
+}
+@media screen and (min-width: 920px) {
+    #today-jam-container {
+        margin: 85px 0 0 0;
+    }
+    #today-plus-audio {
+        grid-template-columns: max-content max-content;
+    }
+    #today-data {
+        grid-template-columns: max-content max-content;
+    }
+    #today-title {
+        padding-right: 10px;
+    }
+    #today-artiste {
+        padding-right: 10px;
+    }
+    #audio-player {
+        width: 40vw;
+        max-width: 450px;
+        height: 48px;
+    }
+}
 body {
     margin: 0;
     height: 800px;
 }
-p {
+p, #today-text {
     margin: 0;
 }
-#today-jam-container {
-    margin: 130px 0 0 0;
+.grid-gap-center {
+    display: grid;
     gap: 5px;
-}
-#today-text {
-    margin: 0;
-}
-#audio-player {
-    width: 90vw;
-    height: 50px;
+    place-items: center;
 }
 hr {
     width: 92.5vw;
