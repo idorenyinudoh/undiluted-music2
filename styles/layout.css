@@ -47,7 +47,7 @@ body {
     margin: 0;
     height: 800px;
 }
-p, #today-text {
+p, h2, h3, figure {
     margin: 0;
 }
 .grid-gap-center {
@@ -58,4 +58,30 @@ p, #today-text {
 hr {
     width: 92.5vw;
     margin: 20px auto 20px auto;
+}
+#latest-releases-container {
+    display: grid;
+    gap: 5px;
+    place-items: center;
+    grid-template-columns: 10vw 1fr 10vw;
+    grid-template-rows: max-content max-content;
+}
+#latest-text {
+    padding: 0 0 1.5vw 2vw;
+    justify-self: flex-start;
+    grid-column: 1 / 4;
+}
+article {
+    grid-column: 2 / 3;
+}
+figure {
+    display: grid;
+    gap: 0;
+}
+img {
+    width: 100%;
+    /*height: calc(attr(width));*/
+}
+figcaption {
+    height: 40px;
 }
