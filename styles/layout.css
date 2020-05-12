@@ -68,8 +68,8 @@ hr {
     padding: 0 0 1.5vw 2vw;
     justify-self: flex-start;
 }
-article {
-}
+/*article {
+}*/
 figure {
     display: grid;
     gap: 0;
