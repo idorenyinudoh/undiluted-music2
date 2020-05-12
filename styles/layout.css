@@ -63,16 +63,12 @@ hr {
     display: grid;
     gap: 5px;
     place-items: center;
-    grid-template-columns: 10vw 1fr 10vw;
-    grid-template-rows: max-content max-content;
 }
 #latest-text {
     padding: 0 0 1.5vw 2vw;
     justify-self: flex-start;
-    grid-column: 1 / 4;
 }
 article {
-    grid-column: 2 / 3;
 }
 figure {
     display: grid;
@@ -80,7 +76,7 @@ figure {
 }
 img {
     width: 100%;
-    /*height: calc(attr(width));*/
+    height: auto;
 }
 figcaption {
     height: 40px;
