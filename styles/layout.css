@@ -43,11 +43,7 @@
         height: 48px;
     }
 }
-body {
-    margin: 0;
-    height: 800px;
-}
-p, h2, h3, figure {
+body, p, h2, h3, figure {
     margin: 0;
 }
 .grid-gap-center {
@@ -72,11 +68,9 @@ hr {
 #article-container {
     grid-column: 2 / 3;
     display: grid;
-    gap: 1.5vw;
+    gap: 2vw;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-/*article {
-}*/
 figure {
     display: grid;
     gap: 0;
@@ -86,5 +80,14 @@ img {
     height: auto;
 }
 figcaption {
-    height: 40px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1ch 1fr;
+    padding: 3%;
+}
+.article-title {
+    grid-column: 1 / 3;
+}
+.article-artiste {
+    grid-column: 2 / 3;
 }
