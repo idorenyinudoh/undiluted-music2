@@ -12,7 +12,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-p, h2 {
+p, h2, ul {
     margin: 0;
 }
 #artistes-container {
@@ -21,4 +21,18 @@ p, h2 {
 .letter {
     width: 100%;
     border-bottom: 1px solid black;
+}
+.artistes {
+    list-style-type: none;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.name {
+    border: 1px solid black;
+    padding: 1%;
+    margin: 1%;
+    width: max-content;
+    height: max-content;
+    background-color: lightgreen;
 }
