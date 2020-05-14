@@ -31,9 +31,6 @@
         font-size: 16px;
     }
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
 #audio-player, figure {
     border: 1px solid black;
 }

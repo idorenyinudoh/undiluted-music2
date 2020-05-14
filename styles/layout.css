@@ -43,7 +43,7 @@
         height: 48px;
     }
 }
-body, p, h2, h3, figure {
+h3, figure {
     margin: 0;
 }
 .grid-gap-center {
