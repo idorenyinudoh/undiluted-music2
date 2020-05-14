@@ -33,17 +33,13 @@ figcaption {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 600;
 }
 .article-artiste {
     grid-column: 2 / 3;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-.article-title {
-    font-size: 16px;
-    font-weight: 600;
-}
-.article-artiste {
     font-size: 14px;
 }
