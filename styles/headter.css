@@ -33,6 +33,13 @@
         grid-row: 3 / 4;
     }
 }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+p, h2, ul {
+    margin: 0;
+}
 #header {
     position: fixed;
     top: 0;
