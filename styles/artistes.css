@@ -29,10 +29,11 @@ p, h2, ul {
     flex-wrap: wrap;
 }
 .name {
-    border: 1px solid black;
+    border: 1px solid green;
     padding: 1%;
     margin: 1%;
     width: max-content;
     height: max-content;
     background-color: lightgreen;
+    font-size: 1.1rem;
 }
