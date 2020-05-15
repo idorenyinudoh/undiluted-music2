@@ -31,7 +31,7 @@
         font-size: 16px;
     }
 }
-#audio-player, figure {
+#audio-player {
     border: 1px solid black;
 }
 hr {
