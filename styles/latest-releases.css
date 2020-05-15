@@ -1,14 +1,14 @@
-#latest-releases-container {
+.latest-releases-container {
     display: grid;
     gap: 5px;
     grid-template-columns: 5vw 1fr 5vw;
 }
-#latest-text {
+.latest-text {
     padding: 0 0 1.5vw 2vw;
     justify-self: flex-start;
     grid-column: 1 / 3;
 }
-#article-container {
+.article-container {
     grid-column: 2 / 3;
     display: grid;
     gap: 2vw;

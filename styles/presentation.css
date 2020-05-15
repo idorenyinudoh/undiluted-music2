@@ -2,7 +2,7 @@
     #today-text {
         font-size: 32px;
     }
-    #today-title, #latest-text {
+    #today-title, .latest-text {
         font-size: 28px;
     }
     #today-artiste {
@@ -13,7 +13,7 @@
     #today-text {
         font-size: 30px;
     }
-    #today-title, #latest-text {
+    #today-title, .latest-text {
         font-size: 26px;
     }
     #today-artiste {
@@ -24,7 +24,7 @@
     #today-text {
         font-size: 28px;
     }
-    #today-title, #latest-text {
+    #today-title, .latest-text {
         font-size: 24px;
     }
     #today-artiste {
