@@ -8,13 +8,6 @@
         margin: 85px 8vw auto 8vw;
     }
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-p, h2, ul {
-    margin: 0;
-}
 #artistes-container {
     display: grid;
 }

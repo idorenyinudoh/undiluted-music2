@@ -2,7 +2,7 @@
     #today-text {
         font-size: 32px;
     }
-    #today-title, #latest-text {
+    #today-title {
         font-size: 28px;
     }
     #today-artiste {
@@ -13,7 +13,7 @@
     #today-text {
         font-size: 30px;
     }
-    #today-title, #latest-text {
+    #today-title {
         font-size: 26px;
     }
     #today-artiste {
@@ -24,26 +24,16 @@
     #today-text {
         font-size: 28px;
     }
-    #today-title, #latest-text {
+    #today-title {
         font-size: 24px;
     }
     #today-artiste {
         font-size: 16px;
     }
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-#audio-player, figure {
+#audio-player {
     border: 1px solid black;
 }
 hr {
     border-color: coral;
-}
-.article-title {
-    font-size: 16px;
-    font-weight: 600;
-}
-.article-artiste {
-    font-size: 14px;
 }
