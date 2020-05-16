@@ -74,5 +74,5 @@ img {
     font-size: 1rem;
 }
 .value {
-    font-size: calc(1rem - 0.2vw);
+    font-size: 14px;
 }
