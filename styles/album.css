@@ -13,8 +13,8 @@
         grid-template-columns: 5vw 1fr 5vw;
         grid-template-areas: 
         "album album ."
-        ". cover ."
-        ". data  .";
+        ".     cover ."
+        ".     data  .";
     }
     #album {
         grid-column: 1 / 3;
@@ -36,6 +36,9 @@
 @media screen and (min-width: 700px) {
     #intro {
         grid-template-columns: 5vw 1fr 2fr 5vw;
+        grid-template-areas: 
+        ". cover album ."
+        ". cover data  .";
     }
     #album {
         grid-column: 3 / 4;
