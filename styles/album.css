@@ -12,9 +12,9 @@
     #intro {
         grid-template-columns: 5vw 1fr 5vw;
         grid-template-areas: 
-        "album"
-        "cover"
-        "data";
+        "album album ."
+        ". cover ."
+        ". data  .";
     }
     #album {
         grid-column: 1 / 3;
