@@ -80,10 +80,16 @@ img {
     margin: 5vw 2.5vw 0 2.5vw;
     border: 1px solid green;
 }
+tr {
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    place-items: center;
+}
 td {
     padding: 0;
 }
 .first {
+    justify-self: flex-start;
     display: grid;
     grid-template-columns: max-content 1fr;
     grid-template-areas:
