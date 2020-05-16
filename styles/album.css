@@ -18,12 +18,9 @@
     }
     #album {
         grid-template-columns: 2vw 1ch 1fr;
-    }
-    #album-title {
-        grid-column: 2 / 4;
-    }
-    #album-artiste {
-        grid-column: 3 / 4;
+        grid-template-areas: 
+        ". title title"
+        ". . artiste";
     }
 }
 @media screen and (min-width: 700px) {
@@ -35,12 +32,9 @@
     }
     #album {
         grid-template-columns: 1ch 1fr;
-    }
-    #album-title {
-        grid-column: 1 / 3;
-    }
-    #album-artiste {
-        grid-column: 2 / 3;
+        grid-template-areas:
+        "title title"
+        ". artiste";
     }
 }
 #intro {
@@ -54,9 +48,11 @@
 }
 #album-title {
     font-size: calc(1.5rem + 0.2vw);
+    grid-area: title;
 }
 #album-artiste {
     font-size: calc(1rem + 0.1vw);
+    grid-area: artiste;
 }
 #cover {
     grid-area: cover;
