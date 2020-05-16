@@ -26,6 +26,7 @@
 @media screen and (min-width: 700px) {
     #intro {
         grid-template-columns: 5vw 1fr 2fr 5vw;
+        grid-template-rows: 50px max-content;
         grid-template-areas: 
         ". cover album ."
         ". cover data .";
@@ -44,7 +45,6 @@
 #album {
     grid-area: album;
     display: grid;
-    height: max-content;
 }
 #album-title {
     font-size: calc(1.5rem + 0.2vw);
