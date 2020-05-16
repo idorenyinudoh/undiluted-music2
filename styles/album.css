@@ -76,3 +76,26 @@ img {
 .value {
     font-size: 14px;
 }
+#audio-section {
+    margin: 5vw 2.5vw 0 2.5vw;
+    border: 1px solid green;
+}
+td {
+    padding: 0;
+}
+.first {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas:
+    "number name"
+    "people people";
+}
+.number {
+    grid-area: number;
+}
+.name {
+    grid-area: name;
+}
+.people {
+    grid-area: people;
+}
