@@ -8,26 +8,38 @@
         margin: 85px 0 0 0;
     }
 }
+@media screen and (max-width: 699px) {
+    #intro {
+        grid-template-columns: 5vw 1fr 5vw;
+    }
+    #album {
+        grid-column: 1 / 3;
+        grid-template-columns: 2vw 1ch 1fr;
+    }
+    #album-title {
+        grid-column: 2 / 4;
+    }
+    #album-artiste {
+        grid-column: 3 / 4;
+    }
+    #cover {
+        grid-column: 2 / 3;
+    }
+}
 #intro {
     display: grid;
-    grid-template-columns: 5vw 1fr 5vw;
     gap: 2vw;
 }
 #album {
-    grid-column: 1 / 3;
     display: grid;
-    grid-template-columns: 2vw 1ch 1fr;
 }
 #album-title {
-    grid-column: 2 / 4;
     font-size: calc(1.5rem + 0.2vw);
 }
 #album-artiste {
-    grid-column: 3 / 4;
     font-size: calc(1rem + 0.1vw);
 }
 #cover {
-    grid-column: 2 / 3;
     border: 1px solid green;
     display: grid;
     gap: 0;
