@@ -25,6 +25,9 @@
     #cover {
         grid-column: 2 / 3;
     }
+    #data {
+        grid-column: 2 / 3;
+    }
 }
 @media screen and (min-width: 700px) {
     #intro {
@@ -68,4 +71,14 @@
 img {
     width: 100%;
     height: auto;
+}
+#data {
+    display: grid;
+    gap: calc(1% + 0.5vw);
+}
+.key {
+    font-size: 1rem;
+}
+.value {
+    font-size: calc(1rem - 0.2vw);
 }
