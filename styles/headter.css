@@ -81,7 +81,13 @@ a {
     margin: 0;
     padding: 0;
     background-color: lightgreen;
+    display: flex;
+    flex-direction: row;
     font-size: 1rem;
+}
+#genres-text {
+    display: inline-block;
+    margin: auto 0;
 }
 #search {
     margin-right: 20px;
