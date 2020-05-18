@@ -89,16 +89,12 @@ a {
     display: inline-block;
     margin: auto 0;
 }
+#genres-box {
+    display: none;
+}
 #search {
     margin-right: 20px;
 }
-/*#genres-box {
-}*/
-.hide {
-    display: none;
-}
-/*.show {
-}*/
 #genres-box ul {
     padding: 2px;
     list-style-type: none;
