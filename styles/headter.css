@@ -91,23 +91,21 @@ a {
 }
 #genres-box {
     display: none;
-}
-#search {
-    margin-right: 20px;
-}
-#genres-box ul {
     padding: 2px;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
 }
-#genres-box ul li {
+#genres-box li {
     display: grid;
     width: max-content;
     margin: 2px;
     padding: 5px;
     font-size: 0.9rem;
     border: 1px solid black;
+}
+#search {
+    margin-right: 20px;
 }
 footer {
     width: 100%;
