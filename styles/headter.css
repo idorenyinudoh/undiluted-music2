@@ -63,7 +63,7 @@ p, h2, h3, ul, figure {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
-nav ul {
+nav > ul {
     padding: 0;
     list-style-type: none;
     grid-template-columns: repeat(4, 70px);
