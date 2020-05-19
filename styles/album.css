@@ -22,6 +22,18 @@
         ". title title"
         ". . artiste";
     }
+    tbody {
+        grid-template-rows: repeat(15, 53px);
+    }
+    tr {
+        grid-template-columns: 6fr 1fr 1fr 1fr;
+    }
+    .first {
+        grid-template-columns: max-content 1fr;
+        grid-template-areas:
+        "number name"
+        "people people";
+    }
 }
 @media screen and (min-width: 700px) {
     #intro {
@@ -36,6 +48,26 @@
         grid-template-areas:
         "title title"
         ". artiste";
+    }
+    tbody {
+        grid-template-rows: repeat(15, 37px);
+    }
+    tr {
+        grid-template-columns: 10fr 1fr 1fr 1fr;
+    }
+    .first {
+        grid-template-columns: 3ch 20vw 2fr;
+        grid-template-areas:
+        "number name people";
+    }
+    .number {
+        justify-self: center;
+    }
+    .name {
+        justify-self: flex-start;
+    }
+    .people {
+        justify-self: flex-start;
     }
 }
 #intro {
@@ -85,12 +117,10 @@ table {
 }
 tbody {
     display: grid;
-    grid-template-rows: repeat(15, 53px);
     gap: 1vw;
 }
 tr {
     display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr;
     place-items: center;
 }
 td {
@@ -99,10 +129,6 @@ td {
 .first {
     justify-self: flex-start;
     display: grid;
-    grid-template-columns: max-content 1fr;
-    grid-template-areas:
-    "number name"
-    "people people";
 }
 .number {
     grid-area: number;
