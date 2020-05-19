@@ -121,11 +121,3 @@ a {
 footer {
     width: 100%;
 }
-@keyframes genre {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
