@@ -64,9 +64,9 @@ nav > ul {
     grid-template-columns: repeat(4, 76.5px);
     justify-content: space-evenly;
 }
-nav > ul > li {
+/*nav > ul > li {
     position: relative;
-}
+}*/
 nav > ul > li > a {
     display: block;
     width: max-content;
