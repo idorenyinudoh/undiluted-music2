@@ -80,6 +80,13 @@ img {
     margin: 5vw 5vw 0 5vw;
     border: 1px solid green;
 }
+table {
+    width: 100%;
+}
+tbody {
+    display: grid;
+    gap: 1vw;
+}
 tr {
     display: grid;
     grid-template-columns: 6fr 1fr 1fr 1fr;
@@ -98,10 +105,16 @@ td {
 }
 .number {
     grid-area: number;
+    font-size: calc(1rem + 0.2vw);
 }
 .name {
     grid-area: name;
+    font-size: calc(1rem + 0.2vw);
 }
 .people {
     grid-area: people;
+    font-size: calc(14px + 0.2vw);
+}
+.time {
+    font-size: calc(14px + 0.2vw);
 }
