@@ -85,12 +85,11 @@ li:not(:hover) > #button-container #icon {
     position: absolute;
     left: 0;
     width: 100vw;
-    /*padding: 2px;*/
+    padding: 2px;
     display: flex;
     flex-flow: wrap;
 }
 #genres-box li {
-    display: none;
     width: max-content;
     margin: 2px;
     padding: 5px;
