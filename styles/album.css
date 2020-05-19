@@ -34,6 +34,12 @@
         "number name"
         "people people";
     }
+    .people {
+        font-size: 14px;
+    }
+    .time {
+        font-size: 14px;
+    }
 }
 @media screen and (min-width: 700px) {
     #intro {
@@ -68,6 +74,10 @@
     }
     .people {
         justify-self: flex-start;
+        font-size: 15px;
+    }
+    .time {
+        font-size: 15px;
     }
 }
 #intro {
@@ -132,16 +142,12 @@ td {
 }
 .number {
     grid-area: number;
-    font-size: calc(1rem + 0.2vw);
+    font-size: 1rem;
 }
 .name {
     grid-area: name;
-    font-size: calc(1rem + 0.2vw);
+    font-size: 1rem;
 }
 .people {
     grid-area: people;
-    font-size: calc(14px + 0.2vw);
-}
-.time {
-    font-size: calc(14px + 0.2vw);
 }
