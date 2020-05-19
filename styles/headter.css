@@ -78,6 +78,7 @@ nav > ul > li > a {
 }
 #genres-box {
     position: absolute;
+    left: 0;
     width: 100vw;
     padding: 2px;
     display: flex;
