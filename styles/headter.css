@@ -36,7 +36,8 @@ p, h2, h3, ul, figure {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
+    perspective: 20px;
     width: 100%;
     padding-top: 10px;
     box-shadow: 0 1px 5px 0 #808080;
