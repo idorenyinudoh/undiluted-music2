@@ -127,7 +127,12 @@ table {
 }
 tbody {
     display: grid;
-    gap: 1vw;
+}
+tr:nth-child(odd) {
+    background-color: green;
+}
+tr:nth-child(even) {
+    background-color: lightgreen;
 }
 tr {
     display: grid;
