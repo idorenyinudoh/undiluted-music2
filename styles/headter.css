@@ -65,9 +65,6 @@ nav > ul {
     justify-content: space-evenly;
 }
 nav > ul > li {
-    display: block;
-    height: 50px;
-    float: left;
     position: relative;
 }
 nav > ul > li > a {
