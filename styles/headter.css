@@ -37,7 +37,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-p, h2, h3, ul, figure {
+p, h1, h2, h3, ul, figure {
     margin: 0;
 }
 #header {
