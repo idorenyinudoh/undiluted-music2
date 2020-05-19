@@ -10,10 +10,6 @@
     #search {
         grid-column: 4 / 5;
     }
-    #genres-box {
-        grid-column: 1 / 5;
-        grid-row: 2 / 3;
-    }
 }
 @media screen and (max-width: 919px) {
     #header {
@@ -27,10 +23,6 @@
     #search {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
-    }
-    #genres-box {
-        grid-column: 1 / 4;
-        grid-row: 3 / 4;
     }
 }
 body {
@@ -63,14 +55,38 @@ p, h2, h3, ul, figure {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
-nav > ul {
+nav ul {
     padding: 0;
-    list-style-type: none;
-    grid-template-columns: repeat(4, 70px);
-    justify-content: space-evenly;
+    list-style: none;
 }
-.nav-link {
-    font-size: 1rem;
+nav > ul > li {
+    display: block;
+    width: 25%;
+    height: 50px;
+    float: left;
+    position: relative;
+}
+nav > ul > li > a {
+    display: block;
+    width: max-content;
+    margin: 16px auto 16px auto;
+}
+#button-container{
+    width: max-content;
+    margin: 16px auto 16px auto;
+}
+#genres-box {
+    position: absolute;
+    width: 100vw;
+    padding: 2px;
+    display: flex;
+    flex-flow: wrap;
+}
+#genres-box li {
+    width: max-content;
+    margin: 2px;
+    padding: 5px;
+    border: 1px solid black;
 }
 a {
     text-decoration: none;
@@ -88,21 +104,6 @@ a {
 #genres-text {
     display: inline-block;
     margin: auto 0;
-}
-#genres-box {
-    display: none;
-    padding: 2px;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-#genres-box li {
-    display: grid;
-    width: max-content;
-    margin: 2px;
-    padding: 5px;
-    font-size: 0.9rem;
-    border: 1px solid black;
 }
 #search {
     margin-right: 20px;
