@@ -79,6 +79,102 @@ li:not(:hover) > #button-container #icon {
 li:hover > #genres-box li{
     display: block;
 }
+/*li:hover > #genres-box :nth-child(1){
+    animation: genre 500ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(2){
+    animation: genre 550ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(3){
+    animation: genre 600ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(4){
+    animation: genre 650ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(5){
+    animation: genre 700ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(6){
+    animation: genre 750ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(7){
+    animation: genre 800ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(8){
+    animation: genre 850ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(9){
+    animation: genre 900ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(10){
+    animation: genre 950ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(11){
+    animation: genre 1000ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(12){
+    animation: genre 1050ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(13){
+    animation: genre 1100ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(14){
+    animation: genre 1150ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(15){
+    animation: genre 1200ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(16){
+    animation: genre 1250ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(17){
+    animation: genre 1300ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(18){
+    animation: genre 1350ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(19){
+    animation: genre 1400ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(20){
+    animation: genre 1450ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(21){
+    animation: genre 1500ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(22){
+    animation: genre 1550ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(23){
+    animation: genre 1600ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(24){
+    animation: genre 1650ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(25){
+    animation: genre 1700ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(26){
+    animation: genre 1750ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(27){
+    animation: genre 1800ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(28){
+    animation: genre 1850ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(29){
+    animation: genre 1900ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(30){
+    animation: genre 1950ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(31){
+    animation: genre 2000ms ease-in-out forwards;
+}
+li:hover > #genres-box :nth-child(32){
+    animation: genre 2050ms ease-in-out forwards;
+}*/
 li:active > #button-container #icon {
     transform: rotate(-180deg);
     transition: transform 200ms linear;
@@ -107,6 +203,7 @@ li:active > #genres-box li{
     margin: 2px;
     padding: 5px;
     border: 1px solid black;
+    background-color: green;
 }
 a {
     text-decoration: none;
@@ -131,4 +228,12 @@ a {
 }
 footer {
     width: 100%;
+}
+@keyframes genre {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
