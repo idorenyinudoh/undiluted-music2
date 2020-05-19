@@ -79,6 +79,16 @@ li:not(:hover) > #button-container #icon {
 li:hover > #genres-box li{
     display: block;
 }
+li:active > #button-container #icon {
+    transform: rotate(-180deg);
+    transition: transform 200ms linear;
+}
+li:not(:active) > #button-container #icon {
+    transition: transform 200ms linear;
+}
+li:active > #genres-box li{
+    display: block;
+}
 #button-container{
     width: max-content;
     margin: 13px auto 13px auto;
