@@ -88,13 +88,14 @@ li:not(:hover) > #button-container #icon {
     padding: 2px;
     display: flex;
     flex-flow: wrap;
+    background-color: #90ee90c9;
 }
 #genres-box li {
     width: max-content;
     margin: 2px;
     padding: 5px;
     border: 1px solid black;
-    background-color: green;
+    background-color: #34ec53;
 }
 a {
     text-decoration: none;
