@@ -79,6 +79,16 @@ li:not(:hover) > #button-container #icon {
 }
 li:hover > #genres-box {
     display: flex;
+    overflow: hidden;
+    animation: gen 1s ease-out forwards;
+}
+@keyframes gen {
+    from {
+        height: 0;
+    }
+    to {
+        height: 306px;
+    }
 }
 #button-container{
     width: max-content;
