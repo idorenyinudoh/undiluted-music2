@@ -84,10 +84,10 @@ li:hover > #genres-box {
 }
 @keyframes gen {
     from {
-        height: 0;
+        max-height: 0;
     }
     to {
-        height: 306px;
+        max-height: 306px;
     }
 }
 #button-container{
