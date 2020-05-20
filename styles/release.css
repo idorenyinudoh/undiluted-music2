@@ -1,0 +1,78 @@
+@media screen and (max-width: 919px) {
+    main {
+        margin: 125px 0 0 0;
+    }
+}
+@media screen and (min-width: 920px) {
+    main {
+        margin: 85px 0 0 0;
+    }
+}
+@media screen and (max-width: 699px) {
+    #intro {
+        grid-template-columns: 5vw 1fr 5vw;
+        grid-template-areas: 
+        "album album ."
+        ". cover ."
+        ". data .";
+    }
+    #album {
+        grid-template-columns: 2vw 1ch 1fr;
+        grid-template-areas: 
+        ". title title"
+        ". . artiste";
+    }
+}
+@media screen and (min-width: 700px) {
+    #intro {
+        grid-template-columns: 5vw 1fr 2fr 5vw;
+        grid-template-rows: 50px max-content;
+        grid-template-areas: 
+        ". cover album ."
+        ". cover data .";
+    }
+    #album {
+        grid-template-columns: 1ch 1fr;
+        grid-template-areas:
+        "title title"
+        ". artiste";
+    }
+}
+#intro {
+    display: grid;
+    gap: 2vw;
+}
+#album {
+    grid-area: album;
+    display: grid;
+}
+#album-title {
+    font-size: calc(1.5rem + 0.2vw);
+    grid-area: title;
+}
+#album-artiste {
+    font-size: calc(1rem + 0.1vw);
+    grid-area: artiste;
+}
+#cover {
+    grid-area: cover;
+    border: 1px solid green;
+    display: grid;
+    gap: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+#data {
+    grid-area: data;
+    display: grid;
+    gap: calc(1% + 0.5vw);
+    height: max-content;
+}
+.key {
+    font-size: 1rem;
+}
+.value {
+    font-size: 14px;
+}
