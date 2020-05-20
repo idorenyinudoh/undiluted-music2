@@ -10,6 +10,10 @@
     #search {
         grid-column: 4 / 5;
     }
+    #genres-box {
+        top: 60px;
+        padding: 12px 2px 2px 2px;
+    }
 }
 @media screen and (max-width: 919px) {
     #header {
@@ -23,6 +27,10 @@
     #search {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
+    }
+    #genres-box {
+        top: 110px;
+        padding: 2px;
     }
 }
 body {
@@ -98,7 +106,6 @@ li:hover > #genres-box {
     position: absolute;
     left: 0;
     width: 100vw;
-    padding: 2px;
     display: none;
     flex-flow: wrap;
     background-color: #90ee90c9;
