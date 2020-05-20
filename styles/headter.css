@@ -62,7 +62,7 @@ nav ul {
 }
 nav > ul {
     display: grid;
-    grid-template-columns: repeat(4, 76.5px);
+    grid-template-columns: repeat(4, 70px);
     justify-content: space-evenly;
 }
 nav > ul > li > a {
@@ -77,6 +77,9 @@ li:hover > #button-container #icon {
 li:not(:hover) > #button-container #icon {
     transition: transform 200ms linear;
 }
+li:hover > #genres-box {
+    display: flex;
+}
 #button-container{
     width: max-content;
     margin: 13px auto 13px auto;
@@ -86,7 +89,7 @@ li:not(:hover) > #button-container #icon {
     left: 0;
     width: 100vw;
     padding: 2px;
-    display: flex;
+    display: none;
     flex-flow: wrap;
     background-color: #90ee90c9;
 }
