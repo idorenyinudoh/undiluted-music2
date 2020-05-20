@@ -9,14 +9,14 @@
     }
 }
 @media screen and (max-width: 699px) {
-    #intro {
+    .intro {
         grid-template-columns: 5vw 1fr 5vw;
         grid-template-areas: 
         "album album ."
         ". cover ."
         ". data .";
     }
-    #album {
+    .album {
         grid-template-columns: 2vw 1ch 1fr;
         grid-template-areas: 
         ". title title"
@@ -24,37 +24,37 @@
     }
 }
 @media screen and (min-width: 700px) {
-    #intro {
+    .intro {
         grid-template-columns: 5vw 1fr 2fr 5vw;
         grid-template-rows: 50px max-content;
         grid-template-areas: 
         ". cover album ."
         ". cover data .";
     }
-    #album {
+    .album {
         grid-template-columns: 1ch 1fr;
         grid-template-areas:
         "title title"
         ". artiste";
     }
 }
-#intro {
+.intro {
     display: grid;
     gap: 2vw;
 }
-#album {
+.album {
     grid-area: album;
     display: grid;
 }
-#album-title {
+.album-title {
     font-size: calc(1.5rem + 0.2vw);
     grid-area: title;
 }
-#album-artiste {
+.album-artiste {
     font-size: calc(1rem + 0.1vw);
     grid-area: artiste;
 }
-#cover {
+.cover {
     grid-area: cover;
     border: 1px solid green;
     display: grid;
@@ -64,7 +64,7 @@ img {
     width: 100%;
     height: auto;
 }
-#data {
+.data {
     grid-area: data;
     display: grid;
     gap: calc(1% + 0.5vw);
