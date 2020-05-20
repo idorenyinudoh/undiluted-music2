@@ -56,7 +56,7 @@
         ". artiste";
     }
     tbody {
-        grid-template-rows: repeat(15, 37px);
+        grid-template-rows: repeat(15, 45px);
     }
     tr {
         grid-template-columns: 10fr 1fr 1fr 1fr;
