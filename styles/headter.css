@@ -11,8 +11,8 @@
         grid-column: 4 / 5;
     }
     #genres-box {
-        grid-column: 1 / 5;
-        grid-row: 2 / 3;
+        top: 60px;
+        padding: 12px 2px 2px 2px;
     }
 }
 @media screen and (max-width: 919px) {
@@ -29,8 +29,8 @@
         grid-row: 1 / 2;
     }
     #genres-box {
-        grid-column: 1 / 4;
-        grid-row: 3 / 4;
+        top: 110px;
+        padding: 2px;
     }
 }
 body {
@@ -44,7 +44,8 @@ p, h1, h2, h3, ul, figure {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
+    perspective: 20px;
     width: 100%;
     padding-top: 10px;
     box-shadow: 0 1px 5px 0 #808080;
@@ -65,44 +66,77 @@ p, h1, h2, h3, ul, figure {
 }
 nav ul {
     padding: 0;
-    list-style-type: none;
+    list-style: none;
+}
+nav > ul {
+    display: grid;
     grid-template-columns: repeat(4, 70px);
     justify-content: space-evenly;
 }
-.nav-link {
-    font-size: 1rem;
+nav > ul > li > a {
+    display: block;
+    width: max-content;
+    margin: 16px auto 16px auto;
+}
+li:hover > #button-container #icon {
+    transform: rotate(-180deg);
+    transition: transform 200ms linear;
+}
+li:not(:hover) > #button-container #icon {
+    transition: transform 200ms linear;
+}
+li:hover > #genres-box {
+    display: flex;
+    overflow: hidden;
+    animation: gen 1s ease-out forwards;
+}
+@keyframes gen {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 306px;
+    }
+}
+#button-container{
+    width: max-content;
+    margin: 13px auto 13px auto;
+}
+#genres-box {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    display: none;
+    flex-flow: wrap;
+    background-color: #90ee90c9;
+}
+#genres-box li {
+    width: max-content;
+    margin: 2px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #34ec53;
 }
 a {
     text-decoration: none;
     color: black;
 }
 #genres-link {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: lightgreen;
     cursor: pointer;
-    grid-template-columns: 1fr 24px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+}
+#genres-text {
+    display: inline-block;
+    margin: auto 0;
 }
 #search {
     margin-right: 20px;
-}
-/*#genres-box {
-}*/
-.hide {
-    display: none;
-}
-/*.show {
-}*/
-#genres-box ul {
-    padding: 2px;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-#genres-box ul li {
-    display: grid;
-    width: max-content;
-    margin: 2px;
-    padding: 5px;
-    font-size: 0.9rem;
-    border: 1px solid black;
 }
 footer {
     width: 100%;
