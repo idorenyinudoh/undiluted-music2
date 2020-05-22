@@ -144,9 +144,10 @@ a {
     margin-right: 20px;
 }
 .breadcrumb {
+    font-size: 15px;
     display: grid;
     grid-template-columns: repeat(4, max-content);
-    gap: 5px;
+    gap: 0.5%;
     place-items: center;
 }
 footer {
