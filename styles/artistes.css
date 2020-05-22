@@ -1,12 +1,5 @@
-@media screen and (max-width: 919px) {
-    main {
-        margin: 125px 8vw auto 8vw;
-    }
-}
-@media screen and (min-width: 920px) {
-    main {
-        margin: 85px 8vw auto 8vw;
-    }
+main {
+    margin: 3vw 8vw auto 8vw;
 }
 #artistes-container {
     display: grid;

@@ -1,12 +1,5 @@
-@media screen and (max-width: 919px) {
-    main {
-        margin: 125px 0 0 0;
-    }
-}
-@media screen and (min-width: 920px) {
-    main {
-        margin: 85px 0 0 0;
-    }
+main {
+    margin-top: 1%;
 }
 .latest-text {
     margin: 1vw auto 2vw 1.5vw;
