@@ -146,7 +146,7 @@ a {
 .breadcrumb {
     font-size: 15px;
     display: grid;
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(5, max-content);
     gap: 0.5%;
     place-items: center;
 }
