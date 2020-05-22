@@ -1,3 +1,6 @@
+main {
+    margin: 3vw 8vw auto 8vw;
+}
 #artistes-container {
     display: grid;
 }
