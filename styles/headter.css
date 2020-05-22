@@ -15,7 +15,7 @@
         padding: 12px 2px 2px 2px;
     }
     .breadcrumb {
-        margin: 85px 8vw auto 8vw;
+        margin: 85px 5vw auto 5vw;
     }
 }
 @media screen and (max-width: 919px) {
@@ -36,7 +36,7 @@
         padding: 2px;
     }
     .breadcrumb {
-        margin: 125px 8vw auto 8vw;
+        margin: 125px 5vw auto 5vw;
     }
 }
 body {
@@ -142,6 +142,12 @@ a {
 }
 #search {
     margin-right: 20px;
+}
+.breadcrumb {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    gap: 5px;
+    place-items: center;
 }
 footer {
     width: 100%;
