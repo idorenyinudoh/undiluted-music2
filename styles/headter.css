@@ -14,6 +14,9 @@
         top: 60px;
         padding: 12px 2px 2px 2px;
     }
+    .breadcrumb {
+        margin: 85px 8vw auto 8vw;
+    }
 }
 @media screen and (max-width: 919px) {
     #header {
@@ -31,6 +34,9 @@
     #genres-box {
         top: 110px;
         padding: 2px;
+    }
+    .breadcrumb {
+        margin: 125px 8vw auto 8vw;
     }
 }
 body {
