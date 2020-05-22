@@ -145,9 +145,8 @@ a {
 }
 .breadcrumb {
     font-size: 15px;
-    display: grid;
-    grid-template-columns: repeat(5, max-content);
-    gap: 1px;
+    display: flex;
+    flex-flow: wrap;
     place-items: center;
 }
 footer {
