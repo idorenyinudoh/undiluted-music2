@@ -147,7 +147,7 @@ a {
     font-size: 15px;
     display: grid;
     grid-template-columns: repeat(5, max-content);
-    gap: 0.5%;
+    gap: 1px;
     place-items: center;
 }
 footer {
