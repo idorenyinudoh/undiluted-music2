@@ -45,20 +45,22 @@
     }
 }
 #audio-section {
-    margin: 5vw 5vw 0 5vw;
-    border: 1px solid green;
+    margin: 5vw 3vw 3vw 3vw;
 }
 table {
     width: 100%;
+    padding: 2vw;
+    background-color: #ffa826;
+    border: 1px solid #003a77;
 }
 tbody {
     display: grid;
 }
 tr:nth-child(odd) {
-    background-color: green;
+    background-color: #ffda5b;
 }
 tr:nth-child(even) {
-    background-color: lightgreen;
+    background-color: #ffa826;
 }
 tr {
     display: grid;
