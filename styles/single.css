@@ -32,7 +32,7 @@
 }
 #audio-player {
     grid-area: audio;
-    border: 1px solid green;
+    border: 1px solid #003a77;
     width: 89vw;
     max-width: 400px;
     height: 50px;
@@ -41,7 +41,7 @@
     grid-area: download;
 }
 button {
-    border: 1px solid black;
+    border: 1px solid #003a77;
     padding: 5px;
     margin: 0;
     background-color: inherit;
