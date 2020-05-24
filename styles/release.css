@@ -49,7 +49,7 @@ main {
 }
 .cover {
     grid-area: cover;
-    border: 1px solid green;
+    border: 1px solid #003a77;
     display: grid;
     gap: 0;
 }
