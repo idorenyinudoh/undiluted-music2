@@ -18,8 +18,8 @@ main {
 }
 .name {
     border: 1px solid #2464a6;
-    padding: 1%;
-    margin: 1%;
+    padding: calc(5px + 0.5vw);
+    margin: 5px;
     width: max-content;
     height: max-content;
     background-color: #5f91d8;
