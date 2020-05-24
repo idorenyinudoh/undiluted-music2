@@ -148,6 +148,9 @@ a {
     flex-flow: wrap;
     place-items: center;
 }
+.sec-dark {
+    color: #003a77;
+}
 footer {
     width: 100%;
 }
