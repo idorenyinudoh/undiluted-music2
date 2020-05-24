@@ -17,11 +17,11 @@ main {
     flex-wrap: wrap;
 }
 .name {
-    border: 1px solid green;
+    border: 1px solid #2464a6;
     padding: 1%;
     margin: 1%;
     width: max-content;
     height: max-content;
-    background-color: lightgreen;
+    background-color: #5f91d8;
     font-size: 1.1rem;
 }
