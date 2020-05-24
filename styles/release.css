@@ -44,7 +44,7 @@ main {
     grid-area: title;
 }
 .album-artiste {
-    font-size: calc(1rem + 0.1vw);
+    font-size: calc(1rem);
     grid-area: artiste;
 }
 .cover {
