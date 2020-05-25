@@ -109,7 +109,7 @@ li:hover > #genres-box {
 #genres-box {
     position: absolute;
     left: 0;
-    width: 100vw;
+    width: 99vw;
     display: none;
     flex-flow: wrap;
     background-color: #ffda5b;
