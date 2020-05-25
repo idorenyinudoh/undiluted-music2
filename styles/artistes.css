@@ -17,11 +17,14 @@ main {
     flex-wrap: wrap;
 }
 .name {
-    border: 1px solid #2464a6;
-    padding: calc(5px + 0.5vw);
+    border: 1px solid #003a77;
     margin: 5px;
     width: max-content;
     height: max-content;
-    background-color: #5f91d8;
+    background-color: #ffda5b;
     font-size: 1.1rem;
+}
+.name a {
+    display: block;
+    padding: calc(5px + 0.5vw);
 }
