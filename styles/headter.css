@@ -5,6 +5,7 @@
     }
     nav {
         grid-column: 3 / 4;
+        height: 60px;
     }
     #search {
         grid-column: 4 / 5;
@@ -73,6 +74,7 @@ p, h1, h2, h3, ul, figure {
 nav ul {
     padding: 0;
     list-style: none;
+    height: inherit;
 }
 nav > ul {
     grid-template-columns: repeat(4, 70px);
