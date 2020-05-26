@@ -45,3 +45,13 @@ figcaption {
     text-overflow: ellipsis;
     font-size: 14px;
 }
+.article-container figure:hover {
+    border: 0;
+    transform: scale(1.05);
+    transition: transform 250ms ease-out;
+    box-shadow: 0 1px 5px 0 #003a77;
+    z-index: 1;
+}
+/* .article-container figure:hover {
+    filter: grayscale(1);
+} */
