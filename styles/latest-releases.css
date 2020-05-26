@@ -53,7 +53,7 @@ figcaption {
     z-index: 1;
 }
 .article-container figure:not(:hover) {
-    transition: transform 250ms ease-out;
+    transition: transform 500ms ease-out;
 }
 article a:focus {
     outline: 0;
