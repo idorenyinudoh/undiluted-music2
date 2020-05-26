@@ -52,6 +52,13 @@ figcaption {
     box-shadow: 0 1px 5px 0 #003a77;
     z-index: 1;
 }
+article a:focus {
+    outline: 0;
+}
+article a:focus figure {
+    border: 0;
+    box-shadow: 0 1px 5px 0 #003a77;
+}
 /* .article-container figure:hover {
     filter: grayscale(1);
 } */
