@@ -1,8 +1,7 @@
 @media screen and (min-width: 920px) {
     #header {
-        padding-bottom: 10px;
         grid-template-columns: 70px 2fr 2.5fr 70px;
-        grid-template-rows: 50px;
+        grid-template-rows: 60px;
     }
     nav {
         grid-column: 3 / 4;
