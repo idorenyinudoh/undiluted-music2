@@ -110,7 +110,7 @@ li:hover > #genres-box {
     margin: 13px auto 13px auto;
 }
 #genres-box {
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 99vw;
     display: none;
@@ -152,6 +152,9 @@ a {
     display: flex;
     flex-flow: wrap;
     place-items: center;
+}
+.crumb:hover {
+    opacity: 0.6;
 }
 .sec-dark {
     color: #003a77;

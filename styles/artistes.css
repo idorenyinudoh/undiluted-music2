@@ -17,14 +17,23 @@ main {
     flex-wrap: wrap;
 }
 .name {
-    border: 1px solid #003a77;
     margin: 5px;
     width: max-content;
     height: max-content;
-    background-color: #ffda5b;
     font-size: 1.1rem;
 }
 .name a {
+    outline: none;
     display: block;
     padding: calc(5px + 0.5vw);
+    border: 1px solid #003a77;
+    background-color: #ffda5b;
+}
+.name a:hover, .name a:focus {
+    background-color: #ffa826;
+    box-shadow: 0 1px 5px 0 #003a77;
+}
+.name a:active {
+    transform: scale(0.95);
+    transition: transform 250ms ease-out;
 }
