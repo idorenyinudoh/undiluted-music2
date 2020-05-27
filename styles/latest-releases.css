@@ -45,6 +45,9 @@ figcaption {
     text-overflow: ellipsis;
     font-size: 14px;
 }
+article a:focus {
+    outline: 0;
+}
 .article-container figure:hover, a:focus figure {
     border: 0;
     transform: scale(1.05);
@@ -58,7 +61,4 @@ figure:not(:hover), a:not(:focus) figure {
 .article-container figure:active {
     transform: scale(0.95);
     transition: transform 250ms ease-out;
-}
-article a:focus {
-    outline: 0;
 }
