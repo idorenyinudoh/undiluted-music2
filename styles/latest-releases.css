@@ -45,7 +45,7 @@ figcaption {
     text-overflow: ellipsis;
     font-size: 14px;
 }
-.article-container figure:hover {
+.article-container figure:hover, article a:focus figure {
     border: 0;
     transform: scale(1.05);
     transition: transform 250ms ease-out;
@@ -57,10 +57,6 @@ figcaption {
 }
 article a:focus {
     outline: 0;
-}
-article a:focus figure {
-    border: 0;
-    box-shadow: 0 1px 5px 0 #003a77;
 }
 /* .article-container figure:hover {
     filter: grayscale(1);
