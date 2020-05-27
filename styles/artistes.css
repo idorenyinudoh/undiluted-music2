@@ -36,3 +36,6 @@ main {
 .name a:focus {
     border: 1px solid #003a77;
 }
+.crumb:hover {
+    opacity: 0.6;
+}
