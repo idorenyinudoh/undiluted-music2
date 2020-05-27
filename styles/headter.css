@@ -153,6 +153,9 @@ a {
     flex-flow: wrap;
     place-items: center;
 }
+.crumb:hover {
+    opacity: 0.6;
+}
 .sec-dark {
     color: #003a77;
 }
