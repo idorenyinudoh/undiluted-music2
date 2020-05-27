@@ -47,4 +47,11 @@ button {
     background-color: inherit;
     color: inherit;
     font-size: 15px;
+#download:hover, #download:focus {
+    background-color: #ffa826;
+    box-shadow: 0 1px 5px 0 #003a77;
+}
+#download:active {
+    transform: scale(0.95);
+    transition: transform 250ms ease-out;
 }
