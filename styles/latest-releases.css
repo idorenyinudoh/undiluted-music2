@@ -55,6 +55,10 @@ figcaption {
 figure:not(:hover), a:not(:focus) figure {
     transition: transform 500ms ease-out;
 }
+.article-container figure:active {
+    transform: scale(0.95);
+    transition: transform 250ms ease-out;
+}
 article a:focus {
     outline: 0;
 }
