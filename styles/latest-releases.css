@@ -62,6 +62,3 @@ figure:not(:hover), a:not(:focus) figure {
 article a:focus {
     outline: 0;
 }
-/* .article-container figure:hover {
-    filter: grayscale(1);
-} */
