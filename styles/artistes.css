@@ -31,4 +31,8 @@ main {
 }
 .name:hover {
     background-color: #ffa826;
+    box-shadow: 0 1px 5px 0 #003a77;
+}
+.name a:focus {
+    border: 1px solid #003a77;
 }
