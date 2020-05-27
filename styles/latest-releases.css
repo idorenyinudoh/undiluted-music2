@@ -45,14 +45,14 @@ figcaption {
     text-overflow: ellipsis;
     font-size: 14px;
 }
-.article-container figure:hover, article a:focus figure {
+figure:hover, a:focus figure {
     border: 0;
     transform: scale(1.05);
     transition: transform 250ms ease-out;
     box-shadow: 0 1px 5px 0 #003a77;
     z-index: 1;
 }
-.article-container figure:not(:hover) {
+figure:not(:hover), a:not(:focus) figure {
     transition: transform 500ms ease-out;
 }
 article a:focus {
