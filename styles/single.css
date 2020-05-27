@@ -40,13 +40,16 @@
 #download-container {
     grid-area: download;
 }
-button {
+#download {
     border: 1px solid #003a77;
-    padding: 5px;
+    padding: calc(5px + 0.5vw);
     margin: 0;
-    background-color: inherit;
+    background-color: #ffda5b;
     color: inherit;
-    font-size: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
 #download:hover, #download:focus {
     background-color: #ffa826;
     box-shadow: 0 1px 5px 0 #003a77;
