@@ -25,6 +25,10 @@ main {
     font-size: 1.1rem;
 }
 .name a {
+    outline: none;
     display: block;
     padding: calc(5px + 0.5vw);
+}
+.name:hover {
+    background-color: #ffa826;
 }
