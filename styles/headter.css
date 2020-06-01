@@ -101,6 +101,14 @@ input[type="search"]:focus {
 #clear-button {
     grid-area: clear;
 }
+#clear-button:focus {
+    outline: 0;
+    border: 2px solid #5f91d8;
+}
+#clear-button:active {
+    transform: scale(0.8);
+    transition: transform 100ms ease-out;
+}
 #header {
     position: fixed;
     top: 0;
