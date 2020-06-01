@@ -46,6 +46,10 @@ body {
 p, h1, h2, h3, ul, figure {
     margin: 0;
 }
+form {
+    position: fixed;
+    width: 100%;
+}
 #header {
     position: fixed;
     top: 0;
