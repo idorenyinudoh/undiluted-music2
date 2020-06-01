@@ -63,7 +63,7 @@ form {
     box-shadow: 0 1px 5px 0 #808080;
     display: grid;
     align-items: center;
-    grid-template-columns: 10px 1fr max-content 10px;
+    grid-template-columns: calc(10px + 1.5vw) 1fr max-content calc(10px + 1.5vw);
     grid-template-rows: 20px 35px;
     grid-template-areas:
     ". . . ."
