@@ -59,7 +59,7 @@ form {
     top: 0;
     background-color: #fff;
     width: 100%;
-    border-bottom: #003a77;
+    border-bottom: 1px solid #003a77;
     box-shadow: 0 1px 5px 0 #808080;
     display: grid;
     align-items: center;
