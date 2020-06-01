@@ -72,7 +72,6 @@ form {
     width: 100%;
     border-bottom: 1px solid #003a77;
     box-shadow: 0 1px 5px 0 #808080;
-    display: grid;
     align-items: center;
     grid-template-columns: calc(10px + 1.5vw) 1fr max-content calc(10px + 1.5vw);
     grid-template-rows: 20px 35px;
