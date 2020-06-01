@@ -62,12 +62,12 @@ form {
     border-bottom: #003a77;
     box-shadow: 0 1px 5px 0 #808080;
     display: grid;
+    align-items: center;
     grid-template-columns: 10px 1fr max-content 10px;
-    grid-template-rows: 1fr 60px 1fr;
+    grid-template-rows: 20px 35px;
     grid-template-areas:
     ". . . ."
-    ". box clear ."
-    ". . . .";
+    ". box clear .";
 }
 input[type="search"] {
     grid-area: box;
