@@ -52,6 +52,17 @@ body {
 p, h1, h2, h3, ul, figure {
     margin: 0;
 }
+.grid-center {
+    display: grid;
+    place-items: center;
+}
+.grid {
+    display: grid;
+}
+.buttons {
+    width: 30px;
+    height: 30px;
+}
 form {
     position: fixed;
     left: 0;
@@ -90,13 +101,6 @@ input[type="search"] {
     padding-top: 10px;
     box-shadow: 0 1px 5px 0 #808080;
     background-color: #ffa826;
-}
-.grid-center {
-    display: grid;
-    place-items: center;
-}
-.grid {
-    display: grid;
 }
 #logo {
     width: 50px;
@@ -182,10 +186,6 @@ button {
     width: 50px;
     height: 50px;
     margin-right: 20px;
-}
-.buttons {
-    width: 30px;
-    height: 30px;
 }
 .breadcrumb {
     font-size: 15px;
