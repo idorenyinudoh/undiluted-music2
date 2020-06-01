@@ -135,7 +135,7 @@ button {
     background-color: inherit;
     cursor: pointer;
 }
-#genres-link {
+#genres-button {
     display: flex;
     flex-direction: row;
     font-size: 1rem;
