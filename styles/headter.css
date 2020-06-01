@@ -62,8 +62,8 @@ p, h1, h2, h3, ul, figure {
     display: grid;
 }
 .buttons {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
 }
 form {
     position: fixed;
@@ -75,7 +75,7 @@ form {
     box-shadow: 0 1px 5px 0 #808080;
     align-items: center;
     grid-template-columns: calc(10px + 1.5vw) 1fr max-content calc(10px + 1.5vw);
-    grid-template-rows: 20px 35px;
+    grid-template-rows: 20px 45px;
     grid-template-areas:
     ". . . ."
     ". box clear .";
@@ -84,7 +84,7 @@ input[type="search"] {
     grid-area: box;
     border: 0;
     padding: 0;
-    height: 34px;
+    height: 45px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
 }
