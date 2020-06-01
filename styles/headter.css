@@ -1,5 +1,6 @@
 @media screen and (min-width: 920px) {
     form {
+        /* top: -75px; */
         height: 70px;
     }
     #header {
@@ -23,6 +24,7 @@
 }
 @media screen and (max-width: 919px) {
     form {
+        /* top: -115px; */
         height: 110px;
     }
     #header {
@@ -67,7 +69,6 @@ form {
     position: fixed;
     left: 0;
     z-index: 5;
-    top: 0;
     background-color: #fff;
     width: 100%;
     border-bottom: 1px solid #003a77;
