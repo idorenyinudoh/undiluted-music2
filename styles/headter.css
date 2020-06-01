@@ -149,6 +149,10 @@ button {
     height: 50px;
     margin-right: 20px;
 }
+#search-button {
+    width: 30px;
+    height: 30px;
+}
 .breadcrumb {
     font-size: 15px;
     display: flex;
