@@ -161,7 +161,7 @@ button {
     height: 50px;
     margin-right: 20px;
 }
-#search-button {
+.buttons {
     width: 30px;
     height: 30px;
 }
