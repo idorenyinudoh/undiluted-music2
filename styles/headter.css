@@ -1,4 +1,7 @@
 @media screen and (min-width: 920px) {
+    form {
+        height: 70px;
+    }
     #header {
         grid-template-columns: 70px 2fr 2.5fr 70px;
         grid-template-rows: 60px;
@@ -19,6 +22,9 @@
     }
 }
 @media screen and (max-width: 919px) {
+    form {
+        height: 110px;
+    }
     #header {
         grid-template-columns: 70px 1fr 70px;
         grid-template-rows: 50px 50px;
@@ -49,6 +55,8 @@ p, h1, h2, h3, ul, figure {
 form {
     position: fixed;
     width: 100%;
+    border-bottom: #003a77;
+    box-shadow: 0 1px 5px 0 #808080;
 }
 #header {
     position: fixed;
