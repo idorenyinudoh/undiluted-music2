@@ -10,13 +10,19 @@
     <title>Singles &nbsp;|&nbsp; Undiluted Music</title>
 </head>
 <body>
+    <form id="form" class="hide">
+        <input id="search-input" type="search" placeholder="Search">
+        <button id="clear-button" type="button" class="buttons grid-center">
+            <span class="material-icons">clear</span>
+        </button>
+    </form>
     <header id="header" class="grid">
         <div id="logo" class="grid-center">Logo</div>
         <nav>
             <ul class="grid">
                 <li>
                     <div id="button-container">
-                        <button id="genres-link" type="button">
+                        <button id="genres-button" type="button">
                             <span id="genres-text">Genres</span>
                             <span id="icon" class="material-icons">arrow_drop_down</span>
                         </button>
@@ -61,8 +67,13 @@
                 <li><a href="eps.html">EPs</a></li>
             </ul>
         </nav>
-        <div id="search" class="grid-center"><span class="material-icons">search</span></div>
+        <div id="search" class="grid-center">
+            <button id="search-button" class="buttons" type="button">
+                <span class="material-icons">search</span>
+            </button>
+        </div>
     </header>
+    <script src="behaviour/header.js"></script>
     <section class="breadcrumb">
         <p class="crumb"><a href="index.html">Home</a></p>
         <span class="material-icons">chevron_right</span>
