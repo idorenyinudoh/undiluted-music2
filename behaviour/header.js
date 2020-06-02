@@ -7,6 +7,7 @@ var toggle = () => {
     if (form.classList.contains('hide')) {
         form.classList.remove('hide');
         form.classList.add('down');
+        document.getElementById('search-input').focus();
         header.classList.add('fade');
         setTimeout(() => {
             header.classList.add('hide');
