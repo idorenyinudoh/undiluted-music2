@@ -72,6 +72,10 @@ p, h1, h2, h3, ul, figure {
     display: grid;
     animation: opac 10s ease-out forwards;
 }
+.up {
+    display: grid;
+    animation: up 10s ease-out forwards;
+}
 .fade {
     animation: fade 10s ease-out forwards;
 }
@@ -82,6 +86,15 @@ p, h1, h2, h3, ul, figure {
     to {
         opacity: 1;
         transform: translateY(75px);
+    }
+}
+@keyframes up {
+    from {
+        transform: translateY(75px);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(0);
     }
 }
 @keyframes fade {

@@ -13,6 +13,14 @@ var toggle = () => {
             header.classList.remove('fade');
         }, 10000);
     }
+    else {
+        form.classList.remove('show');
+        form.classList.add('up');
+        setTimeout(() => {
+            form.classList.remove('up');
+            form.classList.add('hide');
+        }, 10000);
+    }
 };
 
 search.addEventListener('click', toggle);
