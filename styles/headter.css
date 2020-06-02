@@ -79,6 +79,9 @@ p, h1, h2, h3, ul, figure {
 .fade {
     animation: fade 10s ease-out forwards;
 }
+.unfade {
+    animation: unfade 10s ease-out forwards;
+}
 @keyframes down {
     from {
         opacity: 0;
@@ -100,6 +103,14 @@ p, h1, h2, h3, ul, figure {
 @keyframes fade {
     to {
         opacity: 0;
+    }
+}
+@keyframes unfade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 form {

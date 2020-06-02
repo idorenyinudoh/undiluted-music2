@@ -16,9 +16,12 @@ var toggle = () => {
     else {
         form.classList.remove('down');
         form.classList.add('up');
+        header.classList.remove('hide');
+        header.classList.add('unfade');
         setTimeout(() => {
             form.classList.remove('up');
             form.classList.add('hide');
+            header.classList.remove('unfade');
         }, 10000);
     }
 };
