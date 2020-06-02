@@ -1,4 +1,7 @@
 @media screen and (min-width: 920px) {
+    :root {
+        --move: 75px;
+    }
     form {
         /* top: -75px; */
         height: 70px;
@@ -23,6 +26,9 @@
     }
 }
 @media screen and (max-width: 919px) {
+    :root {
+        --move: 115px;
+    }
     form {
         /* top: -115px; */
         height: 110px;
@@ -86,12 +92,12 @@ p, h1, h2, h3, ul, figure {
     }
     to {
         opacity: 1;
-        transform: translateY(75px);
+        transform: translateY(var(--move));
     }
 }
 @keyframes up {
     from {
-        transform: translateY(75px);
+        transform: translateY(var(--move));
     }
     to {
         opacity: 0;
