@@ -7,6 +7,11 @@ var toggle = () => {
     if (form.classList.contains('hide')) {
         form.classList.remove('hide');
         form.classList.add('show');
+        header.classList.add('fade');
+        setTimeout(() => {
+            header.classList.add('hide');
+            header.classList.remove('fade');
+        }, 10000);
     }
 };
 
