@@ -6,7 +6,7 @@ var clear = document.getElementById('clear-button');
 var toggle = () => {
     if (form.classList.contains('hide')) {
         form.classList.remove('hide');
-        form.classList.add('show');
+        form.classList.add('down');
         header.classList.add('fade');
         setTimeout(() => {
             header.classList.add('hide');
@@ -14,7 +14,7 @@ var toggle = () => {
         }, 10000);
     }
     else {
-        form.classList.remove('show');
+        form.classList.remove('down');
         form.classList.add('up');
         setTimeout(() => {
             form.classList.remove('up');
