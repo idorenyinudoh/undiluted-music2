@@ -8,15 +8,10 @@
         height: 70px;
     }
     #header {
-        grid-template-columns: 70px 2fr 2.5fr 70px;
+        grid-template-columns: calc(10px + 1.5vw) 70px 2fr 2.5fr 70px calc(10px + 1.5vw);
         grid-template-rows: 60px;
-    }
-    nav {
-        grid-column: 3 / 4;
-        height: 60px;
-    }
-    #search {
-        grid-column: 4 / 5;
+        grid-template-areas:
+        ". logo . nav search .";
     }
     #genres-box {
         top: 60px;
