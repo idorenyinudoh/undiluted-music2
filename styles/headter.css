@@ -1,9 +1,9 @@
 @media screen and (min-width: 920px) {
     :root {
         --move: 75px;
+        --position: -75px;
     }
     form {
-        /* top: -75px; */
         height: 70px;
     }
     #header {
@@ -28,9 +28,9 @@
 @media screen and (max-width: 919px) {
     :root {
         --move: 115px;
+        --position: -115px;
     }
     form {
-        /* top: -115px; */
         height: 110px;
     }
     #header {
@@ -120,6 +120,7 @@ p, h1, h2, h3, ul, figure {
 form {
     position: fixed;
     left: 0;
+    top: var(--position);
     z-index: 5;
     background-color: #fff;
     width: 100%;
