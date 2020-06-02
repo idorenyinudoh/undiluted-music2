@@ -2,6 +2,7 @@
     :root {
         --move: 75px;
         --position: -75px;
+        --form-row: 12.5px;
     }
     form {
         height: 70px;
@@ -29,6 +30,7 @@
     :root {
         --move: 115px;
         --position: -115px;
+        --form-row: 20px;
     }
     form {
         height: 110px;
@@ -129,7 +131,7 @@ form {
     display: grid;
     align-items: center;
     grid-template-columns: calc(10px + 1.5vw) 1fr max-content calc(10px + 1.5vw);
-    grid-template-rows: 20px 45px;
+    grid-template-rows: var(--form-row) 45px;
     grid-template-areas:
     ". . . ."
     ". box clear .";
