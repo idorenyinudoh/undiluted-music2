@@ -8,7 +8,7 @@
         height: 70px;
     }
     #header {
-        grid-template-columns: calc(10px + 1.5vw) 70px 2fr 2.5fr 70px calc(10px + 1.5vw);
+        grid-template-columns: calc(10px + 1.5vw) 70px 2.5fr 2.5fr 70px calc(10px + 1.5vw);
         grid-template-rows: 60px;
         grid-template-areas:
         ". logo . nav search .";
