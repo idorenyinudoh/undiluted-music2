@@ -75,16 +75,16 @@ p, h1, h2, h3, ul, figure {
     display: none;
 }
 .down {
-    animation: down 10s ease-out forwards;
+    animation: down 250ms ease-out forwards;
 }
 .up {
-    animation: up 10s ease-out forwards;
+    animation: up 250ms ease-out forwards;
 }
 .fade {
-    animation: fade 10s ease-out forwards;
+    animation: fade 250ms ease-out forwards;
 }
 .unfade {
-    animation: unfade 10s ease-out forwards;
+    animation: unfade 250ms ease-out forwards;
 }
 @keyframes down {
     from {

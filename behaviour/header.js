@@ -11,7 +11,7 @@ var toggle = () => {
         setTimeout(() => {
             header.classList.add('hide');
             header.classList.remove('fade');
-        }, 10000);
+        }, 250);
     }
     else {
         form.classList.remove('down');
@@ -22,7 +22,7 @@ var toggle = () => {
             form.classList.remove('up');
             form.classList.add('hide');
             header.classList.remove('unfade');
-        }, 10000);
+        }, 250);
     }
 };
 
