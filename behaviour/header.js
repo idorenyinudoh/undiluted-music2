@@ -1,9 +1,10 @@
-var search = document.getElementById('search-button');
-var header = document.getElementById('header');
-var form = document.getElementById('form');
-var clear = document.getElementById('clear-button');
+const search = document.getElementById('search-button');
+const clear = document.getElementById('clear-button');
 
-var toggle = () => {
+let toggle = () => {
+    const header = document.getElementById('header');
+    const form = document.getElementById('form');
+
     if (form.classList.contains('hide')) {
         form.classList.remove('hide');
         form.classList.add('down');
