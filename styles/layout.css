@@ -45,7 +45,7 @@
 }
 .grid-gap-center {
     display: grid;
-    gap: 5px;
+    gap: calc(5px + 0.5vw);
     place-items: center;
 }
 hr {
