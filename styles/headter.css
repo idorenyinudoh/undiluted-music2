@@ -237,7 +237,7 @@ button {
 #genres-button {
     display: flex;
     width: max-content;
-    margin: 13px auto 13px auto;
+    margin: 13px -3.2345px 13px -3.2345px;
     flex-direction: row;
     font-size: 1rem;
 }
