@@ -147,6 +147,9 @@ form {
 #clear-button {
     grid-area: clear;
 }
+.buttons:hover, .crumb:hover, nav > ul > li > a:hover {
+    opacity: 0.6;
+}
 .buttons:focus {
     outline: 0;
     border: 2px solid #5f91d8;
@@ -187,9 +190,6 @@ nav > ul > li > a {
     display: block;
     width: max-content;
     margin: 16px auto 16px auto;
-}
-nav > ul > li > a:hover {
-    opacity: 0.6;
 }
 #genres-button:hover #icon {
     transform: rotate(-180deg);
@@ -259,9 +259,6 @@ button {
     display: flex;
     flex-flow: wrap;
     place-items: center;
-}
-.crumb:hover {
-    opacity: 0.6;
 }
 .sec-dark {
     color: #003a77;
