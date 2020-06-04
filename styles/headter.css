@@ -188,11 +188,11 @@ nav > ul > li > a {
     width: max-content;
     margin: 16px auto 16px auto;
 }
-li:hover > #button-container #icon {
+li:hover > #genres-button #icon {
     transform: rotate(-180deg);
     transition: transform 200ms linear;
 }
-li:not(:hover) > #button-container #icon {
+li:not(:hover) > #genres-button #icon {
     transition: transform 200ms linear;
 }
 li:hover > #genres-box {
