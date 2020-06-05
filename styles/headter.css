@@ -180,7 +180,6 @@ nav {
 nav ul {
     padding: 0;
     list-style: none;
-    height: inherit;
 }
 nav > ul {
     grid-template-columns: repeat(4, 70px);
