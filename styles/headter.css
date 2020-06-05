@@ -248,6 +248,9 @@ button {
     display: inline-block;
     margin: auto 0;
 }
+#icon {
+    font-size: 20px;
+}
 #search {
     grid-area: search;
     justify-self: flex-end;
