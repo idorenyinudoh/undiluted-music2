@@ -13,6 +13,12 @@
         grid-template-areas:
         ". logo . nav search .";
     }
+    #genres-button {
+        padding: 15px 0 25px 0;
+    }
+    nav > ul > li > a {
+        padding: 16px 0 26px 0;
+    }
     #genres-box {
         top: 60px;
         padding: 2px 5px 5px 5px;
@@ -36,6 +42,12 @@
         grid-template-areas:
         ". logo . search ."
         "nav nav nav nav nav";
+    }
+    #genres-button {
+        padding: 15px 0;
+    }
+    nav > ul > li > a {
+        padding: 16px 0;
     }
     #genres-box {
         top: 110px;
@@ -189,7 +201,6 @@ nav > ul > li > a {
     display: block;
     width: max-content;
     margin: 0 auto;
-    padding: 16px 0;
 }
 #genres-button:hover #icon {
     transform: rotate(-180deg);
@@ -241,7 +252,6 @@ button {
     display: flex;
     width: max-content;
     margin: 0 -1.2345px;
-    padding: 15px 0;
     flex-direction: row;
     font-size: 1rem;
 }
