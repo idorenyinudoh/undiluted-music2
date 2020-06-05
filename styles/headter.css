@@ -188,7 +188,8 @@ nav > ul {
 nav > ul > li > a {
     display: block;
     width: max-content;
-    margin: 16px auto 16px auto;
+    margin: 0 auto;
+    padding: 16px 0;
 }
 #genres-button:hover #icon {
     transform: rotate(-180deg);
