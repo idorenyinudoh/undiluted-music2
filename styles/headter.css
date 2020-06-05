@@ -240,7 +240,8 @@ button {
 #genres-button {
     display: flex;
     width: max-content;
-    margin: 13px -3.2345px 13px -3.2345px;
+    margin: 0 -1.2345px;
+    padding: 15px 0;
     flex-direction: row;
     font-size: 1rem;
 }
