@@ -165,7 +165,7 @@ form {
     opacity: 0.6;
 }
 .disabled {
-    opacity: 0.2;
+    opacity: 0.3;
 }
 .buttons:focus {
     outline: 0;
