@@ -233,6 +233,7 @@ li:hover > #genres-box {
 }
 #genres-box {
     position: fixed;
+    z-index: 5;
     left: 0;
     width: 99vw;
     display: none;
