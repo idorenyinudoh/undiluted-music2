@@ -27,3 +27,19 @@ let toggle = () => {
 
 document.getElementById('search-button').addEventListener('click', toggle);
 document.getElementById('clear-button').addEventListener('click', toggle);
+
+const links = document.getElementsByClassName('nav-link');
+for (let i = 0; i < links.length; i++) {
+    const disable = () => {
+        for (let j = 0; j < links.length; j++) {
+            if (i != j) {
+                if (links[j].classList.contains('disabled')) {
+                    links[j].classList.remove('disabled');
+                }
+                else links[j].classList.add('disabled');
+            }
+        }
+    }
+    links[i].addEventListener('pointerover', disable);
+    links[i].addEventListener('pointerout', disable);
+}
