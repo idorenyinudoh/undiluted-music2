@@ -17,7 +17,7 @@
     #genres-button {
         padding: 15px 0 25px 0;
     }
-    nav > ul > li > a {
+    .nav-link {
         padding: 16px 0 26px 0;
     }
     #genres-box {
@@ -48,7 +48,7 @@
     #genres-button {
         padding: 15px 0;
     }
-    nav > ul > li > a {
+    .nav-link {
         padding: 16px 0;
     }
     #genres-box {
@@ -161,7 +161,7 @@ form {
 #clear-button {
     grid-area: clear;
 }
-.buttons:hover, .crumb:hover, nav > ul > li > a:hover {
+.buttons:hover, .crumb:hover, .nav-link:hover {
     opacity: 0.6;
 }
 .buttons:focus {
@@ -201,17 +201,15 @@ nav > ul {
 }
 .nav-link {
     position: relative;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
 }
 .activated {
     position: absolute;
     top: var(--activated-top);
     background-color: #000;
     height: 5px;
-}
-nav > ul > li > a {
-    display: block;
-    width: max-content;
-    margin: 0 auto;
 }
 #genres-button:hover #icon {
     transform: rotate(-180deg);
