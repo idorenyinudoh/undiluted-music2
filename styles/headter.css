@@ -161,8 +161,11 @@ form {
 #clear-button {
     grid-area: clear;
 }
-.buttons:hover, .crumb:hover, .nav-link:hover {
+.buttons:hover, .crumb:hover {
     opacity: 0.6;
+}
+.nav-link:hover {
+    opacity: 0.8;
 }
 .disabled {
     opacity: 0.3;
