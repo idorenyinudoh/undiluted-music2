@@ -164,6 +164,9 @@ form {
 .buttons:hover, .crumb:hover, .nav-link:hover {
     opacity: 0.6;
 }
+.disabled {
+    opacity: 0.2;
+}
 .buttons:focus {
     outline: 0;
     border: 2px solid #5f91d8;
