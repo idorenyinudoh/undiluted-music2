@@ -1,6 +1,3 @@
-const search = document.getElementById('search-button');
-const clear = document.getElementById('clear-button');
-
 let toggle = () => {
     const header = document.getElementById('header');
     const form = document.getElementById('form');
@@ -28,5 +25,5 @@ let toggle = () => {
     }
 };
 
-search.addEventListener('click', toggle);
-clear.addEventListener('click', toggle);
+document.getElementById('search-button').addEventListener('click', toggle);
+document.getElementById('clear-button').addEventListener('click', toggle);
