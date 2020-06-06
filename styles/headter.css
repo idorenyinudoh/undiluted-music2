@@ -167,6 +167,9 @@ form {
 .nav-link:hover {
     opacity: 0.8;
 }
+.nav-link:focus {
+    outline: solid 2px #000;
+}
 .disabled {
     opacity: 0.3;
 }
