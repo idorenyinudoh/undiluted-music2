@@ -211,6 +211,9 @@ nav > ul {
     background-color: #000;
     height: 5px;
 }
+#genres-activated {
+    display: none;
+}
 /* #genres-button:hover #icon {
     transform: rotate(-180deg);
     transition: transform 200ms linear;
