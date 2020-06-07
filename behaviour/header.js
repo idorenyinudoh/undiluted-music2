@@ -47,9 +47,12 @@ for (let i = 0; i < links.length; i++) {
 const genresButton = document.getElementById('genres-button');
 const toggleGenresBox = () => {
     genresButton.blur();
+    const genresIcon = document.getElementById('icon');
     const genresActivated = document.getElementById('genres-activated');
     const genresBox = document.getElementById('genres-box');
+
     if (genresActivated.classList.contains('hide')) {
+        genresIcon.classList.add('rotate');
         genresActivated.classList.remove('hide');
         genresActivated.classList.add('activate');
         genresBox.classList.remove('hide');
