@@ -294,6 +294,7 @@ button {
 .crumb {
     font-size: 15px;
 }
+.sec-dark, .crumb a {
     color: #003a77;
 }
 footer {
