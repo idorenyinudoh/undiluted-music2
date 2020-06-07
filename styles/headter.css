@@ -3,6 +3,7 @@
         --move: 75px;
         --position: -75px;
         --form-row: 12.5px;
+        --activated-top: 91.6%;
     }
     form {
         height: 70px;
@@ -16,7 +17,7 @@
     #genres-button {
         padding: 15px 0 25px 0;
     }
-    nav > ul > li > a {
+    .nav-link {
         padding: 16px 0 26px 0;
     }
     #genres-box {
@@ -32,6 +33,7 @@
         --move: 115px;
         --position: -115px;
         --form-row: 20px;
+        --activated-top: 90%;
     }
     form {
         height: 110px;
@@ -46,7 +48,7 @@
     #genres-button {
         padding: 15px 0;
     }
-    nav > ul > li > a {
+    .nav-link {
         padding: 16px 0;
     }
     #genres-box {
@@ -159,12 +161,20 @@ form {
 #clear-button {
     grid-area: clear;
 }
-.buttons:hover, .crumb:hover, nav > ul > li > a:hover {
+.buttons:hover, .crumb:hover {
     opacity: 0.6;
 }
+.nav-link:hover {
+    opacity: 0.8;
+}
+.nav-link:focus {
+    outline: solid 2px #000;
+}
+.disabled {
+    opacity: 0.3;
+}
 .buttons:focus {
-    outline: 0;
-    border: 2px solid #5f91d8;
+    outline: 2px solid #000;
 }
 .buttons:active {
     transform: scale(0.8);
@@ -197,10 +207,17 @@ nav > ul {
     grid-template-columns: repeat(4, 70px);
     justify-content: space-evenly;
 }
-nav > ul > li > a {
+.nav-link {
+    position: relative;
     display: block;
     width: max-content;
     margin: 0 auto;
+}
+.activated {
+    position: absolute;
+    top: var(--activated-top);
+    background-color: #000;
+    height: 5px;
 }
 #genres-button:hover #icon {
     transform: rotate(-180deg);
@@ -224,6 +241,7 @@ li:hover > #genres-box {
 }
 #genres-box {
     position: fixed;
+    z-index: 5;
     left: 0;
     width: 99vw;
     display: none;
@@ -250,7 +268,6 @@ button {
 }
 #genres-button {
     display: flex;
-    width: max-content;
     margin: 0 -1.2345px;
     flex-direction: row;
     font-size: 1rem;
