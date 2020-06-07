@@ -220,7 +220,8 @@ nav > ul {
 }
 .activate {
     overflow: hidden;
-    animation: activated 100ms ease-out forwards;
+    animation: activate 100ms ease-out forwards;
+}
 .deactivate {
     overflow: hidden;
     animation: deactivate 100ms ease-out forwards;
