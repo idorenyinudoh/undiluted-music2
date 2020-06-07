@@ -240,7 +240,7 @@ li:hover > #genres-box {
     left: -0.2vw;
     right: -0.2vw;
     width: 100%;
-    display: flex;
+    display: none;
     flex-flow: wrap;
     background: linear-gradient(#000, #003a77);
     padding: calc(2px + 0.2vw);
