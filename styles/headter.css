@@ -220,7 +220,7 @@ nav > ul {
 }
 .activate {
     overflow: hidden;
-    animation: activate 100ms ease-out forwards;
+    animation: activate 100ms ease-in forwards;
 }
 .deactivate {
     overflow: hidden;
@@ -230,7 +230,7 @@ nav > ul {
 .gen {
     display: flex;
     overflow: hidden;
-    animation: gen 500ms ease-out forwards;
+    animation: gen 500ms ease-in forwards;
 }
 .ungen {
     display: flex;
