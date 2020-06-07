@@ -215,12 +215,12 @@ nav > ul {
     overflow: hidden;
     animation: activated 100ms ease-out forwards;
 }
-@keyframes activated {
 .gen {
     display: flex;
     overflow: hidden;
     animation: gen 2s ease-out forwards;
 }
+@keyframes activate {
     from {
         max-height: 0;
     }
