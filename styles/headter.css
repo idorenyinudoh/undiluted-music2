@@ -277,7 +277,7 @@ button {
     display: inline-block;
     margin: auto 0;
 }
-#icon {
+#icon, .chevron {
     font-size: 20px;
 }
 #search {
