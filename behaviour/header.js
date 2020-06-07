@@ -44,7 +44,9 @@ for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('pointerout', disable);
 }
 
+const genresButton = document.getElementById('genres-button');
 const toggleGenresBox = () => {
+    genresButton.blur();
     const genresActivated = document.getElementById('genres-activated');
     const genresBox = document.getElementById('genres-box');
     if (genresActivated.classList.contains('hide')) {
@@ -58,4 +60,4 @@ const toggleGenresBox = () => {
     }
 }
 
-document.getElementById('genres-button').addEventListener('click', toggleGenresBox);
+genresButton.addEventListener('click', toggleGenresBox);
