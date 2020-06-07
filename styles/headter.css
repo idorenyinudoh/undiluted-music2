@@ -287,12 +287,13 @@ button {
     height: 50px;
 }
 .breadcrumb {
-    font-size: 15px;
     display: flex;
     flex-flow: wrap;
     place-items: center;
 }
-.sec-dark {
+.crumb {
+    font-size: 15px;
+}
     color: #003a77;
 }
 footer {
