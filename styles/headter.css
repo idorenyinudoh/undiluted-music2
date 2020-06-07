@@ -234,11 +234,13 @@ li:hover > #genres-box {
 #genres-box {
     position: fixed;
     z-index: 5;
-    left: 0;
+    left: -0.2vw;
+    right: -0.2vw;
     width: 100%;
     display: flex;
     flex-flow: wrap;
     background-color: #ffda5b;
+    padding: calc(2px + 0.2vw);
 }
 #genres-box li {
     width: max-content;
