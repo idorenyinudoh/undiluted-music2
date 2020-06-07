@@ -251,6 +251,15 @@ li:hover > #genres-box {
     padding: calc(5px + 0.1vw);
     border: 1px solid #000;
     background-color: #ffda5b;
+    outline: 0;
+}
+#genres-box li a:hover, #genres-box li a:focus {
+    background-color: #5f91d8;
+    box-shadow: 0 1px 5px 0 #ffda5b;
+}
+#genres-box li a:active {
+    transform: scale(0.9);
+    transition: transform 250ms ease-out;
 }
 a {
     text-decoration: none;
