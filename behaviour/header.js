@@ -46,9 +46,12 @@ for (let i = 0; i < links.length; i++) {
 
 const toggleGenresBox = () => {
     const genresActivated = document.getElementById('genres-activated');
+    const genresBox = document.getElementById('genres-box');
     if (genresActivated.classList.contains('hide')) {
         genresActivated.classList.remove('hide');
         genresActivated.classList.add('activate');
+        genresBox.classList.remove('hide');
+        genresBox.classList.add('gen');
         setTimeout(() => {
             genresActivated.classList.remove('activate');
         }, 100);
