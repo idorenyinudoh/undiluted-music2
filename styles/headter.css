@@ -219,7 +219,7 @@ nav > ul {
     background-color: #000;
     height: 5px;
 }
-#genres-button:hover #icon {
+/* #genres-button:hover #icon {
     transform: rotate(-180deg);
     transition: transform 200ms linear;
 }
@@ -238,13 +238,13 @@ li:hover > #genres-box {
     to {
         max-height: 306px;
     }
-}
+} */
 #genres-box {
     position: fixed;
     z-index: 5;
     left: 0;
-    width: 99vw;
-    display: none;
+    width: 100%;
+    display: flex;
     flex-flow: wrap;
     background-color: #ffda5b;
 }
