@@ -225,12 +225,13 @@ nav > ul {
 .deactivate {
     overflow: hidden;
     animation: deactivate 100ms ease-out forwards;
-    animation-delay: 1s;
+    animation-delay: 500ms;
 }
 .gen {
     display: flex;
     overflow: hidden;
-    animation: gen 1s ease-out forwards;
+    animation: gen 500ms ease-out forwards;
+}
 .ungen {
     display: flex;
     overflow: hidden;
