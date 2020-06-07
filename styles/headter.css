@@ -239,7 +239,7 @@ li:hover > #genres-box {
     width: 100%;
     display: flex;
     flex-flow: wrap;
-    background-color: #ffda5b;
+    background: linear-gradient(#000, #003a77);
     padding: calc(2px + 0.2vw);
 }
 #genres-box li {
@@ -249,8 +249,8 @@ li:hover > #genres-box {
 #genres-box li a {
     display: inline-block;
     padding: calc(5px + 0.1vw);
-    border: 1px solid black;
-    background-color: #5f91d8;
+    border: 1px solid #000;
+    background-color: #ffda5b;
 }
 a {
     text-decoration: none;
