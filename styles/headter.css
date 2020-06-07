@@ -20,10 +20,6 @@
     .nav-link {
         padding: 16px 0 26px 0;
     }
-    #genres-box {
-        top: 60px;
-        padding: 2px 5px 5px 5px;
-    }
     .breadcrumb {
         margin: 85px 5vw auto 5vw;
     }
@@ -50,10 +46,6 @@
     }
     .nav-link {
         padding: 16px 0;
-    }
-    #genres-box {
-        top: 110px;
-        padding: 2px 1vw 2px 1vw;
     }
     .breadcrumb {
         margin: 125px 5vw auto 5vw;
