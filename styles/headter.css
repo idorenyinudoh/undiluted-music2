@@ -211,6 +211,18 @@ nav > ul {
     background-color: #000;
     height: 5px;
 }
+.activate {
+    overflow: hidden;
+    animation: activated 100ms ease-out forwards;
+}
+@keyframes activated {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 5px;
+    }
+}
 /* #genres-button:hover #icon {
     transform: rotate(-180deg);
     transition: transform 200ms linear;

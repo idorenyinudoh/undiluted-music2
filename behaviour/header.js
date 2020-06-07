@@ -43,3 +43,16 @@ for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('pointerover', disable);
     links[i].addEventListener('pointerout', disable);
 }
+
+const toggleGenresBox = () => {
+    const genresActivated = document.getElementById('genres-activated');
+    if (genresActivated.classList.contains('hide')) {
+        genresActivated.classList.remove('hide');
+        genresActivated.classList.add('activate');
+        setTimeout(() => {
+            genresActivated.classList.remove('activate');
+        }, 100);
+    }
+}
+
+document.getElementById('genres-button').addEventListener('click', toggleGenresBox);
