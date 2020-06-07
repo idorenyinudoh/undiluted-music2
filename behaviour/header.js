@@ -75,7 +75,7 @@ const toggleGenresBox = () => {
         setTimeout(() => {
             genresActivated.classList.remove('deactivate');
             genresActivated.classList.add('hide');
-        }, 1100);
+        }, 600);
     }
 }
 
