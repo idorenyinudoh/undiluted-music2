@@ -213,10 +213,10 @@ nav > ul {
 }
 .rotate {
     transform: rotate(-180deg);
-    transition: transform 200ms linear;
+    transition: transform 300ms linear;
 }
 .unrotate {
-    transition: transform 200ms linear;
+    transition: transform 500ms linear;
 }
 .activate {
     overflow: hidden;
