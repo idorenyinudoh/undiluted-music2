@@ -215,6 +215,9 @@ nav > ul {
     transform: rotate(-180deg);
     transition: transform 200ms linear;
 }
+.unrotate {
+    transition: transform 200ms linear;
+}
 .activate {
     overflow: hidden;
     animation: activated 100ms ease-out forwards;
@@ -240,14 +243,6 @@ nav > ul {
         max-height: 346.25px;
     }
 }
-/* #genres-button:hover #icon {
-}
-#genres-button:not(:hover) #icon {
-    transition: transform 200ms linear;
-}
-li:hover > #genres-box {
-
-} */
 #genres-box {
     position: fixed;
     z-index: 5;

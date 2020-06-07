@@ -61,6 +61,10 @@ const toggleGenresBox = () => {
             genresActivated.classList.remove('activate');
         }, 100);
     }
+    else {
+        genresIcon.classList.remove('rotate');
+        genresIcon.classList.add('unrotate');
+    }
 }
 
 genresButton.addEventListener('click', toggleGenresBox);
