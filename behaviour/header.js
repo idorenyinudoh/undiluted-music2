@@ -64,6 +64,9 @@ const toggleGenresBox = () => {
     else {
         genresIcon.classList.remove('rotate');
         genresIcon.classList.add('unrotate');
+        setTimeout(() => {
+            genresIcon.classList.remove('unrotate');
+        }, 200);
     }
 }
 
