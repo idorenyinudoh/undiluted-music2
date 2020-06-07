@@ -229,7 +229,7 @@ nav > ul {
 .gen {
     display: flex;
     overflow: hidden;
-    animation: gen 2s ease-out forwards;
+    animation: gen 1s ease-out forwards;
 }
 @keyframes activate {
     from {
