@@ -231,6 +231,10 @@ nav > ul {
     display: flex;
     overflow: hidden;
     animation: gen 1s ease-out forwards;
+.ungen {
+    display: flex;
+    overflow: hidden;
+    animation: ungen 500ms ease-out forwards;
 }
 @keyframes activate {
     from {
@@ -254,6 +258,14 @@ nav > ul {
     }
     to {
         max-height: 346.25px;
+    }
+}
+@keyframes ungen {
+    from {
+        max-height: 346.25px;
+    }
+    to {
+        max-height: 0;
     }
 }
 #genres-box {
