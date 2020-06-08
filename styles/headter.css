@@ -292,7 +292,6 @@ nav > ul {
 }
 #genres-box li a:hover, #genres-box li a:focus {
     background-color: #5f91d8;
-    box-shadow: 0 1px 5px 0 #ffda5b;
     transform: scale(1.05);
     transition: transform 100ms ease-out;
 }
