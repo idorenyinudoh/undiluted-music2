@@ -80,3 +80,13 @@ const toggleGenresBox = () => {
 }
 
 genresButton.addEventListener('click', toggleGenresBox);
+window.addEventListener('click', (e) => {
+    if(genresActivated.classList.contains('hide') == false && e.target != genresButton && e.target != genresBox) {
+        for (let i = 0; i < genresButton.children.length; i++) {
+            if(e.target == genresButton.children[i]) {
+                return;
+            }
+        }
+        toggleGenresBox();
+    }
+});
