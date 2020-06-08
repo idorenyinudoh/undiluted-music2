@@ -43,3 +43,50 @@ for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('pointerover', disable);
     links[i].addEventListener('pointerout', disable);
 }
+
+const genresButton = document.getElementById('genres-button');
+const genresActivated = document.getElementById('genres-activated');
+const genresBox = document.getElementById('genres-box');
+
+const toggleGenresBox = () => {
+    genresButton.blur();
+    const genresIcon = document.getElementById('icon');
+    if (genresActivated.classList.contains('hide')) {
+        genresIcon.classList.add('rotate');
+        genresActivated.classList.remove('hide');
+        genresActivated.classList.add('activate');
+        genresBox.classList.remove('hide');
+        genresBox.classList.add('gen');
+        setTimeout(() => {
+            genresActivated.classList.remove('activate');
+        }, 100);
+    }
+    else {
+        genresIcon.classList.remove('rotate');
+        genresIcon.classList.add('unrotate');
+        genresActivated.classList.add('deactivate');
+        genresBox.classList.remove('gen');
+        genresBox.classList.add('ungen');
+        setTimeout(() => {
+            genresIcon.classList.remove('unrotate');
+            genresBox.classList.remove('ungen');
+            genresBox.classList.add('hide');
+        }, 500);
+        setTimeout(() => {
+            genresActivated.classList.remove('deactivate');
+            genresActivated.classList.add('hide');
+        }, 600);
+    }
+}
+
+genresButton.addEventListener('click', toggleGenresBox);
+window.addEventListener('click', (e) => {
+    if(genresActivated.classList.contains('hide') == false && e.target != genresButton && e.target != genresBox) {
+        for (let i = 0; i < genresButton.children.length; i++) {
+            if(e.target == genresButton.children[i]) {
+                return;
+            }
+        }
+        toggleGenresBox();
+    }
+});

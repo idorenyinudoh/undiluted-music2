@@ -20,10 +20,6 @@
     .nav-link {
         padding: 16px 0 26px 0;
     }
-    #genres-box {
-        top: 60px;
-        padding: 2px 5px 5px 5px;
-    }
     .breadcrumb {
         margin: 85px 5vw auto 5vw;
     }
@@ -51,10 +47,6 @@
     .nav-link {
         padding: 16px 0;
     }
-    #genres-box {
-        top: 110px;
-        padding: 2px 1vw 2px 1vw;
-    }
     .breadcrumb {
         margin: 125px 5vw auto 5vw;
     }
@@ -66,6 +58,17 @@ body {
 p, h1, h2, h3, ul, figure {
     margin: 0;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+    cursor: pointer;
+}
 .grid-center {
     display: grid;
     place-items: center;
@@ -73,55 +76,11 @@ p, h1, h2, h3, ul, figure {
 .grid {
     display: grid;
 }
-.buttons {
-    width: 45px;
-    height: 45px;
-}
 .hide {
     display: none;
 }
-.down {
-    animation: down 250ms ease-out forwards;
-}
-.up {
-    animation: up 250ms ease-out forwards;
-}
-.fade {
-    animation: fade 250ms ease-out forwards;
-}
-.unfade {
-    animation: unfade 250ms ease-out forwards;
-}
-@keyframes down {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-        transform: translateY(var(--move));
-    }
-}
-@keyframes up {
-    from {
-        transform: translateY(var(--move));
-    }
-    to {
-        opacity: 0;
-        transform: translateY(0);
-    }
-}
-@keyframes fade {
-    to {
-        opacity: 0;
-    }
-}
-@keyframes unfade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.disabled {
+    opacity: 0.3;
 }
 form {
     position: fixed;
@@ -161,17 +120,12 @@ form {
 #clear-button {
     grid-area: clear;
 }
+.buttons {
+    width: 45px;
+    height: 45px;
+}
 .buttons:hover, .crumb:hover {
     opacity: 0.6;
-}
-.nav-link:hover {
-    opacity: 0.8;
-}
-.nav-link:focus {
-    outline: solid 2px #000;
-}
-.disabled {
-    opacity: 0.3;
 }
 .buttons:focus {
     outline: 2px solid #000;
@@ -190,6 +144,49 @@ form {
     padding-top: 10px;
     box-shadow: 0 1px 5px 0 #808080;
     background-color: #ffa826;
+}
+.down {
+    animation: down 250ms ease-out forwards;
+}
+@keyframes down {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(var(--move));
+    }
+}
+.up {
+    animation: up 250ms ease-out forwards;
+}
+@keyframes up {
+    from {
+        transform: translateY(var(--move));
+    }
+    to {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+.fade {
+    animation: fade 250ms ease-out forwards;
+}
+@keyframes fade {
+    to {
+        opacity: 0;
+    }
+}
+.unfade {
+    animation: unfade 250ms ease-out forwards;
+}
+@keyframes unfade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 #logo {
     grid-area: logo;
@@ -213,58 +210,17 @@ nav > ul {
     width: max-content;
     margin: 0 auto;
 }
-.activated {
-    position: absolute;
-    top: var(--activated-top);
-    background-color: #000;
-    height: 5px;
+.nav-link:hover {
+    opacity: 0.8;
 }
-#genres-button:hover #icon {
-    transform: rotate(-180deg);
-    transition: transform 200ms linear;
+.nav-link:focus {
+    outline: solid 2px #000;
 }
-#genres-button:not(:hover) #icon {
-    transition: transform 200ms linear;
-}
-li:hover > #genres-box {
-    display: flex;
-    overflow: hidden;
-    animation: gen 1s ease-out forwards;
-}
-@keyframes gen {
-    from {
-        max-height: 0;
-    }
-    to {
-        max-height: 306px;
-    }
-}
-#genres-box {
-    position: fixed;
-    z-index: 5;
-    left: 0;
-    width: 99vw;
-    display: none;
-    flex-flow: wrap;
-    background-color: #ffda5b;
-}
-#genres-box li {
-    width: max-content;
-    margin: 2px;
-    padding: 5px;
-    border: 1px solid black;
-    background-color: #5f91d8;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-button {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    background-color: inherit;
-    cursor: pointer;
+#search {
+    grid-area: search;
+    justify-self: flex-end;
+    width: 50px;
+    height: 50px;
 }
 #genres-button {
     display: flex;
@@ -280,11 +236,99 @@ button {
 #icon, .chevron {
     font-size: 20px;
 }
-#search {
-    grid-area: search;
-    justify-self: flex-end;
-    width: 50px;
-    height: 50px;
+.activated {
+    position: absolute;
+    top: var(--activated-top);
+    background-color: #000;
+    height: 5px;
+}
+#genres-box {
+    position: fixed;
+    z-index: 5;
+    left: -0.2vw;
+    right: -0.2vw;
+    width: 100%;
+    flex-flow: wrap;
+    background: linear-gradient(#000, #003a77);
+    padding: calc(2px + 0.2vw);
+}
+#genres-box li {
+    width: max-content;
+    margin: 2px;
+}
+#genres-box li a {
+    display: inline-block;
+    padding: calc(5px + 0.1vw);
+    border: 1px solid #000;
+    background-color: #ffda5b;
+    outline: 0;
+}
+#genres-box li a:hover, #genres-box li a:focus {
+    background-color: #5f91d8;
+    transform: scale(1.05);
+    transition: transform 100ms ease-out;
+}
+#genres-box li a:active {
+    transform: scale(0.9);
+    transition: transform 100ms ease-out;
+}
+.rotate {
+    transform: rotate(-180deg);
+    transition: transform 300ms linear;
+}
+.unrotate {
+    transition: transform 500ms linear;
+}
+.activate {
+    overflow: hidden;
+    animation: activate 100ms ease-in forwards;
+}
+@keyframes activate {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 5px;
+    }
+}
+.deactivate {
+    overflow: hidden;
+    animation: deactivate 100ms ease-out forwards;
+    animation-delay: 500ms;
+}
+@keyframes deactivate {
+    from {
+        max-height: 5px;
+    }
+    to {
+        max-height: 0;
+    }
+}
+.gen {
+    display: flex;
+    overflow: hidden;
+    animation: gen 500ms ease-in forwards;
+}
+@keyframes gen {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 346.25px;
+    }
+}
+.ungen {
+    display: flex;
+    overflow: hidden;
+    animation: ungen 500ms ease-out forwards;
+}
+@keyframes ungen {
+    from {
+        max-height: 346.25px;
+    }
+    to {
+        max-height: 0;
+    }
 }
 .breadcrumb {
     display: flex;
