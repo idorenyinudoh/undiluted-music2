@@ -249,7 +249,7 @@ nav > ul {
     right: -0.2vw;
     width: 100%;
     flex-flow: wrap;
-    background: linear-gradient(#000, #003a77);
+    background: linear-gradient(#000, #ffa826);
     padding: calc(2px + 0.2vw);
 }
 #genres-box li {
