@@ -55,6 +55,14 @@ article a:focus {
     box-shadow: 0 0 3px 3px #5f91d8;
     z-index: 1;
 }
+.grayscale {
+    animation: grayscale 250ms ease-out forwards;
+}
+@keyframes grayscale {
+    to {
+        filter: grayscale(50%);
+    }
+}
 figure:not(:hover), a:not(:focus) figure {
     transition: transform 500ms ease-out;
 }
