@@ -1,3 +1,7 @@
+const links = document.getElementsByClassName('nav-link');
+const genresButton = document.getElementById('genres-button');
+const genresActivated = document.getElementById('genres-activated');
+const genresBox = document.getElementById('genres-box');
 let toggle = () => {
     const header = document.getElementById('header');
     const form = document.getElementById('form');
@@ -24,30 +28,6 @@ let toggle = () => {
         }, 250);
     }
 };
-
-document.getElementById('search-button').addEventListener('click', toggle);
-document.getElementById('clear-button').addEventListener('click', toggle);
-
-const links = document.getElementsByClassName('nav-link');
-for (let i = 0; i < links.length; i++) {
-    const disable = () => {
-        for (let j = 0; j < links.length; j++) {
-            if (i != j) {
-                if (links[j].classList.contains('disabled')) {
-                    links[j].classList.remove('disabled');
-                }
-                else links[j].classList.add('disabled');
-            }
-        }
-    }
-    links[i].addEventListener('pointerover', disable);
-    links[i].addEventListener('pointerout', disable);
-}
-
-const genresButton = document.getElementById('genres-button');
-const genresActivated = document.getElementById('genres-activated');
-const genresBox = document.getElementById('genres-box');
-
 const toggleGenresBox = () => {
     genresButton.blur();
     const genresIcon = document.getElementById('icon');
@@ -78,7 +58,22 @@ const toggleGenresBox = () => {
         }, 600);
     }
 }
-
+for (let i = 0; i < links.length; i++) {
+    const disable = () => {
+        for (let j = 0; j < links.length; j++) {
+            if (i != j) {
+                if (links[j].classList.contains('disabled')) {
+                    links[j].classList.remove('disabled');
+                }
+                else links[j].classList.add('disabled');
+            }
+        }
+    }
+    links[i].addEventListener('pointerover', disable);
+    links[i].addEventListener('pointerout', disable);
+}
+document.getElementById('search-button').addEventListener('click', toggle);
+document.getElementById('clear-button').addEventListener('click', toggle);
 genresButton.addEventListener('click', toggleGenresBox);
 window.addEventListener('click', (e) => {
     if(genresActivated.classList.contains('hide') == false && e.target != genresButton && e.target != genresBox) {
