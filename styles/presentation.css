@@ -31,6 +31,10 @@
         font-size: 16px;
     }
 }
+#today-jam-container a:hover, #today-jam-container a:focus {
+    outline: 0;
+    text-decoration: underline #ffa826;
+}
 #audio-player {
     border: 1px solid #003a77;
 }
