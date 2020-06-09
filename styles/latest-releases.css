@@ -52,7 +52,7 @@ article a:focus {
     border: 0;
     transform: scale(1.05);
     transition: transform 250ms ease-out;
-    box-shadow: 0 1px 5px 0 #003a77;
+    box-shadow: 0 0 3px 3px #5f91d8;
     z-index: 1;
 }
 figure:not(:hover), a:not(:focus) figure {
