@@ -2,7 +2,7 @@ const links = document.getElementsByClassName('nav-link');
 const genresButton = document.getElementById('genres-button');
 const genresActivated = document.getElementById('genres-activated');
 const genresBox = document.getElementById('genres-box');
-let toggle = () => {
+let toggleForm = () => {
     const header = document.getElementById('header');
     const form = document.getElementById('form');
 
@@ -72,8 +72,8 @@ for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('pointerover', disable);
     links[i].addEventListener('pointerout', disable);
 }
-document.getElementById('search-button').addEventListener('click', toggle);
-document.getElementById('clear-button').addEventListener('click', toggle);
+document.getElementById('search-button').addEventListener('click', toggleForm);
+document.getElementById('clear-button').addEventListener('click', toggleForm);
 genresButton.addEventListener('click', toggleGenresBox);
 window.addEventListener('click', (e) => {
     if(genresActivated.classList.contains('hide') == false && e.target != genresButton && e.target != genresBox) {
