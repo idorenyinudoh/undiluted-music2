@@ -124,7 +124,7 @@ form {
     width: 45px;
     height: 45px;
 }
-.buttons:hover, .crumb:hover {
+.buttons:hover {
     opacity: 0.6;
 }
 .buttons:focus {
@@ -337,6 +337,10 @@ nav > ul {
 }
 .crumb {
     font-size: 15px;
+}
+.crumb a:hover, .crumb a:focus {
+    outline: 0;
+    border-bottom: 2px solid #ffa826;
 }
 .sec-dark, .crumb a {
     color: #003a77;
