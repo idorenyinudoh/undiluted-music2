@@ -2,7 +2,7 @@ const links = document.getElementsByClassName('nav-link');
 const genresButton = document.getElementById('genres-button');
 const genresActivated = document.getElementById('genres-activated');
 const genresBox = document.getElementById('genres-box');
-let toggleForm = () => {
+const toggleForm = () => {
     const header = document.getElementById('header');
     const form = document.getElementById('form');
 
