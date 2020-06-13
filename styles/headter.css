@@ -63,6 +63,7 @@ a {
     color: black;
 }
 button {
+    font-family: inherit;
     border: 0;
     margin: 0;
     padding: 0;
@@ -124,7 +125,7 @@ form {
     width: 45px;
     height: 45px;
 }
-.buttons:hover, .crumb:hover {
+.buttons:hover {
     opacity: 0.6;
 }
 .buttons:focus {
@@ -228,8 +229,11 @@ nav > ul {
     flex-direction: row;
     font-size: 1rem;
 }
+#genres-button .activated {
+    width: 70px;
+    left: 1.235px;
+}
 #genres-text {
-    font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     margin: auto 0;
 }
@@ -337,6 +341,10 @@ nav > ul {
 }
 .crumb {
     font-size: 15px;
+}
+.crumb a:hover, .crumb a:focus {
+    outline: 0;
+    border-bottom: 2px solid #ffa826;
 }
 .sec-dark, .crumb a {
     color: #003a77;

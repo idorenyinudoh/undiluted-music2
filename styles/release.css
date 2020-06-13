@@ -47,6 +47,10 @@ main {
     font-size: calc(1rem);
     grid-area: artiste;
 }
+.intro a:hover, .intro a:focus {
+    outline: 0;
+    border-bottom: 2px solid #ffa826;
+}
 .cover {
     grid-area: cover;
     border: 1px solid #003a77;
