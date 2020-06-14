@@ -11,6 +11,3 @@
 main {
     margin-top: calc(var(--main-margin-top) + 1vw);
 }
-.latest-text {
-    margin: 1vw auto 2vw 1.5vw;
-}
