@@ -5,25 +5,19 @@ genresBox = document.getElementById('genres-box'),
 toggleForm = () => {
     const header = document.getElementById('header'),
     form = document.getElementById('form');
-
     if (form.classList.contains('hide')) {
-        form.classList.remove('hide');
-        form.classList.add('down');
+        form.classList.replace('hide','down')
         document.getElementById('search-input').focus();
         header.classList.add('fade');
         setTimeout(() => {
-            header.classList.add('hide');
-            header.classList.remove('fade');
+            header.classList.replace('fade','hide');
         }, 250);
     }
     else {
-        form.classList.remove('down');
-        form.classList.add('up');
-        header.classList.remove('hide');
-        header.classList.add('unfade');
+        form.classList.replace('down','up');
+        header.classList.replace('hide','unfade');
         setTimeout(() => {
-            form.classList.remove('up');
-            form.classList.add('hide');
+            form.classList.replace('up','hide');
             header.classList.remove('unfade');
         }, 250);
     }
@@ -33,28 +27,22 @@ toggleGenresBox = () => {
     const genresIcon = document.getElementById('icon');
     if (genresActivated.classList.contains('hide')) {
         genresIcon.classList.add('rotate');
-        genresActivated.classList.remove('hide');
-        genresActivated.classList.add('activate');
-        genresBox.classList.remove('hide');
-        genresBox.classList.add('gen');
+        genresActivated.classList.replace('hide','activate');
+        genresBox.classList.replace('hide','gen');
         setTimeout(() => {
             genresActivated.classList.remove('activate');
         }, 100);
     }
     else {
-        genresIcon.classList.remove('rotate');
-        genresIcon.classList.add('unrotate');
+        genresIcon.classList.replace('rotate','unrotate');
         genresActivated.classList.add('deactivate');
-        genresBox.classList.remove('gen');
-        genresBox.classList.add('ungen');
+        genresBox.classList.replace('gen','ungen');
         setTimeout(() => {
             genresIcon.classList.remove('unrotate');
-            genresBox.classList.remove('ungen');
-            genresBox.classList.add('hide');
+            genresBox.classList.replace('ungen','hide');
         }, 500);
         setTimeout(() => {
-            genresActivated.classList.remove('deactivate');
-            genresActivated.classList.add('hide');
+            genresActivated.classList.replace('deactivate','hide');
         }, 600);
     }
 };
