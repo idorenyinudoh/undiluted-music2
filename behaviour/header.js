@@ -1,8 +1,8 @@
-const links = document.getElementsByClassName('nav-link');
-const genresButton = document.getElementById('genres-button');
-const genresActivated = document.getElementById('genres-activated');
-const genresBox = document.getElementById('genres-box');
-const toggleForm = () => {
+const links = document.getElementsByClassName('nav-link'),
+genresButton = document.getElementById('genres-button'),
+genresActivated = document.getElementById('genres-activated'),
+genresBox = document.getElementById('genres-box'),
+toggleForm = () => {
     const header = document.getElementById('header');
     const form = document.getElementById('form');
 
@@ -27,8 +27,8 @@ const toggleForm = () => {
             header.classList.remove('unfade');
         }, 250);
     }
-};
-const toggleGenresBox = () => {
+},
+toggleGenresBox = () => {
     genresButton.blur();
     const genresIcon = document.getElementById('icon');
     if (genresActivated.classList.contains('hide')) {
@@ -57,7 +57,7 @@ const toggleGenresBox = () => {
             genresActivated.classList.add('hide');
         }, 600);
     }
-}
+};
 for (let i = 0; i < links.length; i++) {
     const disable = () => {
         for (let j = 0; j < links.length; j++) {
@@ -68,7 +68,7 @@ for (let i = 0; i < links.length; i++) {
                 else links[j].classList.add('disabled');
             }
         }
-    }
+    };
     links[i].addEventListener('pointerover', disable);
     links[i].addEventListener('pointerout', disable);
 }
