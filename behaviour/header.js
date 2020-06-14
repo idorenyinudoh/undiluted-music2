@@ -3,8 +3,8 @@ genresButton = document.getElementById('genres-button'),
 genresActivated = document.getElementById('genres-activated'),
 genresBox = document.getElementById('genres-box'),
 toggleForm = () => {
-    const header = document.getElementById('header');
-    const form = document.getElementById('form');
+    const header = document.getElementById('header'),
+    form = document.getElementById('form');
 
     if (form.classList.contains('hide')) {
         form.classList.remove('hide');
