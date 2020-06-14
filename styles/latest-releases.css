@@ -1,7 +1,7 @@
 .latest-releases-container {
     display: grid;
     gap: 5px;
-    grid-template-columns: 5vw 1fr 5vw;
+    grid-template-columns: calc(20px + 1vw) 1fr calc(20px + 1vw);
 }
 .latest-text {
     padding: 0 0 1.5vw 2vw;
