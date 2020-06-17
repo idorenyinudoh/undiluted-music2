@@ -9,6 +9,8 @@
 }
 @media screen and (min-width: 700px) and (max-width: 919px) {
     :root {
+        --title-justify: flex-end;
+        --artiste-justify: flex-start;
         --jam-area:
         "text text"
         "title artiste"
@@ -35,9 +37,11 @@
 }
 #today-title {
     grid-area: title;
+    justify-self: var(--title-justify);
 }
 #today-artiste {
     grid-area: artiste;
+    justify-self: var(--artiste-justify);
 }
 #audio-player {
     width: var(--audio-width);
