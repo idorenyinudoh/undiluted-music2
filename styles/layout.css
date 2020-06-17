@@ -1,11 +1,9 @@
 @media screen and (min-width: 700px) and (max-width: 919px) {
     #today-title {
         padding-right: 5px;
-        justify-self: flex-end;
     }
     #today-artiste {
         padding-left: 5px;
-        justify-self: flex-start;
     }
 }
 @media screen and (min-width: 700px) {
