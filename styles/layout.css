@@ -1,26 +1,48 @@
+@media screen and (max-width: 699px) {
     :root {
+        --jam-area:
+        "text"
+        "title"
+        "artiste"
+        "audio";
     }
 }
+@media screen and (min-width: 700px) and (max-width: 919px) {
     :root {
+        --jam-area:
+        "text text"
+        "title artiste"
+        "audio audio";
     }
 }
 @media screen and (min-width: 920px) {
     :root {
+        --jam-area:
+        "text text text"
+        "title artiste audio";
     }
 }
 .grid-gap-center {
     display: grid;
     gap: calc(5px + 1vw);
+    grid-template-areas: var(--jam-area);
     place-items: center;
 }
 #today-jam-container {
     margin-top: var(--breadcrumb-margin);
+#today-text {
+    grid-area: text;
 }
+#today-title {
+    grid-area: title;
 }
+#today-artiste {
+    grid-area: artiste;
 }
 #audio-player {
     width: var(--audio-width);
     height: var(--audio-height);
+    grid-area: audio;
     max-width: 450px;
 }
 hr {
