@@ -1,39 +1,18 @@
-@media screen and (min-width: 920px) {
-    #today-text {
-        font-size: 32px;
-    }
-    #today-title {
-        font-size: 28px;
-    }
-    #today-artiste {
-        font-size: 20px;
-    }
-}
-@media screen and (min-width: 700px) and (max-width: 919px) {
-    #today-text {
-        font-size: 30px;
-    }
-    #today-title {
-        font-size: 26px;
-    }
-    #today-artiste {
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 699px) {
-    #today-text {
-        font-size: 28px;
-    }
-    #today-title {
-        font-size: 24px;
-    }
-    #today-artiste {
-        font-size: 16px;
-    }
+#today-jam-container {
+    letter-spacing: -0.5px;
 }
 #today-jam-container a:hover, #today-jam-container a:focus {
     outline: 0;
     text-decoration: underline #ffa826;
+}
+#today-text {
+    font-size: calc(1.7rem + 0.4vw);
+}
+#today-title {
+    font-size: calc(1.5rem + 0.3vw);
+}
+#today-artiste {
+    font-size: calc(1rem + 0.3vw);
 }
 #audio-player {
     border: 1px solid #003a77;
