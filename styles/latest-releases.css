@@ -9,6 +9,7 @@
     grid-column: 1 / 3;
     font-size: calc(1.5rem + 0.3vw);
     font-weight: 500;
+    letter-spacing: -0.5px;
 }
 .article-container {
     grid-column: 2 / 3;
@@ -30,6 +31,7 @@ figcaption {
     display: grid;
     grid-template-columns: 1ch 1fr;
     padding: 3%;
+    letter-spacing: -0.4px;
 }
 .article-title {
     grid-column: 1 / 3;
