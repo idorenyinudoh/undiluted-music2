@@ -32,6 +32,7 @@
     row-gap: calc(5px + 0.6vw);
     column-gap: calc(15px + 1vw);
     place-items: center;
+    place-content: center;
 }
 #today-text {
     grid-area: text;
