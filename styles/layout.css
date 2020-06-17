@@ -1,11 +1,3 @@
-@media screen and (min-width: 700px) and (max-width: 919px) {
-    #today-title {
-        padding-right: 5px;
-    }
-    #today-artiste {
-        padding-left: 5px;
-    }
-}
 @media screen and (min-width: 700px) {
     #today-data {
         grid-template-columns: max-content max-content;
@@ -39,6 +31,10 @@
 }
 #today-jam-container {
     margin-top: var(--breadcrumb-margin);
+}
+#today-data {
+    row-gap: calc(5px + 1vw);
+    column-gap: calc(10px + 1vw);
 }
 #audio-player {
     width: var(--audio-width);
