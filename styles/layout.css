@@ -24,7 +24,6 @@
         "title artiste audio";
     }
 }
-.grid-gap-center {
 #today-jam-container {
     margin-top: var(--breadcrumb-margin);
     display: grid;
