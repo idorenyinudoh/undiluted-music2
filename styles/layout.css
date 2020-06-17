@@ -25,13 +25,13 @@
     }
 }
 .grid-gap-center {
+#today-jam-container {
+    margin-top: var(--breadcrumb-margin);
     display: grid;
     gap: calc(5px + 1vw);
     grid-template-areas: var(--jam-area);
     place-items: center;
 }
-#today-jam-container {
-    margin-top: var(--breadcrumb-margin);
 #today-text {
     grid-area: text;
 }
