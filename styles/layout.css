@@ -28,8 +28,9 @@
 #today-jam-container {
     margin-top: var(--breadcrumb-margin);
     display: grid;
-    gap: calc(5px + 1vw);
     grid-template-areas: var(--jam-area);
+    row-gap: calc(5px + 0.6vw);
+    column-gap: calc(15px + 1vw);
     place-items: center;
 }
 #today-text {
