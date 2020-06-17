@@ -17,12 +17,6 @@
     #today-plus-audio {
         grid-template-columns: max-content max-content;
     }
-    #today-title {
-        padding-right: 10px;
-    }
-    #today-artiste {
-        padding-right: 10px;
-    }
 }
 .grid-gap-center {
     display: grid;
