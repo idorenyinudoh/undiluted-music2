@@ -1,5 +1,6 @@
 #today-jam-container {
     letter-spacing: -0.5px;
+    text-align: center;
 }
 #today-jam-container a:hover, #today-jam-container a:focus {
     outline: 0;
