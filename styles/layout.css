@@ -12,13 +12,16 @@
     }
 }
 @media screen and (max-width: 919px) {
-    #audio-player {
-        width: 90vw;
-        max-width: 500px;
-        height: 50px;
+    :root {
+        --audio-width: 90vw;
+        --audio-height: 50px;
     }
 }
 @media screen and (min-width: 920px) {
+    :root {
+        --audio-width: 40vw;
+        --audio-height: 48px;
+    }
     #today-plus-audio {
         grid-template-columns: max-content max-content;
     }
@@ -31,11 +34,6 @@
     #today-artiste {
         padding-right: 10px;
     }
-    #audio-player {
-        width: 40vw;
-        max-width: 450px;
-        height: 48px;
-    }
 }
 .grid-gap-center {
     display: grid;
@@ -44,6 +42,11 @@
 }
 #today-jam-container {
     margin-top: var(--breadcrumb-margin);
+}
+#audio-player {
+    width: var(--audio-width);
+    height: var(--audio-height);
+    max-width: 450px;
 }
 hr {
     width: 92.5vw;
