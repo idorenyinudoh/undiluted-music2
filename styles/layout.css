@@ -1,19 +1,11 @@
-@media screen and (min-width: 700px) {
     :root {
-        --data-column: max-content max-content;
     }
 }
-@media screen and (max-width: 919px) {
     :root {
-        --audio-width: 90vw;
-        --audio-height: 50px;
     }
 }
 @media screen and (min-width: 920px) {
     :root {
-        --audio-width: 40vw;
-        --audio-height: 48px;
-        --plus-audio-column: max-content max-content;
     }
 }
 .grid-gap-center {
@@ -24,13 +16,7 @@
 #today-jam-container {
     margin-top: var(--breadcrumb-margin);
 }
-#today-plus-audio {
-    grid-template-columns: var(--plus-audio-column);
 }
-#today-data {
-    grid-template-columns: var(--data-column);
-    row-gap: calc(5px + 1vw);
-    column-gap: calc(10px + 1vw);
 }
 #audio-player {
     width: var(--audio-width);
