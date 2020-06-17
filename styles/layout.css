@@ -12,9 +12,6 @@
     }
 }
 @media screen and (max-width: 919px) {
-    #today-jam-container {
-        margin: 125px 0 0 0;
-    }
     #audio-player {
         width: 90vw;
         max-width: 500px;
@@ -22,9 +19,6 @@
     }
 }
 @media screen and (min-width: 920px) {
-    #today-jam-container {
-        margin: 85px 0 0 0;
-    }
     #today-plus-audio {
         grid-template-columns: max-content max-content;
     }
@@ -47,6 +41,9 @@
     display: grid;
     gap: calc(5px + 1vw);
     place-items: center;
+}
+#today-jam-container {
+    margin-top: var(--breadcrumb-margin);
 }
 hr {
     width: 92.5vw;
