@@ -52,6 +52,7 @@ table {
     padding: 2vw;
     background-color: #ffa826;
     border: 1px solid #003a77;
+    letter-spacing: -0.5px;
 }
 tbody {
     display: grid;
