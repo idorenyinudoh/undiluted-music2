@@ -52,8 +52,7 @@
     letter-spacing: -0.5px;
 }
 #download:hover, #download:focus {
-    background-color: #ffa826;
-    box-shadow: 0 0 2px 2px #003a77;
+    box-shadow: 0 0 3px 3px #5f91d8;
 }
 #download:active {
     transform: scale(0.95);
