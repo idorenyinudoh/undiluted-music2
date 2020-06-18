@@ -7,7 +7,7 @@
         ". data .";
     }
     .album {
-        grid-template-columns: 2vw 1ch 1fr;
+        grid-template-columns: calc(10px + 1vw) 1ch 1fr;
         grid-template-areas: 
         ". title title"
         ". . artiste";
@@ -33,7 +33,7 @@ main {
 }
 .intro {
     display: grid;
-    gap: 2vw;
+    gap: calc(10px + 1vw);
 }
 .album {
     grid-area: album;
