@@ -38,14 +38,16 @@ main {
 .album {
     grid-area: album;
     display: grid;
+    letter-spacing: -0.5px;
 }
 .album-title {
-    font-size: calc(1.5rem + 0.2vw);
     grid-area: title;
+    font-size: calc(1.5rem + 0.3vw);
+    font-weight: 500;
 }
 .album-artiste {
-    font-size: calc(1rem);
     grid-area: artiste;
+    font-size: calc(1.1rem + 0.1vw);
 }
 .intro a:hover, .intro a:focus {
     outline: 0;
@@ -66,6 +68,7 @@ img {
     display: grid;
     gap: calc(1% + 0.5vw);
     height: max-content;
+    letter-spacing: -0.2px;
 }
 .key {
     font-size: 1rem;
