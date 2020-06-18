@@ -228,7 +228,6 @@ nav > ul {
 }
 #genres-button .activated {
     width: 70px;
-    left: 1.235px;
 }
 #genres-text {
     display: inline-block;
