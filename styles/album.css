@@ -1,6 +1,6 @@
 @media screen and (max-width: 699px) {
     tbody {
-        grid-template-rows: repeat(15, 53px);
+        grid-template-rows: repeat(15, 60px);
     }
     tr {
         grid-template-columns: 6fr 1fr 1fr 1fr;
@@ -65,6 +65,7 @@ tr:nth-child(even) {
 }
 tr {
     display: grid;
+    gap: calc(1px + 0.5vw);
     place-items: center;
 }
 td {
