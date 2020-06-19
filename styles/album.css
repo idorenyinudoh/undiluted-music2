@@ -85,3 +85,6 @@ td {
 .people {
     grid-area: people;
 }
+.audio-buttons {
+    padding: 11px;
+}
