@@ -28,9 +28,6 @@
         ". artiste";
     }
 }
-main {
-    margin-top: 2%;
-}
 .intro {
     display: grid;
     gap: calc(10px + 1vw);
