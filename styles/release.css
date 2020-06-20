@@ -76,11 +76,9 @@ img {
 .download {
     border: 1px solid #003a77;
     padding: calc(5px + 0.5vw);
-    margin: 0;
     background-color: #ffda5b;
     color: inherit;
     font-size: 16px;
-    cursor: pointer;
     outline: none;
     letter-spacing: -0.5px;
 }
