@@ -46,6 +46,9 @@
 }
 #audio-section {
     margin: 5vw 3vw 3vw 3vw;
+    display: grid;
+    gap: calc(10px + 1vw);
+    place-items: center;
 }
 table {
     width: 100%;
