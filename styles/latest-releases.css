@@ -82,5 +82,5 @@ figure:not(:hover), a:not(:focus) figure {
     padding: calc(10px + 1vw) calc(10px + 2vw) 0 0;
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    gap: 10px;
+    gap: calc(10px + 0.5vw);
 }
