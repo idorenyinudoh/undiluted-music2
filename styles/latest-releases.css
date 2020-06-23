@@ -2,8 +2,13 @@
     display: grid;
     gap: 5px;
     grid-template-columns: calc(20px + 1vw) 1fr calc(20px + 1vw);
+    grid-template-areas:
+    "text text ."
+    ". art ."
+    ". nav-sect nav-sect";
 }
 .latest-text {
+    grid-area: text;
     padding: 0 0 1.5vw 2vw;
     justify-self: flex-start;
     grid-column: 1 / 3;
@@ -13,6 +18,7 @@
 }
 .article-container {
     grid-column: 2 / 3;
+    grid-area: art;
     display: grid;
     gap: 2vw;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -72,4 +78,7 @@ figure:not(:hover), a:not(:focus) figure {
 .article-container figure:active {
     transform: scale(0.95);
     transition: transform 250ms ease-out;
+}
+.nav-section {
+    grid-area: nav-sect;
 }
