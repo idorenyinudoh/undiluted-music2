@@ -38,7 +38,7 @@ img {
     left: 0;
 }
 figcaption {
-    height: auto;
+    min-height: 34px;
     display: grid;
     grid-template-columns: 1ch 1fr;
     padding: 3%;
