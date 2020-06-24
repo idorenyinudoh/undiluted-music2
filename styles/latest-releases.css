@@ -30,6 +30,7 @@ figure {
     padding-top: 100%;
 }
 img {
+    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
