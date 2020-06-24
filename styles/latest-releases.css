@@ -43,6 +43,7 @@ figcaption {
     grid-template-columns: 1ch 1fr;
     padding: 3%;
     letter-spacing: -0.4px;
+    border-top: 1px solid #003a7780;
 }
 .article-title {
     grid-column: 1 / 3;
