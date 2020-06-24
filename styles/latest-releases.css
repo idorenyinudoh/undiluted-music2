@@ -25,9 +25,16 @@ figure {
     gap: 0;
     border: 1px solid #003a77;
 }
+.img-container {
+    position: relative;
+    padding-top: 100%;
+}
 img {
-    width: 100%;
-    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 figcaption {
     height: auto;
