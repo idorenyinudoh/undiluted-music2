@@ -52,12 +52,12 @@
 }
 .cover {
     grid-area: cover;
-    border: 1px solid #c77900;
     display: grid;
     position: relative;
     padding-top: 100%;
 }
 img {
+    border: 1px solid #c77900;
     width: 100%;
     position: absolute;
     top: 0;
