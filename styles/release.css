@@ -54,7 +54,6 @@
     grid-area: cover;
     border: 1px solid #c77900;
     display: grid;
-    gap: 0;
 }
 img {
     width: 100%;
