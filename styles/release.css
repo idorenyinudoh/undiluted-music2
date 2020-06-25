@@ -54,10 +54,16 @@
     grid-area: cover;
     border: 1px solid #c77900;
     display: grid;
+    position: relative;
+    padding-top: 100%;
 }
 img {
     width: 100%;
-    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 .data {
     grid-area: data;
