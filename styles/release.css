@@ -57,6 +57,7 @@
     padding-top: 100%;
 }
 img {
+    box-sizing: border-box;
     border: 1px solid #c77900;
     width: 100%;
     position: absolute;
