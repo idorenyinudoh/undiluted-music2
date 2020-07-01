@@ -1,8 +1,6 @@
 @media screen and (max-width: 699px) {
-    tbody {
-        grid-template-rows: repeat(15, 60px);
-    }
     tr {
+        height: 60px;
         grid-template-columns: 6fr 1fr 1fr 1fr;
     }
     .first {
@@ -19,10 +17,8 @@
     }
 }
 @media screen and (min-width: 700px) {
-    tbody {
-        grid-template-rows: repeat(15, 45px);
-    }
     tr {
+        height: 45px;
         grid-template-columns: 10fr 1fr 1fr 1fr;
     }
     .first {
