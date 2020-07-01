@@ -73,6 +73,7 @@ td {
 .first {
     justify-self: flex-start;
     display: grid;
+    align-items: center;
 }
 .number {
     grid-area: number;
