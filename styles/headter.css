@@ -353,6 +353,7 @@ nav > ul {
     letter-spacing: -0.5px;
 }
 .crumb:hover, .crumb:focus {
+    /* To be looked into... */
     outline: 0;
     border-bottom: 2px solid #ffa826;
 }
