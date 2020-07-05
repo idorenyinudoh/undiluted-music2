@@ -234,7 +234,7 @@ nav > ul {
     display: inline-block;
     margin: auto 0;
 }
-#icon, .chevron {
+#icon {
     font-size: 20px;
 }
 .activated {
