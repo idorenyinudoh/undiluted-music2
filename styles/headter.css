@@ -352,11 +352,11 @@ nav > ul {
     font-size: 15px;
     letter-spacing: -0.5px;
 }
-.crumb a:hover, .crumb a:focus {
+.crumb:hover, .crumb:focus {
     outline: 0;
     border-bottom: 2px solid #ffa826;
 }
-.sec-dark, .crumb a {
+.sec-dark, .crumb {
     color: #003a77;
 }
 footer {
