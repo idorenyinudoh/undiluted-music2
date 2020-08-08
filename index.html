@@ -78,7 +78,15 @@
         <h2 id="today-text">TODAY&apos;S JAM</h2>
         <p id="today-title"><a class="sec-dark" href="artistes/rema/beamer.html">Beamer &lpar;Bad Boys&rpar;</a></p>
         <p id="today-artiste"><a class="sec-dark" href="artistes/rema.html">Rema</a> ft. Rvssian</p>
-        <div id="audio-player">Audio</div>
+        <div id="audio-container">
+            <audio src="" loop preload="metadata"></audio>
+            <button aria-label="play" id="play-icon"></button>
+            <span id="current-time" class="dur">0&colon;00</span>
+            <div id="range-container">
+                <input aria-label="seek" id="range-input" value="0" step="1" type="range" min="0">
+            </div>
+            <span id="duration" class="dur">0&colon;00</span>
+        </div>
     </section>
     <hr>
     <main>
