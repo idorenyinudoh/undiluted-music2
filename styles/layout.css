@@ -20,8 +20,9 @@
 @media screen and (min-width: 920px) {
     :root {
         --jam-area:
-        "text text text"
-        "title artiste audio";
+        "text text"
+        "title artiste"
+        "audio audio";
     }
 }
 #today-jam-container {
