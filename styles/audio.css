@@ -16,7 +16,7 @@ html {
     max-width: 600px;
 }
 #play-icon {
-    padding: calc(4.5px - 0.05vw);
+    padding: 4px;
     border: 0;
     background: inherit;
     width: 39px;
