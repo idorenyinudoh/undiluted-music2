@@ -44,11 +44,8 @@
     grid-area: artiste;
     justify-self: var(--artiste-justify);
 }
-#audio-player {
+#audio-container {
     grid-area: audio;
-    /* width: ??; */
-    height: 48px;
-    max-width: 450px;
 }
 hr {
     width: 92.5vw;
