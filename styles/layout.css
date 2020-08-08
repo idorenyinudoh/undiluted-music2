@@ -7,17 +7,7 @@
         "audio";
     }
 }
-@media screen and (min-width: 700px) and (max-width: 919px) {
-    :root {
-        --title-justify: flex-end;
-        --artiste-justify: flex-start;
-        --jam-area:
-        "text text"
-        "title artiste"
-        "audio audio";
-    }
-}
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 700px) {
     :root {
         --title-justify: flex-end;
         --artiste-justify: flex-start;
