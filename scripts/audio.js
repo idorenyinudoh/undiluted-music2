@@ -87,8 +87,6 @@ audioPlayerInteraction = {
     await bodymovin.loadAnimation;
     varz.playAnimation = bodymovin.loadAnimation({
         container: varz.playIcon,
-        path: 'data.json', //for production
-        // path: 'http://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json',
         renderer: 'svg',
         loop: false,
         autoplay: false
