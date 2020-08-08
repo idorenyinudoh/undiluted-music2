@@ -1,8 +1,6 @@
 html {
     --before-width: 0px;
     --buffered-width: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: -0.5px;
 }
 #audio-container {
     display: grid;
@@ -17,11 +15,8 @@ html {
 }
 #play-icon {
     padding: 4px;
-    border: 0;
-    background: inherit;
     width: 39px;
     height: 39px;
-    cursor: pointer;
 }
 button:focus {
     outline: 0;
