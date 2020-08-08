@@ -19,6 +19,8 @@
 }
 @media screen and (min-width: 920px) {
     :root {
+        --title-justify: flex-end;
+        --artiste-justify: flex-start;
         --jam-area:
         "text text"
         "title artiste"
