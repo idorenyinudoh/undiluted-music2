@@ -10,8 +10,8 @@ const varz = {
     range: document.getElementById('range-input'),
     audio: document.querySelector('audio'),
     src: [
-        'https://idorenyinudoh.github.io/my-audio-player/10%20Sing%20About%20Me,%20I\'m%20Dying%20of%20Thirs.m4a',
-        'https://idorenyinudoh.github.io/my-audio-player/beamer-rema_ft_rvssian.mp3',
+        '../../10%20Sing%20About%20Me,%20I\'m%20Dying%20of%20Thirs.m4a',
+        '../../beamer-rema_ft_rvssian.mp3',
         // 'file:///C:/Users/hp/Documents/GitHub/my-audio-player/10%20Sing%20About%20Me,%20I\'m%20Dying%20of%20Thirs.m4a',
         // 'file:///C:/Users/hp/Documents/GitHub/my-audio-player/beamer-rema_ft_rvssian.mp3'
     ]
