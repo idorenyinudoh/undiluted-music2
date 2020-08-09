@@ -259,6 +259,20 @@
                     </tr>
                 </tbody>
             </table>
+            <div id="audio-container">
+                <audio src="../../10 Sing About Me, I'm Dying of Thirs.m4a" preload="metadata"></audio>
+                <div id="control-buttons">
+                    <button class="prenext" aria-label="previous track" title="Previous" id="previous-button"></button>
+                    <button aria-label="play" title="Play" id="play-button"></button>
+                    <button class="prenext" aria-label="next track" title="Next" id="next-button"></button>
+                </div>
+                <span id="current-time" class="dur">0&colon;00</span>
+                <div id="range-container">
+                    <input aria-label="seek" id="range-input" value="0" step="1" type="range" min="0">
+                </div>
+                <span id="duration" class="dur">0&colon;00</span>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js" integrity="sha512-+Ku6s80nhPKhP0lhl+Ygkp56Y2IknfZerdkVJYNaDolV8/H/kKeQRJj8RuwGRjGeXsFA8GzLNOG5vncuxI710A==" crossorigin="anonymous"></script>
             <button class="download" type="button">Download Album</button>
         </section>
     </main>
