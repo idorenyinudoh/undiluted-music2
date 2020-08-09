@@ -100,14 +100,7 @@ audioPlayerInteraction = {
             }
         },
         prenext() {
-            if(!this.isShowingPlay) {
-                if(varz.audio.readyState > 2) {
-                    varz.audio.autoplay = true;
-                }
-                else varz.audio.addEventListener('canplay', () => {
-                    varz.audio.autoplay = true;
-                });
-            } else varz.audio.autoplay = false;
+            if(!this.isShowingPlay)varz.audio.autoplay = true;else varz.audio.autoplay = false;
             varz.range.value = 0;
             audioPlayerInteraction.cur.textContent = '0:00';
             audioPlayerInteraction.dur.textContent = '0:00';
