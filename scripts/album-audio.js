@@ -131,7 +131,7 @@ audioPlayerInteraction = {
     await bodymovin.loadAnimation;
     varz.playAnimation = bodymovin.loadAnimation({
         container: varz.arr[0],
-        path: 'pause.json', //for production
+        path: '../../lottieJson/pause.json', //for production
         // path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json',
         renderer: 'svg',
         loop: false,
@@ -139,7 +139,7 @@ audioPlayerInteraction = {
     });
     varz.previousAnimation = bodymovin.loadAnimation({
         container: varz.arr[1],
-        path: 'previous.json', //for production
+        path: '../../lottieJson/previous.json', //for production
         // path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/skip-backwards/skip-backwards.json',
         renderer: 'svg',
         loop: false,
@@ -147,7 +147,7 @@ audioPlayerInteraction = {
     });
     varz.nextAnimation = bodymovin.loadAnimation({
         container: varz.arr[2],
-        path: 'next.json', //for production
+        path: '../../lottieJson/next.json', //for production
         // path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/skip-forwards/skip-forwards.json',
         renderer: 'svg',
         loop: false,
