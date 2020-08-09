@@ -87,7 +87,7 @@ audioPlayerInteraction = {
     await bodymovin.loadAnimation;
     varz.playAnimation = bodymovin.loadAnimation({
         container: varz.playIcon,
-        path: 'lottieJson/pause.json',
+        path: '../../lottieJson/pause.json',
         renderer: 'svg',
         loop: false,
         autoplay: false
