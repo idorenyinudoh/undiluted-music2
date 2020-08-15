@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175262730-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-175262730-1');
+    </script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="styles/headter.css" rel="stylesheet">
+    <link href="./styles/single-audio.css" rel="stylesheet">
     <link href="styles/layout.css" rel="stylesheet">
     <link href="styles/presentation.css" rel="stylesheet">
     <link href="styles/latest-releases.css" rel="stylesheet">
@@ -78,7 +87,17 @@
         <h2 id="today-text">TODAY&apos;S JAM</h2>
         <p id="today-title"><a class="sec-dark" href="artistes/rema/beamer.html">Beamer &lpar;Bad Boys&rpar;</a></p>
         <p id="today-artiste"><a class="sec-dark" href="artistes/rema.html">Rema</a> ft. Rvssian</p>
-        <div id="audio-player">Audio</div>
+        <div id="audio-container">
+            <audio src="./10 Sing About Me, I'm Dying of Thirs.m4a" loop preload="metadata"></audio>
+            <button aria-label="play" title="Play" id="play-icon"></button>
+            <span id="current-time" class="dur">0&colon;00</span>
+            <div id="range-container">
+                <input aria-label="seek" id="range-input" value="0" step="1" type="range" min="0">
+            </div>
+            <span id="duration" class="dur">0&colon;00</span>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js" integrity="sha512-+Ku6s80nhPKhP0lhl+Ygkp56Y2IknfZerdkVJYNaDolV8/H/kKeQRJj8RuwGRjGeXsFA8GzLNOG5vncuxI710A==" crossorigin="anonymous"></script>
+        <script src="./scripts/audio.js"></script>
     </section>
     <hr>
     <main>

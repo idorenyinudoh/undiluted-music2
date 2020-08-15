@@ -8,14 +8,14 @@
         margin-top: 5vw;
     }
 }
-@media screen and (max-width: 561px) {
+@media screen and (max-width: 919px) {
     #audio-section {
         grid-template-areas:
         "audio"
         "download";
     }
 }
-@media screen and (min-width: 562px) {
+@media screen and (min-width: 920px) {
     #audio-section {
         grid-template-areas:
         "audio download";

@@ -7,7 +7,7 @@
         "audio";
     }
 }
-@media screen and (min-width: 700px) and (max-width: 919px) {
+@media screen and (min-width: 700px) {
     :root {
         --title-justify: flex-end;
         --artiste-justify: flex-start;
@@ -15,13 +15,6 @@
         "text text"
         "title artiste"
         "audio audio";
-    }
-}
-@media screen and (min-width: 920px) {
-    :root {
-        --jam-area:
-        "text text text"
-        "title artiste audio";
     }
 }
 #today-jam-container {
@@ -44,11 +37,8 @@
     grid-area: artiste;
     justify-self: var(--artiste-justify);
 }
-#audio-player {
+#audio-container {
     grid-area: audio;
-    /* width: ??; */
-    height: 48px;
-    max-width: 450px;
 }
 hr {
     width: 92.5vw;
