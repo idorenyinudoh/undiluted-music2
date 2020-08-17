@@ -178,7 +178,7 @@ if('mediaSession' in navigator) {
         audioPlayerInteraction.inputEvent();
         if(!varz.audio.paused) {
             varz.playAnimation.playSegments([0, 14], true);
-            varz.playIcon.setAttribute('aria-label', 'play');
+            varz.arr[0].setAttribute('aria-label', 'play');
             audioPlayerInteraction.controlPlayback.isShowingPlay = true;
         }
     });
