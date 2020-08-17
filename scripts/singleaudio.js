@@ -94,6 +94,16 @@ audioPlayerInteraction = {
     });
     varz.playAnimation.goToAndStop(14, true);
 })();
+if('mediaSession' in navigator) {
+    navigator.mediaSession.metadata = new MediaMetadata({
+        title: document.querySelector('.album-title').textContent,
+        artist: document.querySelector('.album-artiste').textContent,
+        album: `${document.querySelector('.album-title').textContent} - Single`,
+        artwork: [
+            {src: document.querySelector('.cover img').src}
+        ]
+    })
+}
 if(varz.audio.readyState > 0) audioPlayerInteraction.metadata.main(); else varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
 varz.playIcon.addEventListener('click', () => {audioPlayerInteraction.controlPlayback.playBack();});
 varz.audio.addEventListener('progress', audioPlayerInteraction.metadata.forProgress);
