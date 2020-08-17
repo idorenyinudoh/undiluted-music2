@@ -102,7 +102,7 @@ if('mediaSession' in navigator) {
         artwork: [
             {src: document.querySelector('.cover img').src}
         ]
-    })
+    });
 }
 if(varz.audio.readyState > 0) audioPlayerInteraction.metadata.main(); else varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
 varz.playIcon.addEventListener('click', () => {audioPlayerInteraction.controlPlayback.playBack();});
