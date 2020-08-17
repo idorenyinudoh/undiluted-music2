@@ -96,17 +96,18 @@ audioPlayerInteraction = {
 })();
 if('mediaSession' in navigator) {
     navigator.mediaSession.metadata = new MediaMetadata({
-        title: document.querySelector('.album-title').textContent,
-        artist: document.querySelector('.album-artiste').textContent,
-        album: `${document.querySelector('.album-title').textContent} - Single`,
-        artwork: [
-            {src: document.querySelector('.cover img').src, sizes: '96x96'},
-            {src: document.querySelector('.cover img').src, sizes: '128x128'},
-            {src: document.querySelector('.cover img').src, sizes: '192x192'},
-            {src: document.querySelector('.cover img').src, sizes: '256x256'},
-            {src: document.querySelector('.cover img').src, sizes: '384x384'},
-            {src: document.querySelector('.cover img').src, sizes: '512x512'}
-        ]
+        title: document.querySelector('#today-title').textContent,
+        artist: document.querySelector('#today-artiste').textContent,
+        // so much work needed, jeez
+        // album: document.querySelector('.album-title').textContent,
+        // artwork: [
+        //     {src: document.querySelector('.cover img').src, sizes: '96x96'},
+        //     {src: document.querySelector('.cover img').src, sizes: '128x128'},
+        //     {src: document.querySelector('.cover img').src, sizes: '192x192'},
+        //     {src: document.querySelector('.cover img').src, sizes: '256x256'},
+        //     {src: document.querySelector('.cover img').src, sizes: '384x384'},
+        //     {src: document.querySelector('.cover img').src, sizes: '512x512'}
+        // ]
     });
     navigator.mediaSession.setActionHandler('play', () => {audioPlayerInteraction.controlPlayback.playBack()});
     navigator.mediaSession.setActionHandler('pause', () => {audioPlayerInteraction.controlPlayback.playBack()});
