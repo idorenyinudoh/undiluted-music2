@@ -94,6 +94,48 @@ audioPlayerInteraction = {
     });
     varz.playAnimation.goToAndStop(14, true);
 })();
+if('mediaSession' in navigator) {
+    navigator.mediaSession.metadata = new MediaMetadata({
+        title: document.querySelector('#today-title').textContent,
+        artist: document.querySelector('#today-artiste').textContent,
+        // so much work needed, jeez
+        // album: document.querySelector('.album-title').textContent,
+        // artwork: [
+        //     {src: document.querySelector('.cover img').src, sizes: '96x96'},
+        //     {src: document.querySelector('.cover img').src, sizes: '128x128'},
+        //     {src: document.querySelector('.cover img').src, sizes: '192x192'},
+        //     {src: document.querySelector('.cover img').src, sizes: '256x256'},
+        //     {src: document.querySelector('.cover img').src, sizes: '384x384'},
+        //     {src: document.querySelector('.cover img').src, sizes: '512x512'}
+        // ]
+    });
+    navigator.mediaSession.setActionHandler('play', () => {audioPlayerInteraction.controlPlayback.playBack()});
+    navigator.mediaSession.setActionHandler('pause', () => {audioPlayerInteraction.controlPlayback.playBack()});
+    navigator.mediaSession.setActionHandler('stop', () => {
+        varz.audio.currentTime = 0;
+        varz.range.value = 0;
+        audioPlayerInteraction.controlRaf.stop();
+        audioPlayerInteraction.inputEvent();
+        if(!varz.audio.paused) {
+            varz.playAnimation.playSegments([0, 14], true);
+            varz.playIcon.setAttribute('aria-label', 'play');
+            audioPlayerInteraction.controlPlayback.isShowingPlay = true;
+        }
+    });
+    navigator.mediaSession.setActionHandler('seekbackward', (d) => {
+        varz.audio.currentTime = varz.audio.currentTime - (d.seekOffset || 10);
+    });
+    navigator.mediaSession.setActionHandler('seekforward', (d) => {
+        varz.audio.currentTime = varz.audio.currentTime + (d.seekOffset || 10);
+    });
+    navigator.mediaSession.setActionHandler('seekto', (d) => {
+        if(d.fastSeek && 'd' in varz.audio) {
+            varz.audio.fastSeek(d.seekTime);
+            return;
+        }
+        varz.audio.currentTime = d.seekTime;
+    });
+}
 if(varz.audio.readyState > 0) audioPlayerInteraction.metadata.main(); else varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
 varz.playIcon.addEventListener('click', () => {audioPlayerInteraction.controlPlayback.playBack();});
 varz.audio.addEventListener('progress', audioPlayerInteraction.metadata.forProgress);
