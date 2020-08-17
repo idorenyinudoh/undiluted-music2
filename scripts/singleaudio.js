@@ -51,6 +51,7 @@ audioPlayerInteraction = {
     updateCurrentTime() {
         varz.range.value = Math.floor(varz.audio.currentTime);
         audioPlayerInteraction.inputEvent();
+        updatePositionState();
         audioPlayerInteraction.rAF = requestAnimationFrame(audioPlayerInteraction.updateCurrentTime);
     },
     controlRaf: {
