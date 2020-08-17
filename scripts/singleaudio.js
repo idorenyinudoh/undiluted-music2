@@ -103,8 +103,8 @@ if('mediaSession' in navigator) {
             {src: document.querySelector('.cover img').src}
         ]
     });
-    navigator.mediaSession.setActionHandler('play', audioPlayerInteraction.controlPlayback.playBack);
-    navigator.mediaSession.setActionHandler('pause', audioPlayerInteraction.controlPlayback.playBack);
+    navigator.mediaSession.setActionHandler('play', () => {audioPlayerInteraction.controlPlayback.playBack()});
+    navigator.mediaSession.setActionHandler('pause', () => {audioPlayerInteraction.controlPlayback.playBack()});
     navigator.mediaSession.setActionHandler('stop', () => {
         varz.audio.currentTime = 0;
         varz.range.value = 0;
