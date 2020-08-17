@@ -51,7 +51,7 @@ audioPlayerInteraction = {
     updateCurrentTime() {
         varz.range.value = Math.floor(varz.audio.currentTime);
         audioPlayerInteraction.inputEvent();
-        updatePositionState();
+        audioPlayerInteraction.updatePositionState();
         audioPlayerInteraction.rAF = requestAnimationFrame(audioPlayerInteraction.updateCurrentTime);
     },
     controlRaf: {
@@ -81,6 +81,15 @@ audioPlayerInteraction = {
                 audioPlayerInteraction.controlRaf.stop();
                 this.isShowingPlay = true;
             }
+        }
+    },
+    updatePositionState() {
+        if('setPositionState' in navigator.mediaSession) {
+            navigator.mediaSession.setPositionState({
+                duration: varz.audio.duration,
+                playbackRate: varz.audio.playbackRate,
+                position: varz.audio.currentTime
+            });
         }
     }
 };
@@ -135,15 +144,6 @@ if('mediaSession' in navigator) {
         }
         varz.audio.currentTime = d.seekTime;
     });
-}
-updatePositionState = () => {
-    if('setPositionState' in navigator.mediaSession) {
-        navigator.mediaSession.setPositionState({
-            duration: varz.audio.duration,
-            playbackRate: varz.audio.playbackRate,
-            position: varz.audio.currentTime
-        });
-    }
 }
 if(varz.audio.readyState > 0) audioPlayerInteraction.metadata.main(); else varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
 varz.playIcon.addEventListener('click', () => {audioPlayerInteraction.controlPlayback.playBack();});
