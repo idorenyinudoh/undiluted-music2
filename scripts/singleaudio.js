@@ -103,6 +103,19 @@ if('mediaSession' in navigator) {
             {src: document.querySelector('.cover img').src}
         ]
     });
+    navigator.mediaSession.setActionHandler('play', audioPlayerInteraction.controlPlayback.playBack);
+    navigator.mediaSession.setActionHandler('pause', audioPlayerInteraction.controlPlayback.playBack);
+    navigator.mediaSession.setActionHandler('stop', () => {
+        varz.audio.currentTime = 0;
+        varz.range.value = 0;
+        audioPlayerInteraction.controlRaf.stop();
+        audioPlayerInteraction.inputEvent();
+        if(!varz.audio.paused) {
+            varz.playAnimation.playSegments([0, 14], true);
+            varz.playIcon.setAttribute('aria-label', 'play');
+            audioPlayerInteraction.controlPlayback.isShowingPlay = true;
+        }
+    });
 }
 if(varz.audio.readyState > 0) audioPlayerInteraction.metadata.main(); else varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
 varz.playIcon.addEventListener('click', () => {audioPlayerInteraction.controlPlayback.playBack();});
