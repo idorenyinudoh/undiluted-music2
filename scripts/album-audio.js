@@ -157,8 +157,10 @@ audioPlayerInteraction = {
 })();
 if('mediaSession' in navigator) {
     navigator.mediaSession.metadata = new MediaMetadata({
-        title: document.querySelector('.album-title').textContent,
-        artist: document.querySelector('.album-artiste').textContent,
+        // needs work
+        title: document.querySelector('.name').textContent,
+        //needs work too
+        artist: document.querySelector('.people').textContent,
         album: document.querySelector('.album-title').textContent,
         artwork: [
             {src: document.querySelector('.cover img').src, sizes: '96x96'},
