@@ -135,6 +135,15 @@ if('mediaSession' in navigator) {
         varz.audio.currentTime = d.seekTime;
     });
 }
+updatePositionState = () => {
+    if('setPositionState' in navigator.mediaSession) {
+        navigator.mediaSession.setPositionState({
+            duration: varz.audio.duration,
+            playbackRate: varz.audio.playbackRate,
+            position: varz.audio.currentTime
+        });
+    }
+}
 if(varz.audio.readyState > 0) audioPlayerInteraction.metadata.main(); else varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
 varz.playIcon.addEventListener('click', () => {audioPlayerInteraction.controlPlayback.playBack();});
 varz.audio.addEventListener('progress', audioPlayerInteraction.metadata.forProgress);
