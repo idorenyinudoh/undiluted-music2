@@ -209,11 +209,9 @@ if('mediaSession' in navigator) {
     });
     navigator.mediaSession.setActionHandler('previoustrack', () => {
         audioPlayerInteraction.controlPlayback.previous();
-        if(!audioPlayerInteraction.controlPlayback.isShowingPlay) navigator.mediaSession.playbackState = 'playing';
     });
     navigator.mediaSession.setActionHandler('nexttrack', () => {
         audioPlayerInteraction.controlPlayback.next();
-        if(!audioPlayerInteraction.controlPlayback.isShowingPlay) navigator.mediaSession.playbackState = 'playing';
     });
 }
 if(varz.audio.readyState > 0) audioPlayerInteraction.metadata.main(); else varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
