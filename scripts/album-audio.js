@@ -67,6 +67,7 @@ audioPlayerInteraction = {
     updateCurrentTime() {
         varz.range.value = Math.floor(varz.audio.currentTime);
         audioPlayerInteraction.inputEvent();
+        audioPlayerInteraction.controlPlayback.updatePositionState();
         audioPlayerInteraction.rAF = requestAnimationFrame(audioPlayerInteraction.updateCurrentTime);
     },
     controlRaf: {
@@ -121,6 +122,15 @@ audioPlayerInteraction = {
                     this.prenext();
                     break;
                 }
+            }
+        },
+        updatePositionState() {
+            if('setPositionState' in navigator.mediaSession) {
+                navigator.mediaSession.setPositionState({
+                    duration: varz.audio.duration,
+                    playbackRate: varz.audio.playbackRate,
+                    position: varz.audio.currentTime
+                });
             }
         }
     }
