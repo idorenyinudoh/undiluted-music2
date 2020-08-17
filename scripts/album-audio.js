@@ -195,6 +195,12 @@ if('mediaSession' in navigator) {
         }
         varz.audio.currentTime = d.seekTime;
     });
+    navigator.mediaSession.setActionHandler('previoustrack', () => {
+        audioPlayerInteraction.controlPlayback.previous();
+    });
+    navigator.mediaSession.setActionHandler('nexttrack', () => {
+        audioPlayerInteraction.controlPlayback.next();
+    });
 }
 if(varz.audio.readyState > 0) audioPlayerInteraction.metadata.main(); else varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
 varz.arr[0].addEventListener('click', () => {audioPlayerInteraction.controlPlayback.playBack();});
