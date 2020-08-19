@@ -5,6 +5,7 @@
         "title"
         "artiste"
         "audio";
+        --jam-rows: max-content 28px 28px max-content;
     }
 }
 @media screen and (min-width: 700px) {
@@ -21,6 +22,7 @@
     margin-top: var(--breadcrumb-margin);
     display: grid;
     grid-template-areas: var(--jam-area);
+    grid-template-rows: var(--jam-rows);
     row-gap: calc(8px + 0.8vw);
     column-gap: calc(15px + 1vw);
     place-items: center;
