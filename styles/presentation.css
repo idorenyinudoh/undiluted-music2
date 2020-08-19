@@ -7,13 +7,13 @@
     text-decoration: underline #ffa826;
 }
 #today-text {
-    font-size: calc(1.7rem + 0.4vw);
+    font-size: 32px;
 }
 #today-title {
-    font-size: calc(1.5rem + 0.3vw);
+    font-size: 24px;
 }
 #today-artiste {
-    font-size: calc(1rem + 0.3vw);
+    font-size: 16px;
 }
 hr {
     border-color: #ffa826;
