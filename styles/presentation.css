@@ -15,9 +15,6 @@
 #today-artiste {
     font-size: calc(1rem + 0.3vw);
 }
-#audio-player {
-    border: 1px solid #003a77;
-}
 hr {
     border-color: #ffa826;
 }
