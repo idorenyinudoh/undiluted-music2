@@ -17,7 +17,7 @@
 .article-container {
     grid-area: art;
     display: grid;
-    gap: 2vw;
+    gap: calc(15px + 0.5vw);
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 figure {
