@@ -9,8 +9,8 @@
 }
 .latest-text {
     grid-area: text;
-    padding: 0 0 1.5vw 2vw;
-    font-size: calc(1.5rem + 0.3vw);
+    padding: 0 0 calc(15px + 0.5vw) calc(15px + 0.5vw);
+    font-size: 28px;
     font-weight: 500;
     letter-spacing: -0.5px;
 }
