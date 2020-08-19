@@ -23,7 +23,7 @@
     display: grid;
     grid-template-areas: var(--jam-area);
     grid-template-rows: var(--jam-rows);
-    row-gap: calc(8px + 0.8vw);
+    row-gap: calc(10px + 0.8vw);
     column-gap: calc(15px + 1vw);
     place-items: center;
     place-content: center;
