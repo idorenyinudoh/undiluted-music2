@@ -111,6 +111,7 @@ audioPlayerInteraction = {
             audioPlayerInteraction.dur.textContent = '0:00';
             audioPlayerInteraction.root.style.setProperty('--before-width','0%');
             audioPlayerInteraction.root.style.setProperty('--buffered-width','0%');
+            this.loadAudio();
         },
         previous() {
             for(let i=0; i<varz.src.length; i++){
@@ -137,6 +138,13 @@ audioPlayerInteraction = {
                     playbackRate: varz.audio.playbackRate,
                     position: varz.audio.currentTime
                 });
+            }
+        },
+        loadAudio() {
+            if(varz.audio.readyState > 0) {
+                audioPlayerInteraction.metadata.main();
+            } else {
+                varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
             }
         }
     }
@@ -220,11 +228,7 @@ if('mediaSession' in navigator) {
         audioPlayerInteraction.controlPlayback.next();
     });
 }
-if(varz.audio.readyState > 0) {
-    audioPlayerInteraction.metadata.main();
-} else {
-    varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
-}
+audioPlayerInteraction.controlPlayback.loadAudio();
 varz.arr[0].addEventListener('click', () => {audioPlayerInteraction.controlPlayback.playBack();});
 varz.audio.addEventListener('progress', audioPlayerInteraction.metadata.forProgress);
 varz.range.addEventListener('keyup', audioPlayerPresentation.addRangeFocus);
