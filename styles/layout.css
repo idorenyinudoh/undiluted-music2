@@ -32,6 +32,9 @@
 }
 #today-text {
     position: absolute;
+    top: -25px;
+    left: calc(5px + 1vw);
+    padding: 5px;
     /* grid-area: text; */
 }
 #today-title {
