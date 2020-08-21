@@ -22,6 +22,7 @@
     margin: var(--breadcrumb-margin) 2vw 2vw 2vw;
     position: relative;
     border: 2px solid #ffa826;
+    padding: 20px 5px;
     /* display: grid;
     grid-template-areas: var(--jam-area);
     grid-template-rows: var(--jam-rows);
@@ -35,6 +36,7 @@
     top: -25px;
     left: calc(5px + 1vw);
     padding: 5px;
+    background: #fff;
     /* grid-area: text; */
 }
 #today-title {
