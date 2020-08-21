@@ -29,7 +29,7 @@
     max-width: 700px;
     margin: var(--breadcrumb-margin) auto 0 auto;
     position: relative;
-    border: 2px solid #ffa826;
+    background: #fff;
     padding: 30px 5px;
     display: grid;
     gap: calc(10px + 1vw);
@@ -40,6 +40,16 @@
     column-gap: calc(15px + 1vw);
     place-items: center;
     place-content: center; */
+}
+#today-jam-container::before {
+    position: absolute;
+    z-index: -1;
+    left: -2px;
+    top: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    content: '';
+    background: linear-gradient(to right, #ffa826, #2464a6);
 }
 #today-text {
     position: absolute;
