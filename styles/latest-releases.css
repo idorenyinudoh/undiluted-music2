@@ -99,11 +99,11 @@ figure:not(:hover), a:not(:focus) figure {
     transform: scale(0.95);
     transition: transform 250ms ease-out;
 }
-.nav-section {
+/* .nav-section {
     grid-area: nav-sect;
     justify-self: flex-end;
     padding: calc(10px + 1vw) calc(10px + 2vw) 0 0;
     display: grid;
     grid-template-columns: repeat(3, max-content);
     gap: calc(10px + 0.5vw);
-}
+} */
