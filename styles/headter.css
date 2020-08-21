@@ -4,7 +4,7 @@
         --position: -75px;
         --form-row: 12.5px;
         --activated-top: 91.6%;
-        --breadcrumb-margin: 100px;
+        --breadcrumb-margin: 110px;
     }
     form {
         height: 70px;
@@ -28,7 +28,7 @@
         --position: -115px;
         --form-row: 20px;
         --activated-top: 90%;
-        --breadcrumb-margin: 140px;
+        --breadcrumb-margin: 150px;
     }
     form {
         height: 110px;
