@@ -19,7 +19,9 @@
     } */
 }
 #today-jam-container {
-    margin: var(--breadcrumb-margin) 2vw 2vw 2vw;
+    width: 91vw;
+    max-width: 700px;
+    margin: var(--breadcrumb-margin) auto 0 auto;
     position: relative;
     border: 2px solid #ffa826;
     padding: 20px 5px;
