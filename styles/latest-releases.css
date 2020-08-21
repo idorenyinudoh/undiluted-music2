@@ -1,11 +1,13 @@
 @media screen and (max-width: 699px) {
     .latest-text {
         font-size: 28px;
+        top: -22px;
     }
 }
 @media screen and (min-width: 700px) {
     .latest-text {
         font-size: 30px;
+        top: -24px;
     }
 }
 .latest-releases-container {
@@ -19,7 +21,6 @@
 .latest-text {
     padding: 5px;
     position: absolute;
-    top: -17px;
     left: calc(10px + 1vw);
     font-weight: 500;
     letter-spacing: -0.5px;
