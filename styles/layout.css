@@ -1,46 +1,38 @@
 @media screen and (max-width: 699px) {
-    :root {
-        --jam-area:
-        "text"
-        "title"
-        "artiste"
-        "audio";
-        --jam-rows: max-content 28px 28px max-content;
+    #today-text {
+        top: -25px;
     }
 }
 @media screen and (min-width: 700px) {
-    :root {
-        --title-justify: flex-end;
-        --artiste-justify: flex-start;
-        --jam-area:
-        "text text"
-        "title artiste"
-        "audio audio";
+    #today-text {
+        top: -30px;
     }
 }
 #today-jam-container {
-    margin-top: var(--breadcrumb-margin);
+    width: 91vw;
+    max-width: 700px;
+    margin: var(--breadcrumb-margin) auto 0 auto;
+    position: relative;
+    background: #fff;
+    padding: 30px 5px;
     display: grid;
-    grid-template-areas: var(--jam-area);
-    grid-template-rows: var(--jam-rows);
-    row-gap: calc(10px + 0.8vw);
-    column-gap: calc(15px + 1vw);
-    place-items: center;
-    place-content: center;
+    gap: calc(10px + 1vw);
+}
+#today-jam-container::before {
+    position: absolute;
+    z-index: -1;
+    left: -2px;
+    top: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    content: '';
+    background: linear-gradient(to right, #ffa826, #2464a6);
 }
 #today-text {
-    grid-area: text;
-}
-#today-title {
-    grid-area: title;
-    justify-self: var(--title-justify);
-}
-#today-artiste {
-    grid-area: artiste;
-    justify-self: var(--artiste-justify);
-}
-#audio-container {
-    grid-area: audio;
+    position: absolute;
+    left: calc(5px + 1vw);
+    padding: 5px;
+    background: #fff;
 }
 hr {
     width: 75vw;
