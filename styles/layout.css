@@ -1,46 +1,46 @@
 @media screen and (max-width: 699px) {
-    :root {
+    /* :root {
         --jam-area:
         "text"
         "title"
         "artiste"
         "audio";
         --jam-rows: max-content 28px 28px max-content;
-    }
+    } */
 }
 @media screen and (min-width: 700px) {
-    :root {
+    /* :root {
         --title-justify: flex-end;
         --artiste-justify: flex-start;
         --jam-area:
         "text text"
         "title artiste"
         "audio audio";
-    }
+    } */
 }
 #today-jam-container {
     margin-top: var(--breadcrumb-margin);
-    display: grid;
+    /* display: grid;
     grid-template-areas: var(--jam-area);
     grid-template-rows: var(--jam-rows);
     row-gap: calc(10px + 0.8vw);
     column-gap: calc(15px + 1vw);
     place-items: center;
-    place-content: center;
+    place-content: center; */
 }
 #today-text {
-    grid-area: text;
+    /* grid-area: text; */
 }
 #today-title {
-    grid-area: title;
-    justify-self: var(--title-justify);
+    /* grid-area: title;
+    justify-self: var(--title-justify); */
 }
 #today-artiste {
-    grid-area: artiste;
-    justify-self: var(--artiste-justify);
+    /* grid-area: artiste;
+    justify-self: var(--artiste-justify); */
 }
 #audio-container {
-    grid-area: audio;
+    /* grid-area: audio; */
 }
 hr {
     width: 75vw;
