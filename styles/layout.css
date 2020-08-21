@@ -23,6 +23,8 @@
     position: relative;
     border: 2px solid #ffa826;
     padding: 20px 5px;
+    display: grid;
+    gap: calc(10px + 1vw);
     /* display: grid;
     grid-template-areas: var(--jam-area);
     grid-template-rows: var(--jam-rows);
