@@ -20,6 +20,7 @@
 }
 #today-jam-container {
     margin-top: var(--breadcrumb-margin);
+    position: relative;
     /* display: grid;
     grid-template-areas: var(--jam-area);
     grid-template-rows: var(--jam-rows);
@@ -29,6 +30,7 @@
     place-content: center; */
 }
 #today-text {
+    position: absolute;
     /* grid-area: text; */
 }
 #today-title {
