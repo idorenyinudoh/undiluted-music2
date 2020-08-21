@@ -1,4 +1,7 @@
 @media screen and (max-width: 699px) {
+    #today-text {
+        top: -25px;
+    }
     /* :root {
         --jam-area:
         "text"
@@ -9,6 +12,9 @@
     } */
 }
 @media screen and (min-width: 700px) {
+    #today-text {
+        top: -30px;
+    }
     /* :root {
         --title-justify: flex-end;
         --artiste-justify: flex-start;
@@ -37,7 +43,6 @@
 }
 #today-text {
     position: absolute;
-    top: -25px;
     left: calc(5px + 1vw);
     padding: 5px;
     background: #fff;
