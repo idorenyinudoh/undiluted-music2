@@ -2,27 +2,11 @@
     #today-text {
         top: -25px;
     }
-    /* :root {
-        --jam-area:
-        "text"
-        "title"
-        "artiste"
-        "audio";
-        --jam-rows: max-content 28px 28px max-content;
-    } */
 }
 @media screen and (min-width: 700px) {
     #today-text {
         top: -30px;
     }
-    /* :root {
-        --title-justify: flex-end;
-        --artiste-justify: flex-start;
-        --jam-area:
-        "text text"
-        "title artiste"
-        "audio audio";
-    } */
 }
 #today-jam-container {
     width: 91vw;
@@ -33,13 +17,6 @@
     padding: 30px 5px;
     display: grid;
     gap: calc(10px + 1vw);
-    /* display: grid;
-    grid-template-areas: var(--jam-area);
-    grid-template-rows: var(--jam-rows);
-    row-gap: calc(10px + 0.8vw);
-    column-gap: calc(15px + 1vw);
-    place-items: center;
-    place-content: center; */
 }
 #today-jam-container::before {
     position: absolute;
@@ -56,18 +33,6 @@
     left: calc(5px + 1vw);
     padding: 5px;
     background: #fff;
-    /* grid-area: text; */
-}
-#today-title {
-    /* grid-area: title;
-    justify-self: var(--title-justify); */
-}
-#today-artiste {
-    /* grid-area: artiste;
-    justify-self: var(--artiste-justify); */
-}
-#audio-container {
-    /* grid-area: audio; */
 }
 hr {
     width: 75vw;
