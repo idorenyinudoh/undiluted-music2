@@ -112,6 +112,7 @@ audioPlayerInteraction = {
             audioPlayerInteraction.root.style.setProperty('--buffered-width','0%');
             this.loadAudio();
             if(!this.isShowingPlay) {
+                audioPlayerInteraction.controlRaf.stop();
                 varz.audio.play();
                 audioPlayerInteraction.controlRaf.play();  
             }
