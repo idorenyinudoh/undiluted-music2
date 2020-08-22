@@ -11,7 +11,7 @@
     }
 }
 .latest-releases-container {
-    margin-bottom: calc(45px + 1vw);
+    margin-bottom: 4px;
     position: relative;
     display: grid;
     gap: calc(15px + 0.5vw);
