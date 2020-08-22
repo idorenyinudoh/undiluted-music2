@@ -89,7 +89,7 @@ figcaption {
 article a:focus {
     outline: 0;
 }
-.article-container figure:hover, a:focus figure {
+.latest-releases-container figure:hover, a:focus figure {
     border: 0;
     transform: scale(1.05);
     transition: transform 250ms ease-out;
@@ -107,7 +107,7 @@ article a:focus {
 figure:not(:hover), a:not(:focus) figure {
     transition: transform 500ms ease-out;
 }
-.article-container figure:active {
+.latest-releases-container figure:active {
     transform: scale(0.95);
     transition: transform 250ms ease-out;
 }
