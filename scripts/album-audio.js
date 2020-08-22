@@ -105,13 +105,16 @@ audioPlayerInteraction = {
             }
         },
         prenext() {
-            if(!this.isShowingPlay)varz.audio.play();
             varz.range.value = 0;
             audioPlayerInteraction.cur.textContent = '0:00';
             audioPlayerInteraction.dur.textContent = '0:00';
             audioPlayerInteraction.root.style.setProperty('--before-width','0%');
             audioPlayerInteraction.root.style.setProperty('--buffered-width','0%');
             this.loadAudio();
+            if(!this.isShowingPlay) {
+                varz.audio.play();
+                audioPlayerInteraction.controlRaf.play();  
+            }
         },
         previous() {
             for(let i=0; i<varz.src.length; i++){
