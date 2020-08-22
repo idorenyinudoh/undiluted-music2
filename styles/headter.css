@@ -21,6 +21,11 @@
     .nav-link {
         padding: 16px 0 26px 0;
     }
+    footer {
+        padding: 15px calc(30px + 1vw);
+        grid-template-columns: max-content max-content;
+        gap: calc(270px + 1vw);
+    }
 }
 @media screen and (max-width: 919px) {
     :root {
@@ -45,6 +50,10 @@
     }
     .nav-link {
         padding: 16px 0;
+    }
+    footer {
+        padding: 15px;
+        gap: 15px;
     }
 }
 body {
@@ -361,5 +370,13 @@ nav > ul {
     color: #003a77;
 }
 footer {
-    width: 100%;
+    background: linear-gradient(to left, rgba(199, 121, 0, 0.7), rgba(0, 58, 119, 0.7));
+    place-content: center;
+}
+#footer-links {
+    grid-template-columns: repeat(3, max-content);
+    gap: calc(30px + 1vw);
+}
+#footer-links a:hover, #footer-links a:focus {
+    text-decoration: underline;
 }
