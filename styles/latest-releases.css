@@ -129,5 +129,5 @@ figure:not(:hover), a:not(:focus) figure {
     background-color: #ffda5b;
 }
 .load-more button:hover, .load-more button:focus {
-    box-shadow: 0 0 6px 3px #5f91d8;
+    background-color: #ffa826;
 }
