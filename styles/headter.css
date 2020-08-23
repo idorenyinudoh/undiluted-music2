@@ -378,5 +378,6 @@ footer {
     gap: calc(30px + 1vw);
 }
 #footer-links a:hover, #footer-links a:focus {
+    outline: 0;
     text-decoration: underline;
 }
