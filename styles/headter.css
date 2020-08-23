@@ -370,7 +370,7 @@ nav > ul {
     color: #003a77;
 }
 footer {
-    background: linear-gradient(to left, rgba(199, 121, 0, 0.5), rgba(0, 58, 119, 0.5));
+    background: linear-gradient(to left, #ffda5b, #5f91d8);
     place-content: center;
 }
 #footer-links {
