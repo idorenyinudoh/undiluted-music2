@@ -122,6 +122,7 @@ figure:not(:hover), a:not(:focus) figure {
     place-content: center;
 }
 .load-more button {
+    letter-spacing: -0.5px;
     font-size: 16px;
     border: 1px solid #003a77;
     padding: calc(10px + 0.5vw);
