@@ -112,11 +112,18 @@ figure:not(:hover), a:not(:focus) figure {
     transform: scale(0.95);
     transition: transform 250ms ease-out;
 }
-/* .nav-section {
-    grid-area: nav-sect;
-    justify-self: flex-end;
-    padding: calc(10px + 1vw) calc(10px + 2vw) 0 0;
+.load-more {
+    height: calc(90px + 1vw);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: grid;
-    grid-template-columns: repeat(3, max-content);
-    gap: calc(10px + 0.5vw);
-} */
+    place-content: center;
+}
+.load-more button {
+    font-size: 16px;
+    border: 1px solid #003a77;
+    padding: calc(10px + 0.5vw);
+    background-color: #ffda5b;
+}
