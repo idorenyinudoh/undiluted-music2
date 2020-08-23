@@ -16,7 +16,7 @@
     display: grid;
     gap: calc(15px + 0.5vw);
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    padding: calc(30px + 1vw) calc(20px + 1vw);
+    padding: calc(30px + 1vw) calc(20px + 1vw) calc(90px + 1vw) calc(20px + 1vw);
 }
 .latest-releases-container::before {
     position: absolute;
