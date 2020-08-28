@@ -129,5 +129,9 @@ figure:not(:hover), a:not(:focus) figure {
     background-color: #ffda5b;
 }
 .load-more button:hover, .load-more button:focus {
-    background-color: #ffa826;
+    background: linear-gradient(to right, #ffda5b, #5f91d8);
+}
+.load-more button:active {
+    transform: scale(0.9);
+    transition: transform 250ms ease-out;
 }
