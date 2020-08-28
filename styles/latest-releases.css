@@ -132,6 +132,6 @@ figure:not(:hover), a:not(:focus) figure {
     background: linear-gradient(to right, #ffda5b, #5f91d8);
 }
 .load-more button:active {
-    transform: scale(0.9);
+    transform: scale(0.95);
     transition: transform 250ms ease-out;
 }
