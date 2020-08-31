@@ -1,3 +1,9 @@
 main {
     margin-top: var(--breadcrumb-margin);
 }
+.latest-releases-container {
+    padding-top: 10px !important;
+}
+.latest-releases-container::before {
+    background: transparent !important;
+}
