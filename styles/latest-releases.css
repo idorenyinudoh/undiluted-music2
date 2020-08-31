@@ -28,16 +28,6 @@
     content: '';
     background: linear-gradient(to left, #ffa826, #2464a6);
 }
-.latest-releases-container::after {
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    content: '';
-    background: linear-gradient(to right, #ffa826,#2464a6);
-}
 .latest-text {
     background: #fff;
     padding: 5px;
