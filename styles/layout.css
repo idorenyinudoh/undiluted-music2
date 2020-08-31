@@ -11,7 +11,7 @@
 #today-jam-container {
     width: 91vw;
     max-width: 700px;
-    margin: var(--breadcrumb-margin) auto calc(45px + 1vw) auto;
+    margin: calc(var(--breadcrumb-margin) + 10px) auto calc(45px + 1vw) auto;
     position: relative;
     background: #fff;
     padding: 30px 5px;
