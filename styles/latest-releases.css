@@ -115,6 +115,7 @@ figure:not(:hover), a:not(:focus) figure {
     border: 1px solid #003a77;
     padding: calc(10px + 0.5vw);
     background-color: #ffda5b;
+    outline: none;
 }
 .load-more button:hover, .load-more button:focus {
     background: linear-gradient(to right, #ffda5b, #5f91d8);
