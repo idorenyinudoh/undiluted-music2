@@ -135,3 +135,6 @@ figure:not(:hover), a:not(:focus) figure {
     transform: scale(0.95);
     transition: transform 250ms ease-out;
 }
+.load-more button:not(:active) {
+    transition: transform 250ms ease-out;
+}
