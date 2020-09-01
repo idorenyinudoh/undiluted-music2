@@ -365,10 +365,10 @@ nav > ul {
 }
 .crumb:hover::before, .crumb:focus::before {
     position: absolute;
-    width: calc(100% - 30px);
+    width: calc(100% - 26px);
     content: '';
-    left: 5px;
-    bottom: 6.5px;
+    left: 3px;
+    bottom: 5px;
     height: 2px;
     background: #ffa826;
 }
