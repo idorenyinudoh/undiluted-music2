@@ -363,9 +363,14 @@ nav > ul {
     padding: 5px 25px 5px 5px;
     outline: none;
 }
-.crumb:hover, .crumb:focus {
-    /* To be looked into... */
-    border-bottom: 2px solid #ffa826;
+.crumb:hover::before, .crumb:focus::before {
+    position: absolute;
+    width: calc(100% - 30px);
+    content: '';
+    left: 5px;
+    bottom: 6.5px;
+    height: 2px;
+    background: #ffa826;
 }
 .sec-dark, .crumb {
     color: #003a77;
