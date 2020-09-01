@@ -345,7 +345,9 @@ nav > ul {
     display: flex;
     flex-flow: wrap;
     place-items: center;
-    margin: var(--breadcrumb-margin) 5vw 15px calc(10px + 1vw);
+    margin: var(--breadcrumb-margin) 5vw calc(35px + 1vw) calc(25px + 1vw);
+    letter-spacing: -0.5px;
+    font-size: 16px;
 }
 .breadcrumb > :not(:last-child)::after {
     position: absolute;
@@ -353,17 +355,16 @@ nav > ul {
     font-family: 'Material Icons';
     font-size: 20px;
     color: #000;
-    top: -1.5px;
+    top: 4px;
+    padding: 0 2.5px;
 }
 .crumb {
     position: relative;
-    padding-right: 20px;
-    font-size: 15px;
-    letter-spacing: -0.5px;
+    padding: 5px 25px 5px 5px;
+    outline: none;
 }
 .crumb:hover, .crumb:focus {
     /* To be looked into... */
-    outline: 0;
     border-bottom: 2px solid #ffa826;
 }
 .sec-dark, .crumb {
