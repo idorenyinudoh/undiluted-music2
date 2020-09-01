@@ -1,3 +1,15 @@
+@media screen and (max-width: 699px) {
+    .latest-text {
+        font-size: 36px !important;
+        top: -29px !important;
+    }
+}
+@media screen and (min-width: 700px) {
+    .latest-text {
+        font-size: 40px !important;
+        top: -30.5px !important;
+    }
+}
 .latest-text {
-    margin: 1vw 0 calc(2px + 1vw) 1.5vw;
+    padding: 8px !important;
 }
