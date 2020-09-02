@@ -10,6 +10,9 @@
         top: -30.5px !important;
     }
 }
+.breadcrumb {
+    margin-bottom: calc(35px + 1vw);
+}
 .latest-text {
     padding: 8px !important;
 }

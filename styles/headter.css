@@ -345,7 +345,7 @@ nav > ul {
     display: flex;
     flex-flow: wrap;
     place-items: center;
-    margin: var(--breadcrumb-margin) 5vw calc(35px + 1vw) calc(25px + 1vw);
+    margin: var(--breadcrumb-margin) 5vw calc(25px + 1vw) calc(25px + 1vw);
     letter-spacing: -0.5px;
     font-size: 16px;
 }
