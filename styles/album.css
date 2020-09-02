@@ -41,9 +41,9 @@
     }
 }
 #audio-section {
-    margin: 5vw 3vw 3vw 3vw;
+    margin: calc(40px + 0.5vw) 3vw 3vw 3vw;
     display: grid;
-    gap: calc(10px + 1vw);
+    gap: calc(30px + 1vw);
     place-items: center;
 }
 table {
