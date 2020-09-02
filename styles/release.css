@@ -48,9 +48,18 @@
     grid-area: artiste;
     font-size: 18px;
 }
-.intro a:hover, .intro a:focus {
+.intro a {
+    position: relative;
     outline: 0;
-    border-bottom: 2px solid #ffa826;
+}
+.intro a:hover::before, .intro a:focus::before {
+    position: absolute;
+    width: calc(100% + 2px);
+    content: '';
+    left: -1px;
+    bottom: -1px;
+    height: 2px;
+    background: #ffa826;
 }
 .cover {
     grid-area: cover;
@@ -72,7 +81,7 @@ img {
 .data {
     grid-area: data;
     display: grid;
-    row-gap: calc(5px + 1vw);
+    row-gap: calc(5px + 0.5vw);
     height: max-content;
     letter-spacing: -0.2px;
 }
