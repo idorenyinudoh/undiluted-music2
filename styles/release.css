@@ -91,6 +91,12 @@ img {
 .value {
     font-size: 14px;
 }
+#audio-section {
+    margin: calc(40px + 0.5vw) 3vw 3vw 3vw;
+    display: grid;
+    gap: calc(30px + 1vw);
+    place-items: center;
+}
 .download {
     border: 1px solid #003a77;
     padding: calc(10px + 0.5vw);
