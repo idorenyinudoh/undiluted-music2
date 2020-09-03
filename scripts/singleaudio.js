@@ -6,10 +6,14 @@ const varz = {
 },
 audioPlayerPresentation = {
     addPlayFocus() {
-        if(document.activeElement === varz.playIcon && varz.playIcon.classList.contains('play-focus') === false) varz.playIcon.classList.add('play-focus');
+        if(document.activeElement === varz.playIcon && varz.playIcon.classList.contains('play-focus') === false) {
+            varz.playIcon.classList.add('play-focus');
+        }
     },
     removePlayFocus() {
-        if(varz.playIcon.classList.contains('play-focus')) varz.playIcon.classList.remove('play-focus');
+        if(varz.playIcon.classList.contains('play-focus')) {
+            varz.playIcon.classList.remove('play-focus');
+        }
     },
     addRangeFocus() {
         if(document.activeElement === varz.range && varz.range.classList.contains('range-focus') === false) {
@@ -36,7 +40,9 @@ audioPlayerInteraction = {
     },
     metadata: {
         forProgress() {
-            if(varz.audio.duration > 0)audioPlayerInteraction.root.style.setProperty('--buffered-width', `${Math.floor(varz.audio.buffered.end(varz.audio.buffered.length - 1)) / varz.range.max * 100}%`);
+            if(varz.audio.duration > 0) {
+                audioPlayerInteraction.root.style.setProperty('--buffered-width', `${Math.floor(varz.audio.buffered.end(varz.audio.buffered.length - 1)) / varz.range.max * 100}%`);
+            }
         },
         main() {
             varz.range.max = Math.floor(varz.audio.duration);
@@ -145,7 +151,11 @@ if('mediaSession' in navigator) {
         varz.audio.currentTime = d.seekTime;
     });
 }
-if(varz.audio.readyState > 0) audioPlayerInteraction.metadata.main(); else varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
+if(varz.audio.readyState > 0) {
+    audioPlayerInteraction.metadata.main();
+} else {
+    varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
+}
 varz.playIcon.addEventListener('click', () => {audioPlayerInteraction.controlPlayback.playBack();});
 varz.audio.addEventListener('progress', audioPlayerInteraction.metadata.forProgress);
 varz.playIcon.addEventListener('keyup', audioPlayerPresentation.addPlayFocus);

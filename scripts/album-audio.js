@@ -17,12 +17,16 @@ const varz = {
 audioPlayerPresentation = {
     addPlayFocus() {
         varz.arr.forEach((i) => {
-            if(document.activeElement === i && i.classList.contains('play-focus') === false) i.classList.add('play-focus');
+            if(document.activeElement === i && i.classList.contains('play-focus') === false) {
+                i.classList.add('play-focus');
+            }
         });
     },
     removePlayFocus() {
         varz.arr.forEach((i) => {
-            if(i.classList.contains('play-focus')) i.classList.remove('play-focus');
+            if(i.classList.contains('play-focus')) {
+                i.classList.remove('play-focus');
+            }
         });
     },
     addRangeFocus() {
@@ -52,7 +56,9 @@ audioPlayerInteraction = {
     },
     metadata: {
         forProgress() {
-            if(varz.audio.duration > 0)audioPlayerInteraction.root.style.setProperty('--buffered-width', `${Math.floor(varz.audio.buffered.end(varz.audio.buffered.length - 1)) / varz.range.max * 100}%`);
+            if(varz.audio.duration > 0) {
+                audioPlayerInteraction.root.style.setProperty('--buffered-width', `${Math.floor(varz.audio.buffered.end(varz.audio.buffered.length - 1)) / varz.range.max * 100}%`);
+            }
         },
         main() {
             varz.range.max = Math.floor(varz.audio.duration);
@@ -99,12 +105,17 @@ audioPlayerInteraction = {
             }
         },
         prenext() {
-            if(!this.isShowingPlay)varz.audio.play();
             varz.range.value = 0;
             audioPlayerInteraction.cur.textContent = '0:00';
             audioPlayerInteraction.dur.textContent = '0:00';
             audioPlayerInteraction.root.style.setProperty('--before-width','0%');
             audioPlayerInteraction.root.style.setProperty('--buffered-width','0%');
+            this.loadAudio();
+            if(!this.isShowingPlay) {
+                audioPlayerInteraction.controlRaf.stop();
+                varz.audio.play();
+                audioPlayerInteraction.controlRaf.play();  
+            }
         },
         previous() {
             for(let i=0; i<varz.src.length; i++){
@@ -131,6 +142,13 @@ audioPlayerInteraction = {
                     playbackRate: varz.audio.playbackRate,
                     position: varz.audio.currentTime
                 });
+            }
+        },
+        loadAudio() {
+            if(varz.audio.readyState > 0) {
+                audioPlayerInteraction.metadata.main();
+            } else {
+                varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
             }
         }
     }
@@ -214,7 +232,7 @@ if('mediaSession' in navigator) {
         audioPlayerInteraction.controlPlayback.next();
     });
 }
-if(varz.audio.readyState > 0) audioPlayerInteraction.metadata.main(); else varz.audio.addEventListener('loadedmetadata', () => { audioPlayerInteraction.metadata.main();});
+audioPlayerInteraction.controlPlayback.loadAudio();
 varz.arr[0].addEventListener('click', () => {audioPlayerInteraction.controlPlayback.playBack();});
 varz.audio.addEventListener('progress', audioPlayerInteraction.metadata.forProgress);
 varz.range.addEventListener('keyup', audioPlayerPresentation.addRangeFocus);

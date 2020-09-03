@@ -9,11 +9,11 @@ html {
     grid-template-areas:
     ". buttons ."
     "cur range dur";
-    gap: 5px;
+    column-gap: 5px;
+    row-gap: 10px;
     place-content: center;
     place-items: center;
     width: 90vw;
-    margin: auto;
     max-width: 600px;
 }
 #control-buttons {

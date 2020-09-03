@@ -1,11 +1,11 @@
 main {
-    margin: calc(var(--breadcrumb-margin) + 5px + 1vw) 8vw 0 8vw;
+    margin: calc(var(--breadcrumb-margin) + 5px + 1vw) 8vw calc(20px + 1vw) 8vw;
 }
 #artistes-container {
     display: grid;
 }
 .letter {
-    width: 100%;
+    margin-bottom: 10px;
     border-bottom: 1px solid black;
     font-size: 1.5rem;
     font-weight: 600;
@@ -17,23 +17,24 @@ main {
     flex-wrap: wrap;
 }
 .name {
-    margin: 5px;
-    width: max-content;
-    height: max-content;
-    font-size: 1.1rem;
+    margin: 10px;
+    font-size: 18px;
     letter-spacing: -0.3px;
 }
 .name a {
     outline: none;
     display: block;
-    padding: calc(5px + 0.5vw);
+    padding: calc(10px + 0.5vw);
     border: 1px solid #003a77;
     background-color: #ffda5b;
 }
 .name a:hover, .name a:focus {
-    box-shadow: 0 0 3px 3px #5f91d8;
+    background: linear-gradient(to right, #ffda5b, #5f91d8);
 }
 .name a:active {
     transform: scale(0.95);
+    transition: transform 250ms ease-out;
+}
+.name a:not(:active) {
     transition: transform 250ms ease-out;
 }
