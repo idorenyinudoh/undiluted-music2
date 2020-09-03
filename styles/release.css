@@ -129,6 +129,10 @@ img {
 }
 .links-container a {
     margin: 0 calc(10px + 0.5vw);
+    outline: 0;
+}
+.links-container a:hover path, .links-container a:focus path, .links-container a:hover polyline, .links-container a:focus polyline {
+    stroke: #2464a6 !important;
 }
 #share-section::before {
     position: absolute;
