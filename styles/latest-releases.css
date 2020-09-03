@@ -80,7 +80,7 @@ article a:focus {
 }
 .latest-releases-container figure:hover, a:focus figure {
     border: 0;
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: transform 250ms ease-out;
     box-shadow: 0 0 3px 3px #5f91d8;
     z-index: 1;
@@ -97,8 +97,7 @@ figure:not(:hover), a:not(:focus) figure {
     transition: transform 500ms ease-out;
 }
 .latest-releases-container figure:active {
-    transform: scale(0.95);
-    transition: transform 250ms ease-out;
+    transform: scale(1);
 }
 .load-more {
     height: calc(90px + 1vw);
