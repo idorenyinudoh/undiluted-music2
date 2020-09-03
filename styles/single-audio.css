@@ -24,7 +24,7 @@ button:focus {
 .play-focus:focus {
     outline: 2px solid #003a77;
 }
-path {
+#audio-container path {
     stroke: #2464a6;
 }
 .play-focus:focus path {
