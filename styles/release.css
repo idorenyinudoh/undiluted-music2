@@ -28,7 +28,7 @@
         ". artiste";
     }
 }
-@media screen and (max-width: 419px) {
+@media screen and (max-width: 519px) {
     .links-container {
         overflow-x: scroll;
     }
@@ -126,7 +126,7 @@
     margin: calc(50px + 0.5vw) auto;
     width: 85vw;
     padding: 20px 15px;
-    height: 48px;
+    height: 50px;
     background: #fff;
     max-width: max-content;
 }
@@ -140,7 +140,7 @@
     content: '';
     background: linear-gradient(to left, #ffa826, #2464a6);
 }
-#share-section h3 {
+#share-section h2 {
     position: absolute;
     top: -23px;
     left: calc(5px + 0.5vw);
@@ -152,20 +152,55 @@
 }
 .links-container {
     display: grid;
-    grid-template-columns: repeat(5, 48px);
-    grid-template-rows: 48px;
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: 50px;
     column-gap: calc(25px + 0.5vw);
 }
 .links-container a {
-    display: flex;
+    position: relative;
     overflow-x: hidden;
     outline: 0;
 }
-.links-container img {
-    width: 100%;
-    height: 100%;
-    transition: all 250ms ease-out;
+.links-container img:first-child {
+    position: absolute;
+    width: 50px;
+    height: 50px;
 }
-.move-left {
-    transform: translateX(-50px);
+.links-container img:nth-child(2) {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 48px;
+    height: 48px;
+}
+.email img:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+.back {
+    z-index: -1;
+}
+.fadeout {
+    animation: fadeout 250ms ease-out forwards;
+}
+@keyframes fadeout {
+    to {
+        opacity: 0;
+    }
+}
+.noopacity {
+    opacity: 0;
+}
+.fadein {
+    animation: fadein 250ms ease-out forwards;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

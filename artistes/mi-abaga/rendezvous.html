@@ -285,24 +285,37 @@
             <button class="download" type="button">Download Album</button>
         </section>
         <section id="share-section">
-            <h3>share</h3>
+            <h2>share</h2>
             <div class="links-container">
-                <a class="facebook" target="_blank"><img src="../../social-icons/facebook-black.png" alt="facebook logo"><img src="../../social-icons/facebook-color.png" alt="facebook logo"></a>
-                <a href="https://www.pinterest.com/pin/create/button/" tabindex="0" data-pin-do="buttonPin" data-pin-custom="true" class="pinterest" target="_blank"><img src="../../social-icons/pinterest-black.png" alt="pinterest logo"><img src="../../social-icons/pinterest-color.png" alt="pinterest logo"></a>
-                <a class="telegram" target="_blank"><img src="../../social-icons/telegram-black.png" alt="telegram logo"><img src="../../social-icons/telegram-color.png" alt="telegram logo"></a>
-                <a class="twitter" target="_blank"><img src="../../social-icons/twitter-black.png" alt="twitter logo"><img src="../../social-icons/twitter-color.png" alt="twitter logo"></a>
-                <a class="whatsapp" target="_blank"><img src="../../social-icons/whatsapp-black.png" alt="whatsapp logo"><img src="../../social-icons/whatsapp-color.png" alt="whatsapp logo"></a>
+                <a class="facebook" target="_blank"><img src="../../social-icons/facebook-black.png" alt="facebook logo"><img class="back" src="../../social-icons/facebook-color.png" alt="facebook logo"></a>
+                <a href="https://www.pinterest.com/pin/create/button/" tabindex="0" data-pin-do="buttonPin" data-pin-custom="true" class="pinterest" target="_blank"><img src="../../social-icons/pinterest-black.png" alt="pinterest logo"><img class="back" src="../../social-icons/pinterest-color.png" alt="pinterest logo"></a>
+                <a class="telegram" target="_blank"><img src="../../social-icons/telegram-black.png" alt="telegram logo"><img  class="back"src="../../social-icons/telegram-color.png" alt="telegram logo"></a>
+                <a class="twitter" target="_blank"><img src="../../social-icons/twitter-black.png" alt="twitter logo"><img class="back" src="../../social-icons/twitter-color.png" alt="twitter logo"></a>
+                <a class="whatsapp" target="_blank"><img src="../../social-icons/whatsapp-black.png" alt="whatsapp logo"><img class="back" src="../../social-icons/whatsapp-color.png" alt="whatsapp logo"></a>
+                <a class="email" target="_blank"><img src="../../social-icons/email-black.png" alt="email-logo"><img class="back" src="../../social-icons/email-color.png" alt="email logo"></a>
             </div>
             <script>
                 const socials = document.querySelectorAll('.links-container a'),
                 encodedText = encodeURI('Stream and Download Rendezvous by M.I Abaga'),
                 encodedTextWithUrl = encodeURI(`Stream and Download Rendezvous by M.I Abaga ${document.URL}`);
-                socials.forEach(i => {
+                socials.forEach((i, j) => {
                     i.addEventListener('focus',(e) => {
-                        e.target.childNodes.forEach(i => {i.classList.add('move-left')});
+                        e.target.childNodes[0].classList.add('fadeout');
+                        e.target.childNodes[1].classList.remove('back');
+                        setTimeout(() => {
+                            e.target.childNodes[0].classList.add('noopacity');
+                            e.target.childNodes[0].classList.remove('fadeout');
+                        }, 251);
                     });
                     i.addEventListener('blur',(e) => {
-                        e.target.childNodes.forEach(i => {i.classList.remove('move-left')});
+                        e.target.childNodes[0].classList.remove('noopacity');
+                        e.target.childNodes[0].classList.add('fadein');
+                        e.target.childNodes[1].classList.add('fadeout');
+                        setTimeout(() => {
+                            e.target.childNodes[0].classList.remove('fadein');
+                            e.target.childNodes[1].classList.add('back');
+                            e.target.childNodes[1].classList.remove('fadeout');
+                        }, 251);
                     })
                 });
                 socials[0].setAttribute('href', `https://www.facebook.com/dialog/share?app_id=3932996840049032&href=${document.URL}`);
@@ -312,6 +325,7 @@
                 socials[2].setAttribute('href', `https://t.me/share/url?url=${document.URL}&text=${encodedText}`);
                 socials[3].setAttribute('href', `https://twitter.com/intent/tweet?text=${encodedTextWithUrl}`);
                 socials[4].setAttribute('href', `https://wa.me?text=${encodedTextWithUrl}`);
+                socials[5].setAttribute('href', `mailto:?subject=${encodedText}&body=${document.URL}`);
             </script>
         </section>
     </main>
