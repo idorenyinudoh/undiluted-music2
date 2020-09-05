@@ -288,7 +288,7 @@
             <h3>share</h3>
             <div class="links-container">
                 <a class="facebook" target="_blank"><img src="../../social-icons/facebook-black.png" alt="facebook logo"><img src="../../social-icons/facebook-color.png" alt="facebook logo"></a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" class="pinterest" target="_blank"><img src="../../social-icons/pinterest-black.png" alt="pinterest logo"><img src="../../social-icons/pinterest-color.png" alt="pinterest logo"></a>
+                <a href="https://www.pinterest.com/pin/create/button/" tabindex="0" data-pin-do="buttonPin" data-pin-custom="true" class="pinterest" target="_blank"><img src="../../social-icons/pinterest-black.png" alt="pinterest logo"><img src="../../social-icons/pinterest-color.png" alt="pinterest logo"></a>
                 <a class="telegram" target="_blank"><img src="../../social-icons/telegram-black.png" alt="telegram logo"><img src="../../social-icons/telegram-color.png" alt="telegram logo"></a>
                 <a class="twitter" target="_blank"><img src="../../social-icons/twitter-black.png" alt="twitter logo"><img src="../../social-icons/twitter-color.png" alt="twitter logo"></a>
                 <a class="whatsapp" target="_blank"><img src="../../social-icons/whatsapp-black.png" alt="whatsapp logo"><img src="../../social-icons/whatsapp-color.png" alt="whatsapp logo"></a>
@@ -306,7 +306,6 @@
                     })
                 });
                 socials[0].setAttribute('href', `https://www.facebook.com/dialog/share?app_id=3932996840049032&href=${document.URL}`);
-                socials[1].setAttribute('href', 'https://www.pinterest.com/pin/create/button/');
                 socials[1].setAttribute('data-pin-url',document.URL);
                 socials[1].setAttribute('data-pin-media', document.querySelector('.cover img').src);
                 socials[1].setAttribute('data-pin-description',decodeURI(encodedText));
