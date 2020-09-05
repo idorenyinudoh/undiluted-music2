@@ -294,16 +294,24 @@
                 <a class="whatsapp" target="_blank"><img src="../../social-icons/whatsapp-black.png" alt="whatsapp logo"><img src="../../social-icons/whatsapp-color.png" alt="whatsapp logo"></a>
             </div>
             <script>
-                const pinterest = document.querySelector('.pinterest'),
+                const socials = document.querySelectorAll('.links-container a'),
                 encodedText = encodeURI('Stream and Download Rendezvous by M.I Abaga'),
-                encodedTextWithUrl = encodeURI(`Stream and Download Rendezvous by M.I Abaga     ${document.URL}`);
-                document.querySelector('.whatsapp').setAttribute('href', `https://wa.me?text=${encodedTextWithUrl}`);
-                document.querySelector('.telegram').setAttribute('href', `https://t.me/share/url?url=${document.URL}&text=${encodedText}`);
-                document.querySelector('.facebook').setAttribute('href', `https://www.facebook.com/dialog/share?app_id=3932996840049032&href=${document.URL}`);
-                pinterest.setAttribute('data-pin-url',document.URL);
-                pinterest.setAttribute('data-pin-media', document.querySelector('.cover img').src);
-                pinterest.setAttribute('data-pin-description',decodeURI(encodedText));
-                document.querySelector('.twitter').setAttribute('href', `https://twitter.com/intent/tweet?text=${encodedTextWithUrl}`);
+                encodedTextWithUrl = encodeURI(`Stream and Download Rendezvous by M.I Abaga ${document.URL}`);
+                socials.forEach(i => {
+                    i.addEventListener('focus',(e) => {
+                        e.target.childNodes.forEach(i => {i.classList.add('move-left')});
+                    });
+                    i.addEventListener('blur',(e) => {
+                        e.target.childNodes.forEach(i => {i.classList.remove('move-left')});
+                    })
+                });
+                socials[0].setAttribute('href', `https://www.facebook.com/dialog/share?app_id=3932996840049032&href=${document.URL}`);
+                socials[1].setAttribute('data-pin-url',document.URL);
+                socials[1].setAttribute('data-pin-media', document.querySelector('.cover img').src);
+                socials[1].setAttribute('data-pin-description',decodeURI(encodedText));
+                socials[2].setAttribute('href', `https://t.me/share/url?url=${document.URL}&text=${encodedText}`);
+                socials[3].setAttribute('href', `https://twitter.com/intent/tweet?text=${encodedTextWithUrl}`);
+                socials[4].setAttribute('href', `https://wa.me?text=${encodedTextWithUrl}`);
             </script>
         </section>
     </main>
