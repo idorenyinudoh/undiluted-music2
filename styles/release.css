@@ -198,3 +198,7 @@
         opacity: 1;
     }
 }
+#comment-section {
+    margin: calc(50px + 0.5vw) auto;
+    width: 90vw;
+}
