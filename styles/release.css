@@ -158,7 +158,6 @@
 }
 .links-container a {
     position: relative;
-    overflow-x: hidden;
     outline: 0;
 }
 .links-container img:nth-child(2) {
