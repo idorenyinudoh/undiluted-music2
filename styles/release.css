@@ -161,11 +161,6 @@
     overflow-x: hidden;
     outline: 0;
 }
-.links-container img:first-child {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-}
 .links-container img:nth-child(2) {
     position: absolute;
     top: 1px;
