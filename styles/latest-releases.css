@@ -90,7 +90,7 @@ article a:focus {
 }
 @keyframes grayscale {
     to {
-        filter: grayscale(50%);
+        filter: grayscale(90%);
     }
 }
 figure:not(:hover), a:not(:focus) figure {
