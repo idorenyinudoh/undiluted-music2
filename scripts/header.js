@@ -46,18 +46,18 @@ toggleGenresBox = () => {
         }, 600);
     }
 };
-for (let i = 0; i < links.length; i++) {
+for(let i = 0; i < links.length; i++) {
     const disable = () => {
         for (let j = 0; j < links.length; j++) {
-            if (i != j) {
-                if (links[j].classList.contains('disabled')) {
-                    links[j].classList.remove('disabled');
-                }
-                else links[j].classList.add('disabled');
-            }
+            if (i != j) links[j].classList.remove('disabled');
+        }
+    },
+    enable = () => {
+        for (let j = 0; j < links.length; j++) {
+            if (i != j) links[j].classList.add('disabled');
         }
     };
-    links[i].addEventListener('pointerover', disable);
+    links[i].addEventListener('pointerover', enable);
     links[i].addEventListener('pointerout', disable);
 }
 document.getElementById('search-button').addEventListener('click', toggleForm);
