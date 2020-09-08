@@ -359,11 +359,11 @@ nav > ul {
     padding: 0 2.5px;
 }
 .breadcrumb :last-child {
-    padding: 5px;
+    padding: 5px 0;
 }
 .crumb {
     position: relative;
-    padding: 5px 25px 5px 5px;
+    padding: 5px 25px 5px 0;
     outline: none;
 }
 .crumb:hover::before, .crumb:focus::before {
