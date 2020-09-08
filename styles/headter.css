@@ -217,11 +217,12 @@ nav > ul {
     width: max-content;
     margin: 0 auto;
     letter-spacing: -0.3px;
+    outline: 0;
 }
 .nav-link:hover {
     opacity: 0.8;
 }
-.nav-link:focus {
+.nav-link-focus:focus {
     outline: solid 2px #000;
 }
 #search {

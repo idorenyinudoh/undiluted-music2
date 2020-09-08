@@ -23,7 +23,6 @@ toggleForm = () => {
     }
 },
 toggleGenresBox = () => {
-    genresButton.blur();
     const genresIcon = document.getElementById('icon');
     if (genresActivated.classList.contains('hide')) {
         genresIcon.classList.add('rotate');
@@ -56,9 +55,18 @@ for(let i = 0; i < links.length; i++) {
         for (let j = 0; j < links.length; j++) {
             if (i != j) links[j].classList.add('disabled');
         }
+    },
+    focus = () => {
+        if(links[i]==document.activeElement) links[i].classList.add('nav-link-focus');
+    },
+    unfocus = () => {
+        if(links[i].classList.contains('nav-link-focus')) links[i].classList.remove('nav-link-focus');
     };
     links[i].addEventListener('pointerover', enable);
     links[i].addEventListener('pointerout', disable);
+    links[i].addEventListener('keyup', focus);
+    links[i].addEventListener('blur', unfocus);
+    links[i].addEventListener('pointerdown', unfocus);
 }
 document.getElementById('search-button').addEventListener('click', toggleForm);
 document.getElementById('clear-button').addEventListener('click', toggleForm);
