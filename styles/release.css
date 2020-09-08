@@ -52,7 +52,7 @@
 .album-artiste {
     grid-area: artiste;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: normal;
 }
 .intro a {
     position: relative;
