@@ -262,6 +262,16 @@ nav > ul {
     flex-flow: wrap;
     background: linear-gradient(to top, #000, #ffa826);
     padding: calc(5px + 0.5vw);
+    --before-left: 0px;
+}
+#genres-box::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: var(--before-left);
+    width: 72px;
+    height: calc(2.5px + 0.25vw);
+    background: linear-gradient(#000, #ffa826);
 }
 #genres-box li {
     width: max-content;

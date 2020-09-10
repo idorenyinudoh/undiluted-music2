@@ -25,6 +25,7 @@ toggleGenresBox = () => {
     const genresIcon = document.getElementById('icon');
     if (genresBox.classList.contains('hide')) {
         genresIcon.classList.add('rotate');
+        genresBox.style.setProperty('--before-left',`${genresButton.offsetLeft}px`);
         genresBox.classList.replace('hide','gen');
     }
     else {
@@ -71,4 +72,7 @@ window.addEventListener('click', (e) => {
         }
         toggleGenresBox();
     }
+});
+window.addEventListener('resize', () => {
+    genresBox.style.setProperty('--before-left',`${genresButton.offsetLeft}px`);
 });
