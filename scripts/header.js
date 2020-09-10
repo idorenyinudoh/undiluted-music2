@@ -1,6 +1,5 @@
 const links = document.getElementsByClassName('nav-link'),
 genresButton = document.getElementById('genres-button'),
-genresActivated = document.getElementById('genres-activated'),
 genresBox = document.getElementById('genres-box'),
 toggleForm = () => {
     const header = document.getElementById('header'),
@@ -24,25 +23,17 @@ toggleForm = () => {
 },
 toggleGenresBox = () => {
     const genresIcon = document.getElementById('icon');
-    if (genresActivated.classList.contains('hide')) {
+    if (genresBox.classList.contains('hide')) {
         genresIcon.classList.add('rotate');
-        genresActivated.classList.replace('hide','activate');
         genresBox.classList.replace('hide','gen');
-        setTimeout(() => {
-            genresActivated.classList.remove('activate');
-        }, 100);
     }
     else {
         genresIcon.classList.replace('rotate','unrotate');
-        genresActivated.classList.add('deactivate');
         genresBox.classList.replace('gen','ungen');
         setTimeout(() => {
             genresIcon.classList.remove('unrotate');
             genresBox.classList.replace('ungen','hide');
         }, 500);
-        setTimeout(() => {
-            genresActivated.classList.replace('deactivate','hide');
-        }, 600);
     }
 };
 for(let i = 0; i < links.length; i++) {
@@ -72,7 +63,7 @@ document.getElementById('search-button').addEventListener('click', toggleForm);
 document.getElementById('clear-button').addEventListener('click', toggleForm);
 genresButton.addEventListener('click', toggleGenresBox);
 window.addEventListener('click', (e) => {
-    if(genresActivated.classList.contains('hide') == false && e.target != genresButton && e.target != genresBox) {
+    if(genresBox.classList.contains('hide') == false && e.target != genresButton && e.target != genresBox) {
         for (let i = 0; i < genresButton.children.length; i++) {
             if(e.target == genresButton.children[i]) {
                 return;
