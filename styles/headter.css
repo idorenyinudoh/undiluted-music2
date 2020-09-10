@@ -306,7 +306,7 @@ nav > ul {
         max-height: 0;
     }
     to {
-        max-height: 317px;
+        max-height: 332px;
     }
 }
 .ungen {
@@ -316,7 +316,7 @@ nav > ul {
 }
 @keyframes ungen {
     from {
-        max-height: 317px;
+        max-height: 332px;
     }
     to {
         max-height: 0;
