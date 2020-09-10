@@ -256,31 +256,26 @@ nav > ul {
     z-index: 5;
     left: -0.2vw;
     right: -0.2vw;
-    width: 100%;
+    border-top: 2px solid #000;
     flex-flow: wrap;
-    background: linear-gradient(#000, #ffa826);
-    padding: calc(2px + 0.2vw);
+    background: linear-gradient(to top, #000, #ffa826);
+    padding: calc(5px + 0.5vw);
 }
 #genres-box li {
     width: max-content;
-    margin: 2px;
+    margin: 1px;
     letter-spacing: -0.5px;
 }
 #genres-box li a {
     display: inline-block;
-    padding: calc(5px + 0.1vw);
-    border: 1px solid #000;
+    padding: calc(5px + 0.5vw);
+    border: 1px solid transparent;
     background-color: #ffda5b;
     outline: 0;
 }
 #genres-box li a:hover, #genres-box li a:focus {
-    box-shadow: 0 0 3px 3px #5f91d8;
-    transform: scale(1.05);
-    transition: transform 100ms ease-out;
-}
-#genres-box li a:active {
-    transform: scale(0.9);
-    transition: transform 100ms ease-out;
+    background: linear-gradient(to left, #ffda5b, #5f91d8);
+    border-color: #5f91d8;
 }
 .rotate {
     transform: rotate(-180deg);
@@ -324,7 +319,7 @@ nav > ul {
         max-height: 0;
     }
     to {
-        max-height: 346.25px;
+        max-height: 317px;
     }
 }
 .ungen {
@@ -334,7 +329,7 @@ nav > ul {
 }
 @keyframes ungen {
     from {
-        max-height: 346.25px;
+        max-height: 317px;
     }
     to {
         max-height: 0;
