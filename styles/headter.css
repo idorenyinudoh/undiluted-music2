@@ -296,31 +296,6 @@ nav > ul {
 .unrotate {
     transition: transform 500ms linear;
 }
-.activate {
-    overflow: hidden;
-    animation: activate 100ms ease-in forwards;
-}
-@keyframes activate {
-    from {
-        max-height: 0;
-    }
-    to {
-        max-height: 5px;
-    }
-}
-.deactivate {
-    overflow: hidden;
-    animation: deactivate 100ms ease-out forwards;
-    animation-delay: 500ms;
-}
-@keyframes deactivate {
-    from {
-        max-height: 5px;
-    }
-    to {
-        max-height: 0;
-    }
-}
 .gen {
     display: flex;
     overflow: hidden;
