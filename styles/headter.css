@@ -244,9 +244,11 @@ nav > ul {
 #icon {
     font-size: 20px;
 }
-.activated {
+.active::after {
     position: absolute;
+    content: '';
     top: var(--activated-top);
+    left: 0;
     background-color: #000;
     height: 5px;
     width: 100%;
