@@ -112,7 +112,7 @@ form {
     padding: 0;
     height: 45px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
+    font-size: 20px;
 }
 #search-input::-webkit-search-cancel-button,
 #search-input::-webkit-search-decoration,
@@ -122,7 +122,7 @@ form {
 }
 #search-input:focus {
     outline: 0;
-    border-bottom: 1px solid #5f91d8;
+    border-bottom: 2px solid #5f91d8;
 }
 #clear-button {
     grid-area: clear;
@@ -216,6 +216,7 @@ nav > ul {
     display: block;
     width: max-content;
     margin: 0 auto;
+    font-size: 16px;
     letter-spacing: -0.3px;
     outline: 0;
 }
@@ -233,7 +234,6 @@ nav > ul {
     display: flex;
     margin: 0 -1.2345px;
     flex-direction: row;
-    font-size: 1rem;
 }
 #genres-text {
     display: inline-block;
