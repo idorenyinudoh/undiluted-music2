@@ -75,9 +75,6 @@ figcaption {
     text-overflow: ellipsis;
     font-size: 14px;
 }
-article a:focus {
-    outline: 0;
-}
 .latest-releases-container figure:hover, a:focus figure {
     border: 0;
     transform: scale(1.03);
@@ -90,7 +87,7 @@ article a:focus {
 }
 @keyframes grayscale {
     to {
-        filter: grayscale(50%);
+        filter: grayscale(90%);
     }
 }
 figure:not(:hover), a:not(:focus) figure {
@@ -114,7 +111,6 @@ figure:not(:hover), a:not(:focus) figure {
     border: 1px solid #003a77;
     padding: calc(10px + 0.5vw);
     background-color: #ffda5b;
-    outline: none;
 }
 .load-more button:hover, .load-more button:focus {
     background: linear-gradient(to right, #ffda5b, #5f91d8);

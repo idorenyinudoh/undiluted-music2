@@ -22,7 +22,6 @@ main {
     letter-spacing: -0.3px;
 }
 .name a {
-    outline: none;
     display: block;
     padding: calc(10px + 0.5vw);
     border: 1px solid #003a77;

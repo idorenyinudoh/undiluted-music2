@@ -1,0 +1,7 @@
+main {
+    margin-top: calc(var(--breadcrumb-margin) + 20px);
+}
+.active-genre {
+    background: linear-gradient(to right, #ffda5b, #5f91d8) !important;
+    border-color: #ffda5b !important;
+}

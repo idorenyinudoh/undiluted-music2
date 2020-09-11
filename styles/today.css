@@ -1,0 +1,55 @@
+@media screen and (max-width: 699px) {
+    #today-text {
+        top: -25px;
+        font-size: 30px;
+    }
+    #today-title {
+        font-size: 28px;
+    }
+    #today-artiste {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 700px) {
+    #today-text {
+        top: -30px;
+        font-size: 40px;
+    }
+    #today-title {
+        font-size: 30px;
+    }
+    #today-artiste {
+        font-size: 20px;
+    }
+}
+#today-jam-container {
+    width: 91vw;
+    max-width: 700px;
+    margin: calc(var(--breadcrumb-margin) + 10px) auto calc(45px + 1vw) auto;
+    position: relative;
+    background: #fff;
+    padding: 30px 5px;
+    display: grid;
+    gap: calc(10px + 1vw);
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+#today-jam-container::before {
+    position: absolute;
+    z-index: -1;
+    left: -2px;
+    top: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    content: '';
+    background: linear-gradient(to right, #ffa826, #2464a6);
+}
+#today-jam-container a:hover, #today-jam-container a:focus {
+    text-decoration: underline #ffa826;
+}
+#today-text {
+    position: absolute;
+    left: calc(5px + 1vw);
+    padding: 5px;
+    background: #fff;
+}

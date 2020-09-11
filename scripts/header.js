@@ -1,6 +1,5 @@
 const links = document.getElementsByClassName('nav-link'),
 genresButton = document.getElementById('genres-button'),
-genresActivated = document.getElementById('genres-activated'),
 genresBox = document.getElementById('genres-box'),
 toggleForm = () => {
     const header = document.getElementById('header'),
@@ -23,48 +22,49 @@ toggleForm = () => {
     }
 },
 toggleGenresBox = () => {
-    genresButton.blur();
     const genresIcon = document.getElementById('icon');
-    if (genresActivated.classList.contains('hide')) {
+    if (genresBox.classList.contains('hide')) {
         genresIcon.classList.add('rotate');
-        genresActivated.classList.replace('hide','activate');
+        genresBox.style.setProperty('--before-left',`${genresButton.offsetLeft}px`);
         genresBox.classList.replace('hide','gen');
-        setTimeout(() => {
-            genresActivated.classList.remove('activate');
-        }, 100);
     }
     else {
         genresIcon.classList.replace('rotate','unrotate');
-        genresActivated.classList.add('deactivate');
         genresBox.classList.replace('gen','ungen');
         setTimeout(() => {
             genresIcon.classList.remove('unrotate');
             genresBox.classList.replace('ungen','hide');
         }, 500);
-        setTimeout(() => {
-            genresActivated.classList.replace('deactivate','hide');
-        }, 600);
     }
 };
-for (let i = 0; i < links.length; i++) {
+for(let i = 0; i < links.length; i++) {
     const disable = () => {
         for (let j = 0; j < links.length; j++) {
-            if (i != j) {
-                if (links[j].classList.contains('disabled')) {
-                    links[j].classList.remove('disabled');
-                }
-                else links[j].classList.add('disabled');
-            }
+            if (i != j) links[j].classList.remove('disabled');
         }
+    },
+    enable = () => {
+        for (let j = 0; j < links.length; j++) {
+            if (i != j) links[j].classList.add('disabled');
+        }
+    },
+    focus = () => {
+        if(links[i]==document.activeElement) links[i].classList.add('nav-link-focus');
+    },
+    unfocus = () => {
+        if(links[i].classList.contains('nav-link-focus')) links[i].classList.remove('nav-link-focus');
     };
-    links[i].addEventListener('pointerover', disable);
+    links[i].addEventListener('pointerover', enable);
     links[i].addEventListener('pointerout', disable);
+    links[i].addEventListener('keyup', focus);
+    links[i].addEventListener('blur', unfocus);
+    links[i].addEventListener('pointerdown', unfocus);
 }
 document.getElementById('search-button').addEventListener('click', toggleForm);
 document.getElementById('clear-button').addEventListener('click', toggleForm);
 genresButton.addEventListener('click', toggleGenresBox);
 window.addEventListener('click', (e) => {
-    if(genresActivated.classList.contains('hide') == false && e.target != genresButton && e.target != genresBox) {
+    if(genresBox.classList.contains('hide') == false && e.target != genresButton && e.target != genresBox) {
         for (let i = 0; i < genresButton.children.length; i++) {
             if(e.target == genresButton.children[i]) {
                 return;
@@ -72,4 +72,7 @@ window.addEventListener('click', (e) => {
         }
         toggleGenresBox();
     }
+});
+window.addEventListener('resize', () => {
+    genresBox.style.setProperty('--before-left',`${genresButton.offsetLeft}px`);
 });

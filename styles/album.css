@@ -1,6 +1,6 @@
 @media screen and (max-width: 699px) {
     tr {
-        height: 60px;
+        height: 70px;
         grid-template-columns: 6fr 1fr 1fr;
     }
     .first {
@@ -15,10 +15,13 @@
     .time {
         font-size: 14px;
     }
+    .audio-download {
+        padding: 11px;
+    }
 }
 @media screen and (min-width: 700px) {
     tr {
-        height: 45px;
+        height: 50px;
         grid-template-columns: 10fr 1fr 1fr;
     }
     .first {
@@ -38,6 +41,9 @@
     }
     .time {
         font-size: 15px;
+    }
+    .audio-download {
+        padding: 9px;
     }
 }
 table {
@@ -80,6 +86,15 @@ td {
 .people {
     grid-area: people;
 }
-.audio-buttons {
-    padding: 11px;
+.audio-download {
+    position: relative;
+}
+.audio-download:hover::after, .audio-download:focus::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
 }

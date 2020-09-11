@@ -13,7 +13,6 @@
     <link href="../../styles/headter.css" rel="stylesheet">
     <link href="../../styles/single-audio.css" rel="stylesheet">
     <link href="../../styles/release.css" rel="stylesheet">
-    <link href="../../styles/single.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#ffa826">
@@ -36,9 +35,7 @@
 <body>
     <form id="form" class="hide">
         <input id="search-input" type="search" placeholder="Search">
-        <button id="clear-button" type="button" class="buttons grid-center">
-            <span class="material-icons">clear</span>
-        </button>
+        <button id="clear-button" type="button" class="buttons grid-center material-icons">clear</button>
     </form>
     <header id="header" class="grid">
         <div id="logo" class="grid-center">Logo</div>
@@ -48,10 +45,9 @@
                     <button id="genres-button" type="button" class="nav-link">
                         <span id="genres-text">Genres</span>
                         <span id="icon" class="material-icons">arrow_drop_down</span>
-                        <div id="genres-activated" class="activated hide"></div>
                     </button>
                     <ul id="genres-box" class="hide">
-                        <li><a href="">Afrobeat</a></li>
+                        <li><a href="../../genres/afrobeat.html">Afrobeat</a></li>
                         <li><a href="">Afro&dash;Fusion</a></li>
                         <li><a href="">Afro&dash;House</a></li>
                         <li><a href="">Afro&dash;Pop</a></li>
@@ -90,11 +86,7 @@
                 <li><a href="../../eps.html" class="nav-link">EPs</a></li>
             </ul>
         </nav>
-        <div id="search" class="grid-center">
-            <button id="search-button" class="buttons" type="button">
-                <span class="material-icons">search</span>
-            </button>
-        </div>
+        <button id="search-button" type="button" class="buttons grid-center material-icons">search</button>
     </header>
     <script src="../../scripts/header.js"></script>
     <section class="breadcrumb">
@@ -106,7 +98,7 @@
         <section class="intro">
             <div class="album">
                 <h1 class="album-title">Beamer &lpar;Bad Boys&rpar;</h1>
-                <p class="album-artiste"><a class="sec-dark" href="../rema.html">Rema</a> ft&period; Rvssian</p>
+                <h2 class="album-artiste"><a class="sec-dark" href="../rema.html">Rema</a> ft&period; Rvssian</h2>
             </div>
             <div class="cover">
                 <img src="beamer/rema-beamer-album-cover.jpg" alt="Beamer Album Cover">
@@ -138,7 +130,7 @@
             </div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js" integrity="sha512-+Ku6s80nhPKhP0lhl+Ygkp56Y2IknfZerdkVJYNaDolV8/H/kKeQRJj8RuwGRjGeXsFA8GzLNOG5vncuxI710A==" crossorigin="anonymous"></script>
             <script src="../../scripts/singleaudio.js"></script>
-            <button class="download" type="button">Download</button>
+            <a class="download" href="../../beamer-rema_ft_rvssian.mp3" target="_blank" download="beamer-rema-ft-rvssian">Download</a>
         </section>
         <section id="share-section">
             <h2>share</h2>
