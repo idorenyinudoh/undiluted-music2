@@ -6,9 +6,6 @@
         --activated-top: 91.6%;
         --breadcrumb-margin: 100px;
     }
-    form {
-        height: 70px;
-    }
     #header {
         grid-template-columns: calc(10px + 1.5vw) 70px 2.5fr 2.5fr 70px calc(10px + 1.5vw);
         grid-template-rows: 60px;
@@ -34,9 +31,6 @@
         --form-row: 20px;
         --activated-top: 90%;
         --breadcrumb-margin: 140px;
-    }
-    form {
-        height: 110px;
     }
     #header {
         grid-template-columns: calc(10px + 1.5vw) 70px 1fr 70px calc(10px + 1.5vw);
@@ -98,6 +92,7 @@ form {
     z-index: 5;
     background-color: #fff;
     width: 100%;
+    height: calc(var(--breadcrumb-margin) - 30px);
     border-bottom: 1px solid #003a77;
     box-shadow: 0 1px 5px 0 #808080;
     display: grid;
@@ -255,8 +250,8 @@ nav > ul {
 #genres-box {
     position: fixed;
     z-index: 5;
-    left: -0.2vw;
-    right: -0.2vw;
+    top: calc(var(--breadcrumb-margin) - 30px);
+    left: 0;
     border-top: 2px solid #000;
     flex-flow: wrap;
     background: linear-gradient(to top, #000, #ffa826);
@@ -304,7 +299,7 @@ nav > ul {
         max-height: 0;
     }
     to {
-        max-height: 332px;
+        max-height: 368px;
     }
 }
 .ungen {
@@ -314,7 +309,7 @@ nav > ul {
 }
 @keyframes ungen {
     from {
-        max-height: 332px;
+        max-height: 368px;
     }
     to {
         max-height: 0;
