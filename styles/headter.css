@@ -67,6 +67,7 @@ p, h1, h2, h3, ul, figure {
 a {
     text-decoration: none;
     color: black;
+    outline: 0;
 }
 button {
     font-family: inherit;
@@ -75,6 +76,7 @@ button {
     padding: 0;
     background-color: inherit;
     cursor: pointer;
+    outline: 0;
 }
 .grid-center {
     display: grid;
@@ -218,7 +220,6 @@ nav > ul {
     margin: 0 auto;
     font-size: 16px;
     letter-spacing: -0.3px;
-    outline: 0;
 }
 .nav-link:hover {
     opacity: 0.8;
@@ -281,7 +282,6 @@ nav > ul {
     padding: calc(5px + 0.5vw);
     border: 1px solid transparent;
     background-color: #ffda5b;
-    outline: 0;
 }
 #genres-box li a:hover, #genres-box li a:focus {
     background: linear-gradient(to left, #ffda5b, #5f91d8);
@@ -343,7 +343,6 @@ nav > ul {
 .crumb {
     position: relative;
     padding: 5px 25px 5px 0;
-    outline: none;
 }
 .crumb:hover::before, .crumb:focus::before {
     position: absolute;
@@ -367,7 +366,6 @@ footer {
     gap: calc(30px + 1vw);
 }
 #footer-links a:hover, #footer-links a:focus {
-    outline: 0;
     text-decoration: underline;
 }
 footer::before {

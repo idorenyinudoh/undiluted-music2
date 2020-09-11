@@ -25,6 +25,5 @@
     text-align: center;
 }
 #today-jam-container a:hover, #today-jam-container a:focus {
-    outline: 0;
     text-decoration: underline #ffa826;
 }

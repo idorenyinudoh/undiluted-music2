@@ -31,9 +31,6 @@ html {
     padding: 5px;
     height: 48px;
 }
-button:focus {
-    outline: 0;
-}
 .play-focus:focus {
     outline: 2px solid #003a77;
 }
@@ -68,9 +65,7 @@ input[type="range"] {
     margin: 0;
     padding: 0;
     height: 19px;
-}
-input[type="range"]:focus {
-    outline: none;
+    outline: 0;
 }
 input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
