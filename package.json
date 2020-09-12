@@ -1,0 +1,11 @@
+{
+  "name": "undiluted-music",
+  "version": "1.0.0",
+  "description": "a web app to allow users stream and download tracks from their favourite nigerian artistes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "48",
+  "license": "ISC"
+}
