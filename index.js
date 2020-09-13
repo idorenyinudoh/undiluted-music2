@@ -10,7 +10,7 @@ app.set('view engine', 'pug');
 app.use(express.static('./public'));
 
 app.use('/', home);
-app.use('/artistes', artistes)
+app.use('/artistes', artistes);
 
 app.listen(port, () => {
     console.log(`Example listening at http://localhost:${port}`);
