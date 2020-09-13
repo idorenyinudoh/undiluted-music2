@@ -1,0 +1,117 @@
+doctype html
+html(lang="en")
+    head
+        // Global site tag (gtag.js) - Google Analytics
+        script(src="https://www.googletagmanager.com/gtag/js?id=UA-175262730-1")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-175262730-1');
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="stylesheets/headter.css")
+        link(rel="stylesheet", href="stylesheets/latest-releases.css")
+        link(rel="stylesheet", href="stylesheets/singleps.css")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="theme-color", content="#ffa826")
+        title #{title} &nbsp;|&nbsp; undiluted music
+    body
+        form#form.hide(action="")
+            input#search-input(type="search", placeholder="Search")
+            button#clear-button.buttons.grid-center.material-icons clear
+        header#header.grid
+            #logo.grid-center Logo
+            nav.grid
+                ul.grid
+                    li
+                        button#genres-button.nav-link
+                            span#genres-text Genres
+                            span#icon.material-icons arrow_drop_down
+                        ul#genres-box.hide
+                            li: a(href="/genres/afrobeats") Afrobeats
+                            li: a(href="") Afro-Fusion
+                            li: a(href="") Afro-House
+                            li: a(href="") Afro-Pop
+                            li: a(href="") Alternative R&B
+                            li: a(href="") Alternative Rock
+                            li: a(href="") Banku
+                            li: a(href="") Blues
+                            li: a(href="") Contemporary R&B
+                            li: a(href="") Dancehall
+                            li: a(href="") Electronic
+                            li: a(href="") Folk
+                            li: a(href="") Fuji
+                            li: a(href="") Gospel
+                            li: a(href="") Highlife
+                            li: a(href="") Hip-Hop
+                            li: a(href="") House
+                            li: a(href="") Igbo Gospel Hip-Hop
+                            li: a(href="") Igbo Highlife
+                            li: a(href="") Igbo Rap
+                            li: a(href="") Indie-Pop
+                            li: a(href="") Jazz
+                            li: a(href="") Neo-Soul
+                            li: a(href="") Pop
+                            li: a(href="") R&B
+                            li: a(href="") Ragga
+                            li: a(href="") Reggae
+                            li: a(href="") Soca
+                            li: a(href="") Soul
+                            li: a(href="") Trap
+                            li: a(href="") World
+                            li: a(href="") Yoruba
+                    li: a.nav-link(href="/artistes") Artistes
+                    case title
+                        when 'Singles'
+                            li: a.nav-link.active(href="/singles") Singles
+                            li: a.nav-link(href="/eps") EPs
+                        when 'EPs'
+                            li: a.nav-link(href="/singles") Singles
+                            li: a.nav-link.active(href="/eps") EPs
+            button#search-button.buttons.grid-center.material-icons search
+        script(src="scripts/header.js")
+        main
+            section.latest-releases-container
+                article
+                    a(href="artistes/rema/beamer")
+                        figure(title="Rema ft. Rvssian - Beamer")
+                            .img-container: img(src="images/rema-beamer-album-cover.jpg", alt="Beamer Album Cover")
+                            figcaption
+                                p.article-title Beamer (Bad Boys)
+                                p.article-artiste Rema ft. Rvssian
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container: img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container: img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container: img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container: img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                .load-more: button Load more
+            script(src="scripts/latest.js")
+        footer.grid-center
+            #footer-links.grid
+                p: a(href="") Sitemap
+                p: a(href="") Privacy Policy
+                p: a(href="") About Us
+            p &copy; undiluted music. All Rights Reserved.
