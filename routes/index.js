@@ -5,6 +5,10 @@ router.get('/', (req, res) => {
     res.render('index');
 });
 
+router.get('/artistes', (req, res) => {
+    res.render('artistes');
+});
+
 router.get('/singles', (req, res) => {
     res.render('singleps', {
         title: 'Singles'
