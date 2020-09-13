@@ -1,0 +1,268 @@
+doctype html
+html(lang="en")
+    head
+        // Global site tag (gtag.js) - Google Analytics
+        script(src="https://www.googletagmanager.com/gtag/js?id=UA-175262730-1")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-175262730-1');
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="stylesheets/headter.css")
+        link(rel="stylesheet", href="stylesheets/artistes.css")
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="theme-color", content="#ffa826")
+        title Artistes &nbsp;|&nbsp; undiluted music
+    body
+        form#form.hide(action="")
+            input#search-input(type="search", placeholder="Search")
+            button#clear-button.buttons.grid-center.material-icons clear
+        header#header.grid
+            #logo.grid-center Logo
+            nav.grid
+                ul.grid
+                    li
+                        button#genres-button.nav-link
+                            span#genres-text Genres
+                            span#icon.material-icons arrow_drop_down
+                        ul#genres-box.hide
+                            li: a(href="/genres/afrobeats") Afrobeats
+                            li: a(href="") Afro-Fusion
+                            li: a(href="") Afro-House
+                            li: a(href="") Afro-Pop
+                            li: a(href="") Alternative R&B
+                            li: a(href="") Alternative Rock
+                            li: a(href="") Banku
+                            li: a(href="") Blues
+                            li: a(href="") Contemporary R&B
+                            li: a(href="") Dancehall
+                            li: a(href="") Electronic
+                            li: a(href="") Folk
+                            li: a(href="") Fuji
+                            li: a(href="") Gospel
+                            li: a(href="") Highlife
+                            li: a(href="") Hip-Hop
+                            li: a(href="") House
+                            li: a(href="") Igbo Gospel Hip-Hop
+                            li: a(href="") Igbo Highlife
+                            li: a(href="") Igbo Rap
+                            li: a(href="") Indie-Pop
+                            li: a(href="") Jazz
+                            li: a(href="") Neo-Soul
+                            li: a(href="") Pop
+                            li: a(href="") R&B
+                            li: a(href="") Ragga
+                            li: a(href="") Reggae
+                            li: a(href="") Soca
+                            li: a(href="") Soul
+                            li: a(href="") Trap
+                            li: a(href="") World
+                            li: a(href="") Yoruba
+                    li: a.nav-link.active(href="/artistes") Artistes
+                    li: a.nav-link(href="/singles") Singles
+                    li: a.nav-link(href="/eps") EPs
+            button#search-button.buttons.grid-center.material-icons search
+        script(src="scripts/header.js")
+        main
+            section#artistes-container
+                article
+                    h1.letter &num;
+                    ul.artistes
+                        li.name: a(href="artistes/2baba") 2 Baba
+                        li.name: a(href="artistes/9ice") 9ice
+                article
+                    h1.letter A
+                    ul.artistes
+                        li.name: a(href="artistes/abstraktt") Abstraktt
+                        li.name: a(href="artistes/adekunle-gold") Adekunle Gold
+                        li.name: a(href="artistes/ajebutter22") Ajebutter22
+                        li.name: a(href="artistes/asa") Asa
+                        li.name: a(href="artistes/ayanfe") Ayanfe
+                article
+                    h1.letter B
+                    ul.artistes
+                        li.name: a(href="") Blaqbonez
+                        li.name: a(href="") B Red
+                        li.name: a(href="") Brymo
+                        li.name: a(href="") Buju
+                        li.name: a(href="") Burna Boy
+                article
+                    h1.letter C
+                    ul.artistes
+                        li.name: a(href="") CDQ
+                        li.name: a(href="") Chinko Ekun
+                        li.name: a(href="") CKay
+                        li.name: a(href="") Crayon
+                article
+                    h1.letter D
+                    ul.artistes
+                        li.name: a(href="") Darey
+                        li.name: a(href="") Davido
+                        li.name: a(href="") Davolee
+                        li.name: a(href="") D'banj
+                        li.name: a(href="") Dice Ailes
+                        li.name: a(href="") Di'Ja
+                        li.name: a(href="") DJ Big N
+                        li.name: a(href="") DJ Cuppy
+                        li.name: a(href="") DJ Ecool
+                        li.name: a(href="") DJ Enimoney
+                        li.name: a(href="") DJ Neptune
+                        li.name: a(href="") DJ Spinall
+                        li.name: a(href="") DJ Xclusive
+                        li.name: a(href="") DNA Twins
+                        li.name: a(href="") Don Jazzy
+                        li.name: a(href="") D'prince
+                        li.name: a(href="") Dremo
+                        li.name: a(href="") Dr Sid
+                        li.name: a(href="") Duncan Mighty
+                article
+                    h1.letter E
+                    ul.artistes
+                        li.name: a(href="") Erigga
+                        li.name: a(href="") Eva Alordiah
+                article
+                    h1.letter F
+                    ul.artistes
+                        li.name: a(href="") Falz
+                        li.name: a(href="") Fireboy DML
+                        li.name: a(href="") Flavour
+                article
+                    h1.letter G
+                    ul.artistes
+                article
+                    h1.letter H
+                    ul.artistes
+                        li.name: a(href="") Harrysong
+                article
+                    h1.letter I
+                    ul.artistes
+                        li.name: a(href="") Ice Prince
+                        li.name: a(href="") Idowest
+                        li.name: a(href="") iLLBLISS
+                        li.name: a(href="") Iyanya
+                article
+                    h1.letter J
+                    ul.artistes
+                        li.name: a(href="") Jesse Alordiah
+                        li.name: a(href="") Jidenna
+                        li.name: a(href="") Joeboy
+                        li.name: a(href="") Johnny Drille
+                article
+                    h1.letter K
+                    ul.artistes
+                        li.name: a(href="") Kcee
+                        li.name: a(href="") Kida Kudz
+                        li.name: a(href="") Kizz Daniel
+                        li.name: a(href="") Korede Bello
+                article
+                    h1.letter L
+                    ul.artistes
+                        li.name: a(href="") Ladipoe
+                        li.name: a(href="") L.A.X
+                        li.name: a(href="") Lil Frosh
+                        li.name: a(href="") Lil Kesh
+                        li.name: a(href="") Lindsey Abudei
+                article
+                    h1.letter M
+                    ul.artistes
+                        li.name: a(href="") Magnito
+                        li.name: a(href="") Maleek Berry
+                        li.name: a(href="") May D
+                        li.name: a(href="") Mayorkun
+                        li.name: a(href="artistes/mi-abaga") M.I Abaga
+                        li.name: a(href="") Mr. P
+                article
+                    h1.letter N
+                    ul.artistes
+                        li.name: a(href="") Naeto C
+                        li.name: a(href="") Naira Marley
+                        li.name: a(href="") Niniola
+                        li.name: a(href="") Nonso Amadi
+                        li.name: a(href="") Not3s
+                article
+                    h1.letter O
+                    ul.artistes
+                        li.name: a(href="") Odunsi (The Engine)
+                        li.name: a(href="") Ola Dips
+                        li.name: a(href="") Olamide
+                        li.name: a(href="") Olu Maintain
+                        li.name: a(href="") Orezi
+                        li.name: a(href="") Oxlade
+                article
+                    h1.letter P
+                    ul.artistes
+                        li.name: a(href="") Patoranking
+                        li.name: a(href="") Pepenazi
+                        li.name: a(href="") Peruzzi
+                        li.name: a(href="") Phyno
+                        li.name: a(href="") PsychoYP
+                article
+                    h1.letter Q
+                    ul.artistes
+                article
+                    h1.letter R
+                    ul.artistes
+                        li.name: a(href="") Reekado Banks
+                        li.name: a(href="artistes/rema") Rema
+                        li.name: a(href="") Reminisce
+                        li.name: a(href="") Rudeboy
+                        li.name: a(href="") Runtown
+                article
+                    h1.letter S
+                    ul.artistes
+                        li.name: a(href="") Santi
+                        li.name: a(href="") Sarz
+                        li.name: a(href="") Sean Tizzle
+                        li.name: a(href="") Seyi Shay
+                        li.name: a(href="") Show Dem Camp
+                        li.name: a(href="") Simi
+                        li.name: a(href="") Skales
+                        li.name: a(href="") Skiibii
+                        li.name: a(href="") Small Doctor
+                        li.name: a(href="") Sound Sultan
+                article
+                    h1.letter T
+                    ul.artistes
+                        li.name: a(href="") Tekno
+                        li.name: a(href="") Tems
+                        li.name: a(href="") Teni
+                        li.name: a(href="") Terry G
+                        li.name: a(href="") The Flowolf
+                        li.name: a(href="") Timaya
+                        li.name: a(href="") Tiwa Savage
+                        li.name: a(href="") Trevboi
+                article
+                    h1.letter U
+                    ul.artistes
+                article
+                    h1.letter V
+                    ul.artistes
+                        li.name: a(href="") Vector
+                        li.name: a(href="") Victor AD
+                article
+                    h1.letter W
+                    ul.artistes
+                        li.name: a(href="") Wande Coal
+                        li.name: a(href="") Wizkid
+                        li.name: a(href="") Wurld
+                article
+                    h1.letter X
+                    ul.artistes
+                article
+                    h1.letter Y
+                    ul.artistes
+                        li.name: a(href="") Ycee
+                        li.name: a(href="") Yemi Alade
+                article
+                    h1.letter Z
+                    ul.artistes
+                        li.name: a(href="") Zlatan Ibile
+        footer.grid-center
+            #footer-links.grid
+                p: a(href="") Sitemap
+                p: a(href="") Privacy Policy
+                p: a(href="") About Us
+            p &copy; undiluted music. All Rights Reserved.
+                            
