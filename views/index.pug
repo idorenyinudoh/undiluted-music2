@@ -1,6 +1,13 @@
 doctype html
 html(lang="en")
     head
+        // Global site tag (gtag.js) - Google Analytics
+        script(src="https://www.googletagmanager.com/gtag/js?id=UA-175262730-1")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-175262730-1');
         link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
         link(rel="stylesheet", href="stylesheets/headter.css")
         link(rel="stylesheet", href="stylesheets/single-audio.css")
