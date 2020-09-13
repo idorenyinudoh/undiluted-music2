@@ -1,0 +1,368 @@
+doctype html
+html(lang="en")
+    head
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="stylesheets/headter.css")
+        link(rel="stylesheet", href="stylesheets/single-audio.css")
+        link(rel="stylesheet", href="stylesheets/today.css")
+        link(rel="stylesheet", href="stylesheets/latest-releases.css")
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="theme-color", content="#ffa826")
+        title undiluted music
+    body
+        form#form.hide(action="")
+            input#search-input(type="search", placeholder="Search")
+            button#clear-button.buttons.grid-center.material-icons clear
+        header#header.grid
+            #logo.grid-center Logo
+            nav.grid
+                ul.grid
+                    li
+                        button#genres-button.nav-link
+                            span#genres-text Genres
+                            span#icon.material-icons arrow_drop_down
+                        ul#genres-box.hide
+                            li
+                                a(href="/genres/afrobeats") Afrobeats
+                            li
+                                a(href="") Afro-Fusion
+                            li
+                                a(href="") Afro-House
+                            li
+                                a(href="") Afro-Pop
+                            li
+                                a(href="") Alternative R&B
+                            li
+                                a(href="") Alternative Rock
+                            li
+                                a(href="") Banku
+                            li
+                                a(href="") Blues
+                            li
+                                a(href="") Contemporary R&B
+                            li
+                                a(href="") Dancehall
+                            li
+                                a(href="") Electronic
+                            li
+                                a(href="") Folk
+                            li
+                                a(href="") Fuji
+                            li
+                                a(href="") Gospel
+                            li
+                                a(href="") Highlife
+                            li
+                                a(href="") Hip-Hop
+                            li
+                                a(href="") House
+                            li
+                                a(href="") Igbo Gospel Hip-Hop
+                            li
+                                a(href="") Igbo Highlife
+                            li
+                                a(href="") Igbo Rap
+                            li
+                                a(href="") Indie-Pop
+                            li
+                                a(href="") Jazz
+                            li
+                                a(href="") Neo-Soul
+                            li
+                                a(href="") Pop
+                            li
+                                a(href="") R&B
+                            li
+                                a(href="") Ragga
+                            li
+                                a(href="") Reggae
+                            li
+                                a(href="") Soca
+                            li
+                                a(href="") Soul
+                            li
+                                a(href="") Trap
+                            li
+                                a(href="") World
+                            li
+                                a(href="") Yoruba
+                    li
+                        a.nav-link(href="/artistes") Artistes
+                    li
+                        a.nav-link(href="/singles") Singles
+                    li
+                        a.nav-link(href="/eps") EPs
+            button#search-button.buttons.grid-center.material-icons search
+        script(src="scripts/header.js")
+        section#today-jam-container
+            h1#today-text today's jam
+            p#today-title
+                a.sec-dark(href="/artistes/rema/beamer") Beamer (Bad Boys)
+            p#today-artiste
+                a.sec-dark(href="artistes/rema") Rema
+                |  ft. Rvssian
+            #audio-container(style="grid-template-rows: '30px'")
+                audio(src="audio/beamer-rema_ft_rvssian.mp3" loop preload="metadata")
+                button#play-icon(aria-label="play" title="Play")
+                span#current-time.dur 0:00
+                #range-container
+                    input#range-input(type="range" aria-label="seek" value="0" step="1" min="0")
+                span#duration.dur 0:00
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js" integrity="sha512-+Ku6s80nhPKhP0lhl+Ygkp56Y2IknfZerdkVJYNaDolV8/H/kKeQRJj8RuwGRjGeXsFA8GzLNOG5vncuxI710A==" crossorigin="anonymous")
+            script(src="scripts/audio.js")
+        main
+            section.latest-releases-container
+                h1.latest-text latest releases
+                article
+                    a(href="")
+                        figure(title="Fela Kuti - (2000) Black President - The Best of Fela Kuti")
+                            .img-container
+                                img(src="images/fela-kuti-2000-black-president-the-best-of-fela-kuti.jpg", alt="(2000) Black President - The Best of Fela Kuti Album Cover")
+                            figcaption
+                                p.article-title (2000) Black President - The Best of Fela Kuti
+                                p.article-artiste Fela Kuti
+                article
+                    a(href="")
+                        figure(title="Drake - More Life")
+                            .img-container
+                                img(src="images/drake-more-life-album-cover.jpg", alt="More Life Album Cover")
+                            figcaption
+                                p.article-title More Life
+                                p.article-artiste Drake
+                article
+                    a(href="")
+                        figure(title="Jon Bellion - The Separation")
+                            .img-container
+                                img(src="images/jon-bellion-the-separation-album-cover.jpg", alt="The Separation Album Cover")
+                            figcaption
+                                p.article-title The Separation
+                                p.article-artiste Jon Bellion
+                article
+                    a(href="artistes/mi-abaga/rendezvous")
+                        figure(title="M.I Abaga - Rendezvous: The Playlist")
+                            .img-container
+                                img(src="images/mi-abaga-rendezvous-album-cover.jpg", alt="Rendezvous: The Playlist Album Cover")
+                            figcaption
+                                p.article-title Rendezvous: The Playlist
+                                p.article-artiste M.I Abaga
+                article
+                    a(href="")
+                        figure(title="Drake - Scorpion")
+                            .img-container
+                                img(src="images/drake-scorpion-album-cover.jpg", alt="Scorpion Album Cover")
+                            figcaption
+                                p.article-title Scorpion
+                                p.article-artiste Drake
+                article
+                    a(href="artistes/rema/beamer")
+                        figure(title="Rema ft. Rvssian - Beamer")
+                            .img-container
+                                img(src="images/rema-beamer-album-cover.jpg", alt="Beamer Album Cover")
+                            figcaption
+                                p.article-title Beamer (Bad Boys)
+                                p.article-artiste Rema ft. Rvssian
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container
+                                img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                .load-more
+                    button Load more
+            script(src="scripts/latest.js")
+        footer.grid-center
+            #footer-links.grid
+                p
+                    a(href="") Sitemap
+                p
+                    a(href="") Privacy Policy
+                p
+                    a(href="") About Us
+            p &copy; undiluted music. All Rights Reserved.
