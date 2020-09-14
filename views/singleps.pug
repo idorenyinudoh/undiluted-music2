@@ -61,13 +61,8 @@ html(lang="en")
                             li: a(href="") World
                             li: a(href="") Yoruba
                     li: a.nav-link(href="/artistes") Artistes
-                    case title
-                        when 'Singles'
-                            li: a.nav-link.active(href="/singles") Singles
-                            li: a.nav-link(href="/eps") EPs
-                        when 'EPs'
-                            li: a.nav-link(href="/singles") Singles
-                            li: a.nav-link.active(href="/eps") EPs
+                    li: a.nav-link(href="/singles" class={active: title === 'Singles'}) Singles
+                    li: a.nav-link(href="/eps" class={active: title === 'EPs'}) EPs
             button#search-button.buttons.grid-center.material-icons search
         script(src="scripts/header.js")
         main
