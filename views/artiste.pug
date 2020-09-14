@@ -1,0 +1,89 @@
+doctype html
+html(lang="en")
+    head
+        // Global site tag (gtag.js) - Google Analytics
+        script(src="https://www.googletagmanager.com/gtag/js?id=UA-175262730-1")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-175262730-1');
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="../stylesheets/headter.css")
+        link(rel="stylesheet", href="../stylesheets/latest-releases.css")
+        link(rel="stylesheet", href="../stylesheets/artiste.css")
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="theme-color", content="#ffa826")
+        title #{artiste} &nbsp;|&nbsp; undiluted music
+    body
+        form#form.hide(action="")
+            input#search-input(type="search", placeholder="Search")
+            button#clear-button.buttons.grid-center.material-icons clear
+        header#header.grid
+            #logo.grid-center Logo
+            nav.grid
+                ul.grid
+                    li
+                        button#genres-button.nav-link
+                            span#genres-text Genres
+                            span#icon.material-icons arrow_drop_down
+                        ul#genres-box.hide
+                            li: a(href="/afrobeats") Afrobeats
+                            li: a(href="/afro-fusion") Afro-Fusion
+                            li: a(href="/afro-house") Afro-House
+                            li: a(href="/afro-pop") Afro-Pop
+                            li: a(href="/alternative-r&b") Alternative R&B
+                            li: a(href="/alternative-rock") Alternative Rock
+                            li: a(href="/banku") Banku
+                            li: a(href="/blues") Blues
+                            li: a(href="/contemporary-r&b") Contemporary R&B
+                            li: a(href="/dancehall") Dancehall
+                            li: a(href="/electronic") Electronic
+                            li: a(href="/folk") Folk
+                            li: a(href="/fuji") Fuji
+                            li: a(href="/gospel") Gospel
+                            li: a(href="/highlife") Highlife
+                            li: a(href="/hip-hop") Hip-Hop
+                            li: a(href="/house") House
+                            li: a(href="/igbo-gospel-hip-hop") Igbo Gospel Hip-Hop
+                            li: a(href="/igbo-highlife") Igbo Highlife
+                            li: a(href="/igbo-rap") Igbo Rap
+                            li: a(href="/indie-pop") Indie-Pop
+                            li: a(href="/jazz") Jazz
+                            li: a(href="/neo-soul") Neo-Soul
+                            li: a(href="/pop") Pop
+                            li: a(href="/r&b") R&B
+                            li: a(href="/ragga") Ragga
+                            li: a(href="/reggae") Reggae
+                            li: a(href="/soca") Soca
+                            li: a(href="/soul") Soul
+                            li: a(href="/trap") Trap
+                            li: a(href="/world") World
+                            li: a(href="/yoruba") Yoruba
+                    li: a.nav-link(href="/artistes") Artistes
+                    li: a.nav-link(href="/singles") Singles
+                    li: a.nav-link(href="/eps") EPs
+            button#search-button.buttons.grid-center.material-icons search
+        script(src="../scripts/header.js")
+        section.breadcrumb
+            a.crumb(href="/artistes") Artistes
+            span #{artiste}
+        main
+            section.latest-releases-container
+                h1.latest-text #{artiste}
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container: img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                .load-more: button Load more
+            script(src="../scripts/latest.js")
+        footer.grid-center
+            #footer-links.grid
+                p: a(href="") Sitemap
+                p: a(href="") Privacy Policy
+                p: a(href="") About Us
+            p &copy; undiluted music. All Rights Reserved.

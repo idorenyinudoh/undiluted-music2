@@ -1,13 +1,13 @@
 const express = require('express');
+const artistes = require('./artistes');
 const router = express.Router();
 
 router.get('/', (req, res) => {
     res.render('index');
 });
 
-router.get('/artistes', (req, res) => {
-    res.render('artistes');
-});
+router.get('/artistes', artistes);
+router.get('/artistes/:random', artistes);
 
 router.get('/singles', (req, res) => {
     res.render('singleps', {
