@@ -1,0 +1,114 @@
+doctype html
+html(lang="en")
+    head
+        // Global site tag (gtag.js) - Google Analytics
+        script(src="https://www.googletagmanager.com/gtag/js?id=UA-175262730-1")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-175262730-1');
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="stylesheets/headter.css")
+        link(rel="stylesheet", href="stylesheets/genre.css")
+        link(rel="stylesheet", href="stylesheets/latest-releases.css")
+        link(rel="stylesheet", href="stylesheets/artiste.css")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="theme-color", content="#ffa826")
+        title #{title} &nbsp;|&nbsp; undiluted music
+    body
+        form#form.hide(action="")
+            input#search-input(type="search", placeholder="Search")
+            button#clear-button.buttons.grid-center.material-icons clear
+        header#header.grid
+            #logo.grid-center Logo
+            nav.grid
+                ul.grid
+                    li
+                        button#genres-button.nav-link.active
+                            span#genres-text Genres
+                            span#icon.material-icons arrow_drop_down
+                        ul#genres-box.hide
+                            li: a(href="/afrobeats" class={'active-genre': title === 'Afrobeats'}) Afrobeats
+                            li: a(href="/afro-fusion" class={'active-genre': title === 'Afro-Fusion'}) Afro-Fusion
+                            li: a(href="/afro-house" class={'active-genre': title === 'Afro-House'}) Afro-House
+                            li: a(href="/afro-pop" class={'active-genre': title === 'Afro-Pop'}) Afro-Pop
+                            li: a(href="/alternative-r&b" class={'active-genre': title === 'Alternative R&B'}) Alternative R&B
+                            li: a(href="/alternative-rock" class={'active-genre': title === 'Alternative Rock'}) Alternative Rock
+                            li: a(href="/banku" class={'active-genre': title === 'Banku'}) Banku
+                            li: a(href="/blues" class={'active-genre': title === 'Blues'}) Blues
+                            li: a(href="/contemporary-r&b" class={'active-genre': title === 'Contemporary R&B'}) Contemporary R&B
+                            li: a(href="/dancehall" class={'active-genre': title === 'Dancehall'}) Dancehall
+                            li: a(href="/electronic" class={'active-genre': title === 'Electronic'}) Electronic
+                            li: a(href="/folk" class={'active-genre': title === 'Folk'}) Folk
+                            li: a(href="/fuji" class={'active-genre': title === 'Fuji'}) Fuji
+                            li: a(href="/gospel" class={'active-genre': title === 'Gospel'}) Gospel
+                            li: a(href="/highlife" class={'active-genre': title === 'Highlife'}) Highlife
+                            li: a(href="/hip-hop" class={'active-genre': title === 'Hip-Hop'}) Hip-Hop
+                            li: a(href="/house" class={'active-genre': title === 'House'}) House
+                            li: a(href="/igbo-gospel-hip-hop" class={'active-genre': title === 'Igbo Gospel Hip-Hop'}) Igbo Gospel Hip-Hop
+                            li: a(href="/igbo-highlife" class={'active-genre': title === 'Igbo Highlife'}) Igbo Highlife
+                            li: a(href="/igbo-rap" class={'active-genre': title === 'Igbo Rap'}) Igbo Rap
+                            li: a(href="/indie-pop" class={'active-genre': title === 'Indie-Pop'}) Indie-Pop
+                            li: a(href="/jazz" class={'active-genre': title === 'Jazz'}) Jazz
+                            li: a(href="/neo-soul" class={'active-genre': title === 'Neo-Soul'}) Neo-Soul
+                            li: a(href="/pop" class={'active-genre': title === 'Pop'}) Pop
+                            li: a(href="/r&b" class={'active-genre': title === 'R&B'}) R&B
+                            li: a(href="/ragga" class={'active-genre': title === 'Ragga'}) Ragga
+                            li: a(href="/reggae" class={'active-genre': title === 'Reggae'}) Reggae
+                            li: a(href="/soca" class={'active-genre': title === 'Soca'}) Soca
+                            li: a(href="/soul" class={'active-genre': title === 'Soul'}) Soul
+                            li: a(href="/trap" class={'active-genre': title === 'Trap'}) Trap
+                            li: a(href="/world" class={'active-genre': title === 'World'}) World
+                            li: a(href="/yoruba" class={'active-genre': title === 'Yoruba'}) Yoruba
+                    li: a.nav-link(href="/artistes") Artistes
+                    li: a.nav-link(href="/singles") Singles
+                    li: a.nav-link(href="/eps") EPs
+            button#search-button.buttons.grid-center.material-icons search
+        script(src="scripts/header.js")
+        main
+            section.latest-releases-container
+                h1.latest-text #{title}
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container: img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container: img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container: img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container: img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                article
+                    a(href="")
+                        figure(title="")
+                            .img-container: img(src="", alt="")
+                            figcaption
+                                p.article-title 
+                                p.article-artiste 
+                .load-more: button Load more
+            script(src="scripts/latest.js")
+        footer.grid-center
+            #footer-links.grid
+                p: a(href="") Sitemap
+                p: a(href="") Privacy Policy
+                p: a(href="") About Us
+            p &copy; undiluted music. All Rights Reserved.
