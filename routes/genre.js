@@ -37,6 +37,7 @@ const genres = {
 
 router.get('/:genre', (req, res) => {
     if(genres[`${req.params.genre}`]) res.render('genre', {genre: genres[`${req.params.genre}`]});
+    else res.render('error');
 });
 
 module.exports = router;
