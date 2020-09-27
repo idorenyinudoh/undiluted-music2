@@ -4,6 +4,7 @@
   "description": "a web app to allow users stream and download tracks from their favourite nigerian artistes",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "48",
