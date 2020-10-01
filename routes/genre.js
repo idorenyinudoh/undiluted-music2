@@ -35,9 +35,13 @@ const genres = {
     'yoruba': 'Yoruba'
 }
 
+router.get('/page-not-found', (req, res) => {
+    res.render('error');
+});
+
 router.get('/:genre', (req, res) => {
     if(genres[`${req.params.genre}`]) res.render('genre', {genre: genres[`${req.params.genre}`]});
-    else res.render('error');
+    else res.redirect('/page-not-found');
 });
 
 module.exports = router;

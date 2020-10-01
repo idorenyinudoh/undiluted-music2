@@ -15,6 +15,7 @@ router.get('/artistes', (req, res) => {
 });
 router.get('/artistes/:artiste', (req, res) => {
     if(artistes[`${req.params.artiste}`]) res.render('artiste', {artiste: artistes[`${req.params.artiste}`]});
+    else res.redirect('../page-not-found');
 });
 
 module.exports = router;
