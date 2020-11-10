@@ -24,6 +24,8 @@
     "webpack-fix-style-only-entries": "^0.6.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.12.5"
+    "@babel/runtime": "^7.12.5",
+    "dotenv": "^8.2.0",
+    "mongodb": "^3.6.3"
   }
 }
