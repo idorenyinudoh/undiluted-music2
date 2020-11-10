@@ -9,7 +9,7 @@ module.exports = {
         singleAudio: './public/scripts/singleAudio.js',
     },
     output: {
-        path: path.resolve(__dirname, 'views'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'scripts/[name].bundle.js'
     },
     module: {
