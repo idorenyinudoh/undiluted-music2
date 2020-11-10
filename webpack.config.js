@@ -2,11 +2,11 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        'album-audio': './public/scripts/album-audio.js',
+        albumAudio: './public/scripts/albumAudio.js',
         audio: './public/scripts/audio.js',
         header: './public/scripts/header.js',
         latest: './public/scripts/latest.js',
-        singleaudio: './public/scripts/singleaudio.js'
+        singleAudio: './public/scripts/singleAudio.js',
     },
     output: {
         path: path.resolve(__dirname, 'views'),
