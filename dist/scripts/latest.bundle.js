@@ -1,0 +1,1 @@
+(()=>{for(var e=document.getElementsByTagName("figure"),t=function(t){e[t].addEventListener("pointerover",(function(){for(var n=0;n<e.length;n++)t!=n&&e[n].classList.add("grayscale")})),e[t].addEventListener("pointerout",(function(){for(var n=0;n<e.length;n++)t!=n&&e[n].classList.remove("grayscale")}))},n=0;n<e.length;n++)t(n)})();

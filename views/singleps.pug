@@ -9,9 +9,9 @@ html(lang="en")
             gtag('js', new Date());
             gtag('config', 'UA-175262730-1');
         link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
-        link(rel="stylesheet", href="stylesheets/headter.css")
-        link(rel="stylesheet", href="stylesheets/latest-releases.css")
-        link(rel="stylesheet", href="stylesheets/singleps.css")
+        link(rel="stylesheet", href="stylesheets/headter.bundle.css")
+        link(rel="stylesheet", href="stylesheets/latest-releases.bundle.css")
+        link(rel="stylesheet", href="stylesheets/singleps.bundle.css")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(name="theme-color", content="#ffa826")
         title #{title} &nbsp;|&nbsp; undiluted music
@@ -64,7 +64,7 @@ html(lang="en")
                     li: a.nav-link(href="/singles" class={active: title === 'Singles'}) Singles
                     li: a.nav-link(href="/eps" class={active: title === 'EPs'}) EPs
             button#search-button.buttons.grid-center.material-icons search
-        script(src="scripts/header.js")
+        script(src="scripts/header.bundle.js")
         main
             section.latest-releases-container
                 article
@@ -103,7 +103,7 @@ html(lang="en")
                                 p.article-title 
                                 p.article-artiste 
                 .load-more: button Load more
-            script(src="scripts/latest.js")
+            script(src="scripts/latest.bundle.js")
         footer.grid-center
             #footer-links.grid
                 p: a(href="") Sitemap

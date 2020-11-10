@@ -9,10 +9,10 @@ html(lang="en")
             gtag('js', new Date());
             gtag('config', 'UA-175262730-1');
         link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
-        link(rel="stylesheet", href="stylesheets/headter.css")
-        link(rel="stylesheet", href="stylesheets/single-audio.css")
-        link(rel="stylesheet", href="stylesheets/today.css")
-        link(rel="stylesheet", href="stylesheets/latest-releases.css")
+        link(rel="stylesheet", href="stylesheets/headter.bundle.css")
+        link(rel="stylesheet", href="stylesheets/single-audio.bundle.css")
+        link(rel="stylesheet", href="stylesheets/today.bundle.css")
+        link(rel="stylesheet", href="stylesheets/latest-releases.bundle.css")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(name="theme-color", content="#ffa826")
@@ -66,7 +66,7 @@ html(lang="en")
                     li: a.nav-link(href="/singles") Singles
                     li: a.nav-link(href="/eps") EPs
             button#search-button.buttons.grid-center.material-icons search
-        script(src="scripts/header.js")
+        script(src="scripts/header.bundle.js")
         section#today-jam-container
             h1#today-text today's jam
             p#today-title: a.sec-dark(href="/artistes/rema/beamer") Beamer (Bad Boys)
@@ -80,7 +80,7 @@ html(lang="en")
                 #range-container: input#range-input(type="range" aria-label="seek" value="0" step="1" min="0")
                 span#duration.dur 0:00
             script(src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js" integrity="sha512-+Ku6s80nhPKhP0lhl+Ygkp56Y2IknfZerdkVJYNaDolV8/H/kKeQRJj8RuwGRjGeXsFA8GzLNOG5vncuxI710A==" crossorigin="anonymous")
-            script(src="scripts/audio.js")
+            script(src="scripts/audio.bundle.js")
         main
             section.latest-releases-container
                 h1.latest-text latest releases
@@ -295,7 +295,7 @@ html(lang="en")
                                 p.article-title 
                                 p.article-artiste 
                 .load-more: button Load more
-            script(src="scripts/latest.js")
+            script(src="scripts/latest.bundle.js")
         footer.grid-center
             #footer-links.grid
                 p: a(href="") Sitemap
