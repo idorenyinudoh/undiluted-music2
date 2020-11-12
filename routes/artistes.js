@@ -22,9 +22,13 @@ router.get('/artistes', (req, res) => {
         res.render('artistes', {artistes: urlTitle});
     });
 });
+
 router.get('/artistes/:artiste', (req, res) => {
-    if(artistes[`${req.params.artiste}`]) res.render('artiste', {artiste: artistes[`${req.params.artiste}`]});
-    else res.redirect('../page-not-found');
+    if(Object.keys(urlTitle).length > 0) res.render('artiste', {artiste: urlTitle[`${req.params.artiste}`]});
+    else fetchArtistes().then(() => {
+        if(urlTitle[`${req.params.artiste}`]) res.render('artiste', {artiste: urlTitle[`${req.params.artiste}`]});
+        else res.redirect('../page-not-found');
+    })
 });
 
 module.exports = router;
