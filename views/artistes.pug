@@ -70,195 +70,165 @@ html(lang="en")
                 article
                     h1.letter &num;
                     ul.artistes
-                        li.name: a(href="artistes/2-baba") 2 Baba
-                        li.name: a(href="artistes/9ice") 9ice
+                        each val, key in artistes
+                            if key.search(/(\d)/) === 0
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter A
                     ul.artistes
-                        li.name: a(href="artistes/abstraktt") Abstraktt
-                        li.name: a(href="artistes/adekunle-gold") Adekunle Gold
-                        li.name: a(href="artistes/ajebutter22") Ajebutter22
-                        li.name: a(href="artistes/asa") Asa
-                        li.name: a(href="artistes/ayanfe") Ayanfe
+                        each val, key in artistes
+                            if key.charAt(0) === 'a' | 'A'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter B
                     ul.artistes
-                        li.name: a(href="") Blaqbonez
-                        li.name: a(href="") B Red
-                        li.name: a(href="") Brymo
-                        li.name: a(href="") Buju
-                        li.name: a(href="") Burna Boy
+                        each val, key in artistes
+                            if key.charAt(0) === 'b' | 'B'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter C
                     ul.artistes
-                        li.name: a(href="") CDQ
-                        li.name: a(href="") Chinko Ekun
-                        li.name: a(href="") CKay
-                        li.name: a(href="") Crayon
+                        each val, key in artistes
+                            if key.charAt(0) === 'c' | 'C'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter D
                     ul.artistes
-                        li.name: a(href="") Darey
-                        li.name: a(href="") Davido
-                        li.name: a(href="") Davolee
-                        li.name: a(href="") D'banj
-                        li.name: a(href="") Dice Ailes
-                        li.name: a(href="") Di'Ja
-                        li.name: a(href="") DJ Big N
-                        li.name: a(href="") DJ Cuppy
-                        li.name: a(href="") DJ Ecool
-                        li.name: a(href="") DJ Enimoney
-                        li.name: a(href="") DJ Neptune
-                        li.name: a(href="") DJ Spinall
-                        li.name: a(href="") DJ Xclusive
-                        li.name: a(href="") DNA Twins
-                        li.name: a(href="") Don Jazzy
-                        li.name: a(href="") D'prince
-                        li.name: a(href="") Dremo
-                        li.name: a(href="") Dr Sid
-                        li.name: a(href="") Duncan Mighty
+                        each val, key in artistes
+                            if key.charAt(0) === 'd' | 'D'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter E
                     ul.artistes
-                        li.name: a(href="") Erigga
-                        li.name: a(href="") Eva Alordiah
+                        each val, key in artistes
+                            if key.charAt(0) === 'e' | 'E'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter F
                     ul.artistes
-                        li.name: a(href="") Falz
-                        li.name: a(href="") Fireboy DML
-                        li.name: a(href="") Flavour
+                        each val, key in artistes
+                            if key.charAt(0) === 'f' | 'F'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter G
                     ul.artistes
+                        each val, key in artistes
+                            if key.charAt(0) === 'g' | 'G'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter H
                     ul.artistes
-                        li.name: a(href="") Harrysong
+                        each val, key in artistes
+                            if key.charAt(0) === 'h' | 'H'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter I
                     ul.artistes
-                        li.name: a(href="") Ice Prince
-                        li.name: a(href="") Idowest
-                        li.name: a(href="") iLLBLISS
-                        li.name: a(href="") Iyanya
+                        each val, key in artistes
+                            if key.charAt(0) === 'i' | 'I'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter J
                     ul.artistes
-                        li.name: a(href="") Jesse Alordiah
-                        li.name: a(href="") Jidenna
-                        li.name: a(href="") Joeboy
-                        li.name: a(href="") Johnny Drille
+                        each val, key in artistes
+                            if key.charAt(0) === 'j' | 'J'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter K
                     ul.artistes
-                        li.name: a(href="") Kcee
-                        li.name: a(href="") Kida Kudz
-                        li.name: a(href="") Kizz Daniel
-                        li.name: a(href="") Korede Bello
+                        each val, key in artistes
+                            if key.charAt(0) === 'k' | 'K'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter L
                     ul.artistes
-                        li.name: a(href="") Ladipoe
-                        li.name: a(href="") L.A.X
-                        li.name: a(href="") Lil Frosh
-                        li.name: a(href="") Lil Kesh
-                        li.name: a(href="") Lindsey Abudei
+                        each val, key in artistes
+                            if key.charAt(0) === 'l' | 'L'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter M
                     ul.artistes
-                        li.name: a(href="") Magnito
-                        li.name: a(href="") Maleek Berry
-                        li.name: a(href="") May D
-                        li.name: a(href="") Mayorkun
-                        li.name: a(href="artistes/mi-abaga") M.I Abaga
-                        li.name: a(href="") Mr. P
+                        each val, key in artistes
+                            if key.charAt(0) === 'm' | 'M'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter N
                     ul.artistes
-                        li.name: a(href="") Naeto C
-                        li.name: a(href="") Naira Marley
-                        li.name: a(href="") Niniola
-                        li.name: a(href="") Nonso Amadi
-                        li.name: a(href="") Not3s
+                        each val, key in artistes
+                            if key.charAt(0) === 'n' | 'N'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter O
                     ul.artistes
-                        li.name: a(href="") Odunsi (The Engine)
-                        li.name: a(href="") Ola Dips
-                        li.name: a(href="") Olamide
-                        li.name: a(href="") Olu Maintain
-                        li.name: a(href="") Orezi
-                        li.name: a(href="") Oxlade
+                        each val, key in artistes
+                            if key.charAt(0) === 'o' | 'O'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter P
                     ul.artistes
-                        li.name: a(href="") Patoranking
-                        li.name: a(href="") Pepenazi
-                        li.name: a(href="") Peruzzi
-                        li.name: a(href="") Phyno
-                        li.name: a(href="") PsychoYP
+                        each val, key in artistes
+                            if key.charAt(0) === 'p' | 'P'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter Q
                     ul.artistes
+                        each val, key in artistes
+                            if key.charAt(0) === 'q' | 'Q'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter R
                     ul.artistes
-                        li.name: a(href="") Reekado Banks
-                        li.name: a(href="artistes/rema") Rema
-                        li.name: a(href="") Reminisce
-                        li.name: a(href="") Rudeboy
-                        li.name: a(href="") Runtown
+                        each val, key in artistes
+                            if key.charAt(0) === 'r' | 'R'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter S
                     ul.artistes
-                        li.name: a(href="") Santi
-                        li.name: a(href="") Sarz
-                        li.name: a(href="") Sean Tizzle
-                        li.name: a(href="") Seyi Shay
-                        li.name: a(href="") Show Dem Camp
-                        li.name: a(href="") Simi
-                        li.name: a(href="") Skales
-                        li.name: a(href="") Skiibii
-                        li.name: a(href="") Small Doctor
-                        li.name: a(href="") Sound Sultan
+                        each val, key in artistes
+                            if key.charAt(0) === 's' | 'S'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter T
                     ul.artistes
-                        li.name: a(href="") Tekno
-                        li.name: a(href="") Tems
-                        li.name: a(href="") Teni
-                        li.name: a(href="") Terry G
-                        li.name: a(href="") The Flowolf
-                        li.name: a(href="") Timaya
-                        li.name: a(href="") Tiwa Savage
-                        li.name: a(href="") Trevboi
+                        each val, key in artistes
+                            if key.charAt(0) === 't' | 'T'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter U
                     ul.artistes
+                        each val, key in artistes
+                            if key.charAt(0) === 'u' | 'U'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter V
                     ul.artistes
-                        li.name: a(href="") Vector
-                        li.name: a(href="") Victor AD
+                        each val, key in artistes
+                            if key.charAt(0) === 'v' | 'V'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter W
                     ul.artistes
-                        li.name: a(href="") Wande Coal
-                        li.name: a(href="") Wizkid
-                        li.name: a(href="") Wurld
+                        each val, key in artistes
+                            if key.charAt(0) === 'w' | 'W'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter X
                     ul.artistes
+                        each val, key in artistes
+                            if key.charAt(0) === 'x' | 'X'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter Y
                     ul.artistes
-                        li.name: a(href="") Ycee
-                        li.name: a(href="") Yemi Alade
+                        each val, key in artistes
+                            if key.charAt(0) === 'y' | 'Y'
+                                li.name: a(href="artistes/" + key) #{val}
                 article
                     h1.letter Z
                     ul.artistes
-                        li.name: a(href="") Zlatan Ibile
+                        each val, key in artistes
+                            if key.charAt(0) === 'z' | 'Z'
+                                li.name: a(href="artistes/" + key) #{val}
         footer.grid-center
             #footer-links.grid
                 p: a(href="") Sitemap
