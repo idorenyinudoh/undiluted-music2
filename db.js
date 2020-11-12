@@ -5,7 +5,7 @@ let state = {
 }
 
 exports.connect = function(url, databaseName) {
-    MongoClient.connect(url, (err, cli) => {
+    MongoClient.connect(url, { useUnifiedTopology: true}, (err, cli) => {
         state.db = cli.db(databaseName);
         console.log('from db');
     });
